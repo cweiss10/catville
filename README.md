@@ -14,3 +14,33 @@ Every day, a new Substack post is generated, summarizing:
 - A narrative overview of Catville’s daily events
 
 You can subscribe to receive these updates here: (link here)
+
+
+### Running Locally
+
+1. **Start Ollama with Mistral**
+
+   Make sure Ollama is installed and the Mistral model is pulled:
+
+   ```bash
+   ollama pull mistral
+   ```
+
+   Start Ollama daemon (if not already running):
+
+    ```bash
+    ollama run mistral
+    ```
+
+
+    Install all the required dependencies using Poetry:
+
+    ```bash
+    poetry install
+    ```
+
+    Run the Simulation:
+
+    ```bash
+    poetry run python catville.py
+    ```

@@ -1,27 +1,17 @@
-from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationSummaryBufferMemory
 import random
-import time
 
-# === Environment Setup ===
-world = {
-    "locations": {
-        "home": [],
-        "park": [],
-        "cafe": []
-    },
-    "time": "08:00 AM"
-}
 
 # === Agent Class ===
 class Agent:
-    def __init__(self, name, personality, llm):
+    def __init__(self, name, personality, world, llm):
         self.name = name
         self.personality = personality
         self.memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=1000)
         self.location = "home"
+        self.world = world
         self.llm = llm
 
     def observe(self):
@@ -32,9 +22,9 @@ class Agent:
         return random.choice(actions)
 
     def move(self, new_location):
-        world["locations"][self.location].remove(self.name)
+        self.world["locations"][self.location].remove(self.name)
         self.location = new_location
-        world["locations"][new_location].append(self.name)
+        self.world["locations"][new_location].append(self.name)
 
     def reflect(self):
         summary = self.memory.buffer[-1]["content"] if self.memory.buffer else "Nothing to reflect."
@@ -49,13 +39,15 @@ class Agent:
                 "Write a short, natural conversation between them."
             )
         )
-        chain = LLMChain(llm=self.llm, prompt=prompt)
-        conversation = chain.run(
-            name1=self.name,
-            name2=other_agent.name,
-            personality1=self.personality,
-            personality2=other_agent.personality
-        )
+        chain = prompt | self.llm
+        result = chain.invoke({
+            "name1": self.name,
+            "name2": other_agent.name,
+            "personality1": self.personality,
+            "personality2": other_agent.personality
+        })
+
+        conversation = result.content if hasattr(result, "content") else str(result)
         self.memory.save_context({"input": f"Talked to {other_agent.name}"}, {"output": conversation})
         other_agent.memory.save_context({"input": f"Talked to {self.name}"}, {"output": conversation})
         print(conversation)

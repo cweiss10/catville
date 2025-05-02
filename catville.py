@@ -1,13 +1,25 @@
-from agent import agent
-from langchain_community.chat_models import ChatOllama
+from agent import Agent
+from langchain_ollama import ChatOllama
+import time
 
-llm = ChatOllama(model="mistral")
+
+# === World Setup ===
+world = {
+    "locations": {
+        "home": [],
+        "park": [],
+        "cafe": []
+    },
+    "time": "08:00 AM"
+}
+
 # === Simulation Setup ===
+llm = ChatOllama(model="mistral")
 agents = [
-    Agent("Andy", "a cheerful artist who loves mornings", llm),
-    Agent("Samantha", "a quiet programmer who enjoys solitude", llm),
-    Agent("Caroline", "a purple haired barista who makes the best lattes", llm),
-    Agent("Peter", "a narcissistic finance bro who didn't make it to Wall Street but wants to find true love", llm),
+    Agent("Andy", "a cheerful artist who loves mornings", world, llm),
+    Agent("Samantha", "a quiet programmer who enjoys solitude", world, llm),
+    Agent("Caroline", "a purple haired barista who makes the best lattes", world, llm),
+    Agent("Peter", "a narcissistic finance bro who didn't make it to Wall Street but wants to find true love", world,  llm),
 ]
 
 # Place agents in initial location
@@ -34,7 +46,7 @@ def tick():
             present[0].interact(present[1])
 
     # Advance time (mocked)
-    current_hour = int(world["time"].split(":"[0]))
+    current_hour = int(world["time"].split(":")[0])
     world["time"] = f"{current_hour + 1}:00 AM"
 
 # Run a few ticks
