@@ -1,5 +1,5 @@
 # Catville
-In 2023, Stanford and Google introduced a groundbreaking simulation of human behavior using AI agents. You can read the original paper [here](https://arxiv.org/abs/2304.03442).
+In 2023, Stanford and Google introduced a simulation of human behavior using AI agents. You can read the original paper [here](https://arxiv.org/abs/2304.03442).
 
 # What Is Catville?
 Inspired by that research, Catville is my own take on an autonomous, AI-driven social simulation. The project uses Mistral's open-source LLM for its strong performance and accessibility (free to run locally).
