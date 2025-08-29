@@ -1,0 +1,94 @@
+name: Run AI City Simulation
+
+on:
+  schedule:
+    - cron: "0 * * * *"     # every hour at minute 0 (UTC)
+  workflow_dispatch:         # manual trigger
+
+permissions:
+  contents: write            # allow committing logs to main
+
+env:
+  TZ: America/Los_Angeles    # LA time for filenames & timestamps
+
+jobs:
+  run-simulation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Install Ollama
+        run: |
+          curl -fsSL https://ollama.com/download.sh | sh
+          ollama --version
+
+      - name: Pull Mistral model
+        run: ollama pull mistral
+
+      - name: Start Ollama in background
+        run: |
+          nohup ollama serve > ollama.log 2>&1 &
+          sleep 12
+          ollama list || (echo "Ollama failed to start" && exit 1)
+
+      - name: Install deps
+        run: poetry install
+
+      - name: Run simulation and append to daily log
+        shell: bash
+        run: |
+          MM=$(date +%m)
+          DD=$(date +%d)
+          YYYY=$(date +%Y)
+          LOG_DIR="logs/${MM}/${DD}"
+          LOG_FILE="${LOG_DIR}/${YYYY}.txt"
+
+          mkdir -p "${LOG_DIR}"
+
+          {
+            echo "=============================="
+            echo "Run started: $(date '+%Y-%m-%d %H:%M:%S %Z')"
+            echo "------------------------------"
+            poetry run python catville.py
+            EXIT_CODE=$?
+            echo "------------------------------"
+            echo "Run finished: $(date '+%Y-%m-%d %H:%M:%S %Z') (exit ${EXIT_CODE})"
+            echo
+          } >> "${LOG_FILE}" 2>&1
+
+          echo "LOG_FILE=${LOG_FILE}" >> $GITHUB_ENV
+      
+      - name: Generate daily summary (yesterday, LA time)
+        run: poetry run python daily_summary.py
+
+
+      - name: Commit and push logs + state + summaries to main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs state summaries
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Run log/state/summary update: $(date '+%Y-%m-%d %H:%M:%S %Z')"
+            git push origin main
+          fi
+
+      - name: Upload log as artifact (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: latest-daily-log
+          path: ${{ env.LOG_FILE }}
