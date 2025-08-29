@@ -1,36 +1,35 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Noor"
+      "home": [],
+      "park": [
+        "Diego"
       ],
-      "park": [],
-      "cafe": [
-        "Caroline"
-      ],
+      "cafe": [],
       "library": [
-        "Leo"
-      ],
-      "school": [],
-      "hospital": [
         "Mei"
       ],
-      "market": [],
+      "school": [
+        "Samantha"
+      ],
+      "hospital": [],
+      "market": [
+        "Leo"
+      ],
       "town_hall": [],
       "theater": [
         "Andy",
-        "Diego"
-      ],
-      "gym": [
         "Peter"
       ],
+      "gym": [],
       "museum": [],
-      "restaurant": [
-        "Samantha"
-      ],
-      "train_station": []
+      "restaurant": [],
+      "train_station": [
+        "Caroline",
+        "Noor"
+      ]
     },
-    "time": "10:00 AM"
+    "time": "11:00 AM"
   },
   "agents": [
     {
@@ -93,6 +92,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Peter at theater around 10:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Morning, Peter! Enjoying another sunrise? I always find the theater quiets down just enough for a peaceful sketch.\n\nPeter: Hey, Andy! Been a while since our last art class. How've you been? Sketched anything good lately?\n\nAndy: It's always great to see you here, Peter. Things are going well. Actually, I've been working on a mural for the community center. They should be finishing up the walls any day now!\n\nPeter: Wow, that's fantastic! You're such an inspiration, Andy. Maybe I could join you sometime at the park to help with your kids' classes or just learn a thing or two from you.\n\nAndy: That would mean a lot to me and the kids. We usually meet on Saturdays around 9:00 AM. How about we catch up then?\n\nPeter: Sounds perfect, Andy! I'll make sure not to miss it this time around. Looking forward to it!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -100,7 +126,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "restaurant",
+      "location": "school",
       "memory": {
         "summary": "",
         "messages": []
@@ -109,25 +135,81 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "cafe",
+      "location": "train_station",
       "memory": {
         "summary": "",
-        "messages": []
+        "messages": [
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at train_station around 10:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: \"Hey Noor! Your usual, right? And how was that robotics workshop last night?\"\n\nNoor: \"Hey Caroline, yes, please! The cappuccino with an intricate leaf design, just like always. And the workshop went really well, we're making great progress!\"\n\nCaroline: \"I knew you would, I can see your passion in every project. By the way, I've been thinking of trying out for that open slot at the theater on Thursdays. What do you think?\"\n\nNoor: \"That sounds amazing, Caroline! Your voice is captivating and it would be a perfect addition to our local talent. Encourage your inner performer!\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          }
+        ]
       }
     },
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "gym",
+      "location": "theater",
       "memory": {
         "summary": "",
-        "messages": []
+        "messages": [
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Andy at theater around 10:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Morning, Peter! Enjoying another sunrise? I always find the theater quiets down just enough for a peaceful sketch.\n\nPeter: Hey, Andy! Been a while since our last art class. How've you been? Sketched anything good lately?\n\nAndy: It's always great to see you here, Peter. Things are going well. Actually, I've been working on a mural for the community center. They should be finishing up the walls any day now!\n\nPeter: Wow, that's fantastic! You're such an inspiration, Andy. Maybe I could join you sometime at the park to help with your kids' classes or just learn a thing or two from you.\n\nAndy: That would mean a lot to me and the kids. We usually meet on Saturdays around 9:00 AM. How about we catch up then?\n\nPeter: Sounds perfect, Andy! I'll make sure not to miss it this time around. Looking forward to it!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          }
+        ]
       }
     },
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "hospital",
+      "location": "library",
       "memory": {
         "summary": "",
         "messages": [
@@ -164,7 +246,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "theater",
+      "location": "park",
       "memory": {
         "summary": "",
         "messages": [
@@ -201,16 +283,44 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "home",
+      "location": "train_station",
       "memory": {
         "summary": "",
-        "messages": []
+        "messages": [
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at train_station around 10:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: \"Hey Noor! Your usual, right? And how was that robotics workshop last night?\"\n\nNoor: \"Hey Caroline, yes, please! The cappuccino with an intricate leaf design, just like always. And the workshop went really well, we're making great progress!\"\n\nCaroline: \"I knew you would, I can see your passion in every project. By the way, I've been thinking of trying out for that open slot at the theater on Thursdays. What do you think?\"\n\nNoor: \"That sounds amazing, Caroline! Your voice is captivating and it would be a perfect addition to our local talent. Encourage your inner performer!\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          }
+        ]
       }
     },
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "library",
+      "location": "market",
       "memory": {
         "summary": "",
         "messages": []
