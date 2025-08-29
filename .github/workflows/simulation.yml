@@ -31,17 +31,18 @@ jobs:
 
       - name: Install Ollama
         run: |
-          curl -fsSL https://ollama.com/download.sh | sh
+          curl -fsSL https://ollama.com/install.sh | sh
           ollama --version
-
-      - name: Pull Mistral model
-        run: ollama pull mistral
 
       - name: Start Ollama in background
         run: |
           nohup ollama serve > ollama.log 2>&1 &
+          # wait a moment for the daemon to come up
           sleep 12
           ollama list || (echo "Ollama failed to start" && exit 1)
+
+      - name: Pull Mistral model
+        run: ollama pull mistral
 
       - name: Install deps
         run: poetry install
