@@ -1,0 +1,32 @@
+name: Publish Catville Daily (Buttondown)
+
+on:
+  schedule:
+    # 09:05 America/Los_Angeles.
+    # Convert to UTC: 16:05 when DST is in effect, 17:05 otherwise.
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  TZ: America/Los_Angeles
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Publish yesterday's summary to Buttondown
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: python publish_buttondown.py
