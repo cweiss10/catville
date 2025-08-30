@@ -13,7 +13,7 @@ Every day, a new Buttondown post is generated, summarizing:
 
 - A narrative overview of Catville’s daily events
 
-[Click here to subscribe to the newsletter and receive daily updates!](https://buttondown.com/catherineweiss95).
+[Click here to subscribe to the newsletter and receive daily updates!](https://buttondown.com/catherineweiss95)
 
 
 ### Running Locally
