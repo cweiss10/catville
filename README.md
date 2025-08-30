@@ -6,14 +6,14 @@ Inspired by that research, Catville is my own take on an autonomous, AI-driven s
 
 The simulation evolves on its own: each day, the agents interact, make decisions, and reflect—forming an emergent narrative of society.
 
-# Daily Updates via Substack
-Every day, a new Substack post is generated, summarizing:
+# Daily Updates via Newsletter
+Every day, a new Buttondown post is generated, summarizing:
 
 - Key interactions between the people of Catville
 
 - A narrative overview of Catville’s daily events
 
-You can subscribe to receive these updates here: (link here)
+[Click here to subscribe to the newsletter and receive daily updates!](https://buttondown.com/catherineweiss95).
 
 
 ### Running Locally
