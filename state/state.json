@@ -1,41 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Leo"
-      ],
+      "home": [],
       "park": [],
-      "cafe": [
-        "Mei"
+      "cafe": [],
+      "library": [],
+      "school": [],
+      "hospital": [
+        "Andy"
       ],
-      "library": [
-        "Samantha",
+      "market": [
         "Caroline"
       ],
-      "school": [],
-      "hospital": [],
-      "market": [],
       "town_hall": [
-        "Andy",
+        "Peter",
         "Noor"
       ],
-      "theater": [],
-      "gym": [
-        "Peter"
+      "theater": [
+        "Leo"
       ],
-      "museum": [
+      "gym": [
         "Diego"
       ],
-      "restaurant": [],
-      "train_station": []
+      "museum": [],
+      "restaurant": [
+        "Samantha"
+      ],
+      "train_station": [
+        "Mei"
+      ]
     },
-    "time": "8:00 PM"
+    "time": "9:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "town_hall",
+      "location": "hospital",
       "memory": {
         "summary": " The human conversed with Diego at the theater around 9:00 AM and Peter around 10:00 AM, discussing art-related matters. Later in the day, around 12:00 PM, the human talked to Caroline at the park where Andy complimented her latte art and expressed interest in collaborating with her on a gallery show. They both agreed, suggesting they also work on coffee-themed watercolor murals together.\n\nAround 2:00 PM, the human spoke with Noor at the market. Andy admired Noor's new haircut and appreciated her feedback on his sunrise sketch displayed at the community center. They discussed collaborating on a science-inspired mural for the robotics club after school next week, with Andy teaching them about art as well. Both parties were excited to work together on something unique and amazing for the kids.",
         "messages": [
@@ -153,7 +154,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "library",
+      "location": "restaurant",
       "memory": {
         "summary": "",
         "messages": [
@@ -244,7 +245,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "library",
+      "location": "market",
       "memory": {
         "summary": " The human interacted with Noor at the train station at around 10:00 AM, discussing their usual cappuccino order and a robotics workshop. Noor shared that the workshop went well and they're making progress. Caroline then expressed interest in trying out for an open slot at the theater on Thursdays to which Noor encouraged her.\n\nLater, the human spoke with Diego at the museum around 11:00 AM. Caroline and Diego engaged in a latte art challenge, with Caroline creating an intricate design that impressed Diego. He wished her luck for her show that night and Caroline invited him to the theater.\n\nAround 12:00 PM, the human talked to Andy at the park. Andy admired Caroline's latte art and they discussed collaborating on a gallery show. They also agreed to work on coffee-themed watercolor murals together, planning for what could potentially be a successful collaboration.",
         "messages": [
@@ -362,7 +363,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "gym",
+      "location": "town_hall",
       "memory": {
         "summary": "",
         "messages": [
@@ -446,6 +447,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at town_hall around 8:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Peter: Hey Noor, long time no see! How have you been? I've noticed your robotics club is doing great.\n\nNoor: Hi Peter! It's good to catch up. The kids are loving it, and we finally got that 3D printer I asked for at the last town hall meeting. How about you? Still working on those startup ideas?\n\nPeter: Yeah, you know me – always hustling. But truth be told, I've been thinking of taking a break from finance to focus more on the startups. And maybe I could use someone like you to help with my business plan.\n\nNoor: (laughs) You know I'm all about science and teaching, but if there's anything I can do to help, let me know! Maybe we can even make it a project for the robotics club.\n\nPeter: That sounds amazing, Noor. Let's grab coffee sometime next week and talk more about it?\n\nNoor: Sounds perfect, Peter. How about Tuesday at 10 AM at the Coffee House near the town hall? I have to run now, but let's definitely catch up then!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -453,7 +481,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "cafe",
+      "location": "train_station",
       "memory": {
         "summary": "",
         "messages": [
@@ -571,7 +599,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "museum",
+      "location": "gym",
       "memory": {
         "summary": "",
         "messages": [
@@ -773,6 +801,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Peter at town_hall around 8:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Peter: Hey Noor, long time no see! How have you been? I've noticed your robotics club is doing great.\n\nNoor: Hi Peter! It's good to catch up. The kids are loving it, and we finally got that 3D printer I asked for at the last town hall meeting. How about you? Still working on those startup ideas?\n\nPeter: Yeah, you know me – always hustling. But truth be told, I've been thinking of taking a break from finance to focus more on the startups. And maybe I could use someone like you to help with my business plan.\n\nNoor: (laughs) You know I'm all about science and teaching, but if there's anything I can do to help, let me know! Maybe we can even make it a project for the robotics club.\n\nPeter: That sounds amazing, Noor. Let's grab coffee sometime next week and talk more about it?\n\nNoor: Sounds perfect, Peter. How about Tuesday at 10 AM at the Coffee House near the town hall? I have to run now, but let's definitely catch up then!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -780,7 +835,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "home",
+      "location": "theater",
       "memory": {
         "summary": "",
         "messages": [
