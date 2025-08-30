@@ -1,41 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [],
-      "park": [],
-      "cafe": [
-        "Peter"
-      ],
-      "library": [
-        "Mei",
-        "Diego"
-      ],
-      "school": [],
-      "hospital": [
-        "Noor"
-      ],
-      "market": [
-        "Andy",
+      "home": [
         "Leo"
       ],
+      "park": [],
+      "cafe": [],
+      "library": [],
+      "school": [
+        "Diego"
+      ],
+      "hospital": [],
+      "market": [],
       "town_hall": [
-        "Caroline"
+        "Mei"
       ],
       "theater": [],
-      "gym": [],
-      "museum": [],
-      "restaurant": [],
+      "gym": [
+        "Samantha",
+        "Peter"
+      ],
+      "museum": [
+        "Caroline"
+      ],
+      "restaurant": [
+        "Noor"
+      ],
       "train_station": [
-        "Samantha"
+        "Andy"
       ]
     },
-    "time": "8:00 AM"
+    "time": "9:00 AM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "market",
+      "location": "train_station",
       "memory": {
         "summary": " The human talks to Noor at home around 1:00 AM. Andy shares his recent day's experiences and Mei's advice about finding inspiration in unexpected places like the community garden. Noor expresses enthusiasm, and Andy mentions a potential collaboration with Diego at the community center. Noor reminds him of their successful robotics workshop and encourages him, offering help if needed. Andy appreciates her support and suggests they catch up over tea soon. They agree to meet around 1:00 PM at their usual spot.",
         "messages": [
@@ -153,7 +154,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "train_station",
+      "location": "gym",
       "memory": {
         "summary": " The human met various individuals throughout the day - Caroline at the park around 1:00 PM, Mei at the theater around 2:00 PM, and again at the library around 7:00 PM. They discussed Samantha's progress on her latest project and potential collaborations with Mei. The conversation with Caroline also included topics such as robotics, a new espresso blend, an invitation from Diego, and a stray cat behind the cafe.\n\nLater at the theater around 9:00 PM, Samantha encountered Leo who offered to play the violin for her. At the town hall around 10:00 PM, Samantha discussed with Caroline Noor's robotics workshop and potential help required, as well as remembering a coffee-themed watercolor collaboration with Andy at the park, which both women expressed enthusiasm about.",
         "messages": [
@@ -237,6 +238,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Peter at gym around 8:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Peter, I saw you at the gym this morning. Good workout?\n\nPeter: Hi Samantha! Yeah, you too? I was just about to ask if I've seen you around here lately. How have your routines been going?\n\nSamantha: They're good, thanks. I've actually been making some progress on my latest project and might need your help with something. Remember our conversation with Noor at the town hall last week?\n\nPeter: Oh right! Yes, that sounds like it could be a great collaboration. Let's catch up this weekend maybe? Grab a coffee or something?\n\nSamantha: I'd like that. How about Sunday afternoon around 2:00 PM at the cafe where we feed the stray cats behind?\n\nPeter: Sounds perfect! Looking forward to it, Samantha. Let's make some magic happen together.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -244,7 +272,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "town_hall",
+      "location": "museum",
       "memory": {
         "summary": " The human met Samantha at the town hall around 10:00 PM, where they discussed Caroline's latest latte art and upcoming projects. Samantha shared her progress on an open-source library and offered help for Noor and Diego's robotics workshop. They also remembered to address the stray cats behind the cafe and planned a coffee-themed watercolor collaboration with Andy at the park, aiming to continue fostering creativity in their community.\n\nLater that night, around 12:00 AM, the human talked to Mei at the library. Caroline shared her intention to collaborate with Samantha using Caroline's latte art for visuals in Samantha's coding breaks. Mei suggested checking the library archives related to local artists for inspiration.\n\nThe conversation ended with Mei sharing news about the Saturday zine club starting next week, and the two agreed to catch up more on it soon. The small rituals of socializing were emphasized throughout their exchange.",
         "messages": [
@@ -362,37 +390,10 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "cafe",
+      "location": "gym",
       "memory": {
-        "summary": " The human discusses their encounter with Andy at the theater around 10:00 AM and again around 4:00 PM, as well as their conversation with Diego at a restaurant around 6:00 PM. During their second conversation with Diego, they catch up on each other's lives, discuss a new Mexican restaurant, and plan to meet there for dinner to further discuss potential fitness-related collaborations due to their shared interests and expertise. Both parties are excited about the prospect of working together. Later at 8:00 PM, the human talks to Noor at the town hall, discussing her successful robotics club and potential collaboration on startup ideas. They agree to meet for coffee next week to discuss further details.",
+        "summary": " The human discusses their encounter with Andy at the theater around 10:00 AM and again around 4:00 PM, as well as their conversation with Diego at a restaurant around 6:00 PM. During their second conversation with Diego, they catch up on each other's lives, discuss a new Mexican restaurant, and plan to meet there for dinner to further discuss potential fitness-related collaborations due to their shared interests and expertise. Both parties are excited about the prospect of working together.\n\nLater at 8:00 PM, the human talks to Noor at the town hall, discussing her successful robotics club and potential collaboration on startup ideas. They agree to meet for coffee next week to discuss further details. During their conversation at the town hall, Peter and Noor talk about the importance of curiosity and exploration in science, decide to collaborate on a project, and plan to set up a meeting at the library to discuss ideas. They also discuss exchanging books and networking strategies for fundraising. Both are looking forward to making a difference together.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Noor at town_hall around 9:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Noor, great to see you again! I was just admiring your robotics club's latest project from the window.\n\nNoor: Oh, hi Peter! Thanks for noticing. The students are really excited about it. You know, science isn't just about numbers and equations, it's about curiosity and exploration too.\n\nPeter: I couldn't agree more. I've been trying to incorporate that into my own life lately. Maybe we could collaborate on a project someday?\n\nNoor: That would be fantastic! Let's set up a meeting at the library next week to discuss some ideas. And maybe you can teach me some of your networking strategies for fundraising too.\n\nPeter: Sounds perfect! I think I might have just the right book for you on my shelf. We can swap recommendations as well.\n\nNoor: Looking forward to it, Peter. Let's make a difference together.\n\nPeter: Absolutely, Noor. Real change starts with small steps and open minds. See you next week!\n\nNoor: Take care, Peter. Good night!",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -473,6 +474,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at gym around 8:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Peter, I saw you at the gym this morning. Good workout?\n\nPeter: Hi Samantha! Yeah, you too? I was just about to ask if I've seen you around here lately. How have your routines been going?\n\nSamantha: They're good, thanks. I've actually been making some progress on my latest project and might need your help with something. Remember our conversation with Noor at the town hall last week?\n\nPeter: Oh right! Yes, that sounds like it could be a great collaboration. Let's catch up this weekend maybe? Grab a coffee or something?\n\nSamantha: I'd like that. How about Sunday afternoon around 2:00 PM at the cafe where we feed the stray cats behind?\n\nPeter: Sounds perfect! Looking forward to it, Samantha. Let's make some magic happen together.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -480,7 +508,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "library",
+      "location": "town_hall",
       "memory": {
         "summary": " The human talked to Andy at the library around 9:00 PM. Andy updated Mei about his eventful day which included a sunrise sketch at the community center that Noor enjoyed. They discussed collaborating on a science-inspired mural for the robotics club, and Andy expressed enthusiasm about teaching art skills to children. Mei suggested incorporating quiet spaces into the design, and they agreed to make a hidden reading nook with some of Mei's favorite books, which would inspire kids and promote their shared values. They planned to work on it together the following week.",
         "messages": [
@@ -598,7 +626,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "library",
+      "location": "school",
       "memory": {
         "summary": " The human talks to Mei at the market around 5:00 PM. Diego inquires about new seeds for the community garden, and Mei shares sunflower seeds. He updates Mei on his knee progress and discusses stretching regularly. Diego suggests hosting Mei's zine club at the community center, which she agrees to consider. They make plans to have dinner together at a nearby taqueria after Diego's run.",
         "messages": [
@@ -716,7 +744,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "hospital",
+      "location": "restaurant",
       "memory": {
         "summary": " The conversation now revolves around Noor meeting Peter at the town hall around 8:00 PM. Peter praises Noor for her successful robotics club and expresses his desire to take a break from finance to focus more on startups. He then proposes collaboration with Noor, suggesting they work together on his business plan. Noor offers her help and suggests making it a project for the robotics club. They agree to meet for coffee next week at 10 AM at the Coffee House near the town hall.",
         "messages": [
@@ -834,7 +862,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "market",
+      "location": "home",
       "memory": {
         "summary": " The human met Caroline at school around 2:00 PM. Caroline offered Leo his usual coffee with an extra shot and a splash of cinnamon. Leo thanked her and requested to save his seat by the window as always. He mentioned he has something new for their duet at the theater, to which Caroline agreed to attend after work.",
         "messages": [
