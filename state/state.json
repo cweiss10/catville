@@ -1,71 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Samantha",
+      "home": [],
+      "park": [],
+      "cafe": [],
+      "library": [
+        "Caroline",
+        "Diego",
         "Noor"
       ],
-      "park": [
-        "Andy"
-      ],
-      "cafe": [
-        "Caroline"
-      ],
-      "library": [
-        "Peter",
-        "Leo"
-      ],
       "school": [
-        "Mei"
+        "Mei",
+        "Leo"
       ],
       "hospital": [],
       "market": [],
-      "town_hall": [],
+      "town_hall": [
+        "Andy",
+        "Samantha"
+      ],
       "theater": [
-        "Diego"
+        "Peter"
       ],
       "gym": [],
       "museum": [],
       "restaurant": [],
       "train_station": []
     },
-    "time": "9:00 AM"
+    "time": "10:00 AM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "park",
+      "location": "town_hall",
       "memory": {
-        "summary": " The human talks to Andy at the gym around 4:00 AM, Caroline at a train station around 5:00 AM, and Leo at the market around 7:00 AM. Andy proposes collaborating with Noor and kids from the community center on interactive elements for a coffee-themed gallery show. Peter invites Andy to discuss a fitness-related project for his new Mexican restaurant after their workouts. Caroline suggests collaborating with Andy on a science-inspired mural for the robotics club, which will include quiet spaces for reading, and proposes incorporating some of her latte art into the park installation Andy is working on.\n\nDuring the conversation with Leo at the market, Andy expresses admiration for Leo's violin playing, and they discuss collaborating on a piece combining Leo's music with Andy's artwork for the coffee gallery exhibition. They agree to meet next week at the same time to finalize their plans for this collaboration as well as possibly inspiring each other's work.",
+        "summary": " The human talks to Mei at the market around 11:00 AM. Andy proposes incorporating herbs from the community garden that Mei tends as a motif for their mural collaboration. Mei expresses enthusiasm, suggesting they include a hidden reading nook in the design. They agree to discuss further details during a tea date at the library around 1:00 PM.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at market around 11:00 AM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy:\n\"Hey Mei, your herbs are really thriving in the community garden! I think they'd look great as a motif for our mural.\"\n\nMei:\n\"Ah, Andy! That's wonderful to hear. The idea of incorporating the community garden into our art is truly delightful. Let's make sure to include that hidden reading nook too.\"\n\nAndy:\n\"Absolutely! And I can't wait for our tea date this afternoon to discuss further details. Any chance you have a quiet corner at the library around 1:00 PM?\"\n\nMei:\n\"Of course, Andy! I'll save us a table by the window with some of my favorite books on art and science. See you then!\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -173,21 +144,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Samantha",
-      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "home",
-      "memory": {
-        "summary": " Samantha met with Noor at the town hall around 9 PM. They discussed Samantha's conversation with Peter about a business plan, which went well and they planned to catch up this weekend at a cafe behind the park at 2 PM. Noor also expressed interest in learning more about Samantha's robotics project.\n\nSimultaneously, Caroline met with Peter at the theater and discussed their startup ideas. They agreed to meet for coffee next week to further discuss potential projects. Peter updated Caroline on his collaboration with Diego and she mentioned starting her watercolor project with Andy, using local artists' archives for inspiration. They both appreciated each other's involvement in their collaborations.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Leo at library around 10:00 PM",
+              "content": "Talked to Samantha at town_hall around 9:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -199,7 +160,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Samantha: Hey Leo, I was just about to head to the library. Care to join me? We could discuss that collaboration we talked about.\n\nLeo: Absolutely, Samantha! I'd love to. And maybe you can introduce me to those strays of yours too, if you don't mind.\n\nSamantha: Of course! I think they'd enjoy your company. Let's meet at the library entrance in 15 minutes.",
+              "content": " Andy: Hey Samantha, great seeing you at the town hall! Have we ever collaborated on something outside of our usual circles?\n\nSamantha: Hi Andy, not that I recall. But Noor was telling me about your gallery show idea and it sounds fascinating. I could contribute some coding for interactive elements if you'd like.\n\nAndy: That would be amazing! I think the kids from the community center would love that. Let's meet next week at the park around 7 AM to discuss further?\n\nSamantha: Sounds good, see you then. And don't worry about creative block, sometimes it takes a fresh perspective to inspire new ideas.\n\nAndy: Thanks for the encouragement, Samantha. I appreciate your support!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -210,7 +171,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Samantha",
+      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
+      "location": "town_hall",
+      "memory": {
+        "summary": " Samantha met with Noor and Peter separately, discussing business plans and potential collaborations. Samantha also planned to catch up with Noor at a cafe over the weekend. Additionally, Noor expressed interest in learning about Samantha's robotics project. Meanwhile, Caroline and Peter discussed startup ideas and agreed to meet for coffee next week. Peter updated Caroline on his collaboration with Diego, while she mentioned her watercolor project with Andy. They both appreciated each other's collaborative efforts. Subsequently, Samantha invited Leo to join her at the library, where they planned to discuss their previous collaboration and introduced him to her pets.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -318,21 +289,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "cafe",
-      "memory": {
-        "summary": " The human talks to Peter at a cafe around 7:00 PM. Caroline asks Peter about his gym life and he updates her on his workouts. She shares her ongoing theater gig and an exciting gallery show idea she's collaborating on with Andy for Noor's robotics club, which might need Peter's help with the park installation as well. Inspired by this, Peter proposes a potential fitness collaboration involving both of them, suggesting they meet up next week to discuss further. Caroline agrees and looks forward to their meeting with Andy too.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Samantha at hospital around 8:00 PM",
+              "content": "Talked to Andy at town_hall around 9:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -344,7 +305,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Samantha: Hey Caroline, I saw you at the hospital. How was your day?\n\nCaroline: Hi Samantha! It's been a whirlwind, but good. Noor and I are working on some exciting projects together. You should come by the theater sometime to hear about them!\n\nSamantha: That sounds intriguing. Perhaps we can discuss it over coffee this weekend as promised? Sunday afternoon at 2:00 PM works for me. And I must say, your latte art is quite captivating.\n\nCaroline: Oh, thank you! Mei and I were thinking about creating something special for you. Why don't you join us at the community garden next week to help inspire our design? Noor will be there too.\n\nSamantha: That sounds delightful. I'll make sure to bring some treats for the strays as well. It's a win-win!",
+              "content": " Andy: Hey Samantha, great seeing you at the town hall! Have we ever collaborated on something outside of our usual circles?\n\nSamantha: Hi Andy, not that I recall. But Noor was telling me about your gallery show idea and it sounds fascinating. I could contribute some coding for interactive elements if you'd like.\n\nAndy: That would be amazing! I think the kids from the community center would love that. Let's meet next week at the park around 7 AM to discuss further?\n\nSamantha: Sounds good, see you then. And don't worry about creative block, sometimes it takes a fresh perspective to inspire new ideas.\n\nAndy: Thanks for the encouragement, Samantha. I appreciate your support!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -355,7 +316,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "library",
+      "memory": {
+        "summary": " The human initially talks to Peter at a cafe around 7:00 PM about his gym life and Caroline's ongoing theater gig, an exciting gallery show idea she's collaborating on with Andy for Noor's robotics club. Peter proposes a potential fitness collaboration involving both of them, suggesting they meet up next week to discuss further.\n\nLater in the evening at around 8:00 PM, the human talks to Samantha at a hospital. Samantha is intrigued by Caroline's ongoing projects and proposes discussing them over coffee this weekend as promised. They arrange to meet on Sunday afternoon at 2:00 PM. Additionally, Samantha expresses interest in joining Mei and Caroline at the community garden next week to help inspire their design, suggesting she will bring treats for stray animals.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -436,6 +407,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Diego at library around 9:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego, I saw you talking to Mei earlier at the market. What's the plan with the zine club this Saturday?\n\nDiego: Oh, hi Caroline! Yeah, I'll be there helping out. By the way, did you hear about Andy and your collaboration with Peter for the gallery show? It seems like a great opportunity!\n\nCaroline: Absolutely! We're planning to meet up next week to discuss it further. Have you talked to Noor about the potential robotics club project? I think she could bring some interesting ideas.\n\nDiego: Actually, I spoke with her at the museum tonight. She seems excited too and offered to bring snacks for students who might need a pick-me-up. Sounds like a perfect team!\n\nCaroline: That's wonderful news, Diego. I can't wait to see what we come up with together. Maybe we should grab some of those famous street tacos you mentioned after our meetings?\n\nDiego: Definitely! It'll be good to catch up and discuss our plans over a delicious meal. How about Friday night? My knee is feeling much better now.\n\nCaroline: Sounds perfect, Diego. See you then! And I'm looking forward to collaborating with everyone on these exciting projects.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -443,7 +441,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "library",
+      "location": "theater",
       "memory": {
         "summary": " The human meets Caroline at the park around 10:00 PM and discusses Peter's project ideas, including his potential collaboration with Diego on a gym project. They agree to meet for coffee next week. Later that night, Peter talks to Diego at the hospital around 12:00 AM. Diego expresses interest in their collaboration and they decide to catch up next week over coffee at the usual cafe where Caroline and Peter usually hang out. Peter also updates Diego on the progress of his partnership with Caroline for her theater gig and gallery show idea. Peter later talks to Mei at the museum around 1:00 AM about their community garden collaboration, discussing a possible yoga session for the zine club members, which Mei agrees to share at the next meeting. Diego also shows interest in joining the yoga session.",
         "messages": [
@@ -563,35 +561,8 @@
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
       "location": "school",
       "memory": {
-        "summary": " The human discusses ongoing collaborative efforts with Diego at different locations and times. At the museum at 3:00 PM, they talk about collaborating on community garden projects, hosting Mei's zine club at the community center next week, and potentially working together with Caroline on latte art designs. By 4:00 PM at the market, Mei offers Diego new seeds for the garden and he agrees to help out at the zine club this Saturday due to space constraints. They also plan to collaborate with Andy and Caroline on a coding break project, ensuring involvement of everyone at the zine club. Diego proposes a double date dinner with Leo at a new Mexican restaurant around 7:00 PM, which both Mei and the human agree to attend. These conversations illustrate growing collaborations, social gatherings, and potential projects among various individuals.",
+        "summary": " The human discusses ongoing collaborative efforts with various individuals, such as Diego, Mei, and Peter. Collaborations involve community garden projects, hosting Mei's zine club, latte art designs, a fitness-art project, and a new Mexican restaurant featuring Andy's artwork. Diego proposes organizing a yoga session for the zine club members, and there are plans for a double date dinner with Leo at the new Mexican restaurant. Peter discusses healing Diego's knee injury, which may allow him to join their community garden projects. These conversations illustrate the progress of various collaborations among several individuals, with potential additions such as yoga sessions and fitness-art projects.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Peter at cafe around 8:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Mei, I hope you're doing well! Got some exciting news about collaborations brewing.\n\nMei: Hi Peter! Always a pleasure to catch up. Sounds intriguing! Tell me more about these collaborations. And how's your early morning gym buddy, Andy?\n\nPeter: Great to hear from you too! Well, there's this fitness-art project with Diego, and I discussed with Andy about incorporating his artwork into my new Mexican restaurant.\n\nMei: That sounds fantastic! It seems like you're making a lot of progress. And have you managed to heal Diego's knee injury? Maybe he could join our community garden if it works out?\n\nPeter: Yes, I spoke with him about it at the library this morning. He suggested organizing a yoga session for the zine club members. I think it could inspire some great ideas!\n\nMei: Brilliant idea, Peter! We should definitely make it happen at the community center. Looking forward to seeing you and Diego at our Saturday zine club next week.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -699,6 +670,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Leo at school around 9:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Mei: Hey Leo, I heard about your collaboration with Andy for that coffee gallery thing! Sounds fascinating.\n\nLeo: Yeah, Mei! It's shaping up nicely. I think my music and his artwork will create a unique energy. Speaking of collaborations, Samantha at the museum approached me today about a project combining my music and one of her algorithms.\n\nMei: Wow, that sounds amazing! Remember when we talked about our ideal town with spaces for art and community? This is us living it in action!\n\nLeo: Absolutely, Mei. And I can't wait to show you what Samantha and I find in the library archives. We might even have some interesting stories for your zine club!\n\nMei: Can't wait! This town is definitely becoming more vibrant by the day. Let's make sure our double date with Diego and you at that Mexican place happens soon!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -706,64 +704,10 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "theater",
+      "location": "library",
       "memory": {
-        "summary": " The human talks to Mei at a market around 4:00 PM and discusses various plans, including Diego helping out at the zine club this Saturday, collaborating with Andy and Caroline on a coding break project, and meeting Peter and Leo for dinner at a new Mexican restaurant that night. Later in the day at a museum, Diego talks to Noor from the robotics club around 7:00 PM. They discuss Diego's recent plans with Mei, as well as a potential collaboration between them. They also plan to catch up over street tacos and discuss Peter's new project idea. Noor offers to bring snacks for any students who might be feeling overwhelmed by the museum exhibits.",
+        "summary": " The human talks to Mei at a theater around 11:00 PM, discussing Diego's knee injury progress and plans for a yoga session at the community center next month for the zine club. Later in the night, Diego talks to Peter at the hospital around 12:00 AM, discussing Peter's fitness collaboration with Caroline and updates on her theater gig or gallery show idea. They plan to meet up next week to discuss the details further.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at theater around 11:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Mei: \"Hey Diego, nice to see you again! I was thinking about your knee injury. Any progress?\"\n\nDiego: \"Hi Mei! Yeah, it's been a gradual process but I think the stretches are helping. Have you tried the runner's lunge and quad stretch I suggested?\"\n\nMei: \"Not yet, but I'll give them a go this week. By the way, have you heard about our zine club getting together for a yoga session at the community center next month? I thought it could inspire some new ideas.\"\n\nDiego: \"That sounds fantastic! Count me in for planning over dinner tonight if you don't mind. Maybe we can discuss how to make it a great event for everyone.\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Peter at hospital around 12:00 AM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Diego, ran into you at the hospital. Heard about your knee injury? Hope everything's alright.\n\nDiego: Hey Peter! Good to see you too. Yeah, it's been a bit tough but I'm managing. You know, the old warrior refuses to bow down just yet. Speaking of which, have you given any thought to that fitness collaboration we discussed with Caroline?\n\nPeter: Oh right, Caroline! I was thinking about it actually. She mentioned something about a robotics club installation at the park. That could be fascinating. What do you think?\n\nDiego: I'm all for it, Peter. It's exciting to see our paths crossing in more ways than one. Let's definitely catch up next week and discuss the details over coffee. In the meantime, watch out for that knee. You don't want to be sidelined like me.\n\nPeter: Thanks for the advice, Diego. I do need to step up my game when it comes to stretching. How about we meet at that cafe where Caroline and I usually hang out? See you there!\n\nDiego: Sounds perfect, Peter. Looking forward to our discussion next week. And speaking of which, how's the partnership with Caroline shaping up? Any updates on her theater gig or the gallery show idea?\n\nPeter: Well, we're definitely making progress. I think we might have something special here. Can't wait to share more details with you soon. Take care and see you next week!\n\nDiego: You too, Peter. Let's make this collaboration count.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -817,6 +761,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at library around 9:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego, I saw you talking to Mei earlier at the market. What's the plan with the zine club this Saturday?\n\nDiego: Oh, hi Caroline! Yeah, I'll be there helping out. By the way, did you hear about Andy and your collaboration with Peter for the gallery show? It seems like a great opportunity!\n\nCaroline: Absolutely! We're planning to meet up next week to discuss it further. Have you talked to Noor about the potential robotics club project? I think she could bring some interesting ideas.\n\nDiego: Actually, I spoke with her at the museum tonight. She seems excited too and offered to bring snacks for students who might need a pick-me-up. Sounds like a perfect team!\n\nCaroline: That's wonderful news, Diego. I can't wait to see what we come up with together. Maybe we should grab some of those famous street tacos you mentioned after our meetings?\n\nDiego: Definitely! It'll be good to catch up and discuss our plans over a delicious meal. How about Friday night? My knee is feeling much better now.\n\nCaroline: Sounds perfect, Diego. See you then! And I'm looking forward to collaborating with everyone on these exciting projects.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -824,7 +795,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "home",
+      "location": "library",
       "memory": {
         "summary": " The summary now includes Noor talking to Mei at the park at 9:00 PM, adding onto the previous conversation. In their discussion, it is not specified what they talked about but the interaction is included in the updated summary.",
         "messages": [
@@ -957,49 +928,10 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "library",
+      "location": "school",
       "memory": {
-        "summary": " The human spoke to Andy at the market around 7:00 AM, who admired Leo's violin playing in the market, which sounded like a concert hall. They discussed Noor's idea about the coffee gallery collaboration and decided it was a perfect blend of art and community. Leo suggested collaborating on a piece combining his music with Andy's artwork, capturing the energy of the market in the morning light. Andy agreed and they planned to meet at the same place the following week to discuss further.\n\nLater in the day, around 12:00 PM, the human spoke to Samantha at the museum. She admired Leo's violin playing earlier and proposed a collaboration between Leo's music and one of her algorithms for a future performance. Leo agreed, also suggesting they explore old archives together at the library. They planned to meet behind the cafe that evening, with Samantha mentioning she would introduce Leo to her neighborhood strays as well.",
+        "summary": " The human spoke to multiple individuals throughout the day. At the market around 7:00 AM, they discussed a coffee gallery collaboration with Andy and Noor, which was agreed upon. They also planned to meet again to discuss a piece combining Andy's artwork and Leo's music. Later in the day, at around 12:00 PM, the human spoke to Samantha at the museum about collaborating on a future performance using one of her algorithms. They also discussed exploring old archives together at the library.\n\nAround 3:00 PM at the train station, Caroline complimented Leo's improvisational violin playing with birds and expressed excitement for their new theater performance piece inspired by the birds' songs. She invited Leo to meet her at the cafe after his gig that night for a catch-up over coffee.\n\nAt 4:00 PM, the human spoke to Samantha again, this time at the hospital. No additional details about their conversation were provided in the lines of conversation given.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Caroline at train_station around 3:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Caroline: \"Hey Leo, how'd your duet go? I heard you improvising with birds today.\"\n\nLeo: \"It was amazing, Caroline! I think we nailed it. By the way, I've got something new for our theater performance – a melody inspired by those birds' songs!\"\n\nCaroline: \"That sounds wonderful, Leo! I can't wait to see how it turns out. You should come by the cafe after your gig tonight, and we can catch up over coffee.\"\n\nLeo: \"Sounds like a plan, Caroline. See you later!\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Samantha at hospital around 4:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
           {
             "type": "ai",
             "data": {
@@ -1112,6 +1044,33 @@
             "type": "ai",
             "data": {
               "content": " Peter: Hey Leo, running late today huh? I spotted your violin playing at the market this morning, sounded incredible!\n\nLeo: Ah, Peter! Thanks for noticing. I was trying to capture that early market energy for a new piece I'm working on. How about you? Any progress with Caroline and that theater gig?\n\nPeter: Yeah, we had coffee yesterday and it's moving forward. We're also collaborating with Diego now on a gym project. He seemed interested too, we're meeting next week.\n\nLeo: That sounds exciting! Maybe you could include my music in your gym too, like background ambiance or something?\n\nPeter: Haha, I think that might be pushing it, but I'll see what I can do! You should come by and check it out sometime.\n\nLeo: I'd love to, Peter. Let's catch up soon over some coffee at the library. Maybe you can introduce me to Diego as well?\n\nPeter: Absolutely, sounds like a plan!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Mei at school around 9:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Mei: Hey Leo, I heard about your collaboration with Andy for that coffee gallery thing! Sounds fascinating.\n\nLeo: Yeah, Mei! It's shaping up nicely. I think my music and his artwork will create a unique energy. Speaking of collaborations, Samantha at the museum approached me today about a project combining my music and one of her algorithms.\n\nMei: Wow, that sounds amazing! Remember when we talked about our ideal town with spaces for art and community? This is us living it in action!\n\nLeo: Absolutely, Mei. And I can't wait to show you what Samantha and I find in the library archives. We might even have some interesting stories for your zine club!\n\nMei: Can't wait! This town is definitely becoming more vibrant by the day. Let's make sure our double date with Diego and you at that Mexican place happens soon!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
