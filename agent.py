@@ -7,7 +7,7 @@ class Agent:
     def __init__(self, name, personality, world, llm):
         self.name = name
         self.personality = personality
-        self.memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=1000)
+        self.memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=2000)
         self.location = "home"
         self.world = world
         self.llm = llm
@@ -34,6 +34,13 @@ class Agent:
     def reflect(self):
         summary = getattr(self.memory, "moving_summary_buffer", "") or "Nothing to reflect."
         return f"{self.name} reflects: {summary}"
+    
+    def build_schedule(conversation, schedule, agent):
+        """Using the agent's memories, build a schedule for commitments that they need"""
+        template = f"""Given the content of this conversation: {conversation}
+        And this existing schedule: {schedule}
+        Add any additional commitments from this conversation to the schedule in the same JSON format. Return the full schedule.
+        """
 
     def interact(self, other_agent):
         """Create a short conversation that leverages relationship hints,
