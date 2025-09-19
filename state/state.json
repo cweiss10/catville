@@ -1,40 +1,41 @@
 {
   "world": {
     "locations": {
-      "home": [],
-      "park": [],
+      "home": [
+        "Mei"
+      ],
+      "park": [
+        "Andy"
+      ],
       "cafe": [],
       "library": [],
       "school": [
-        "Leo",
+        "Samantha",
+        "Peter"
+      ],
+      "hospital": [
         "Caroline",
         "Diego"
       ],
-      "hospital": [],
-      "market": [
-        "Mei"
-      ],
+      "market": [],
       "town_hall": [],
       "theater": [],
-      "gym": [
-        "Samantha"
-      ],
+      "gym": [],
       "museum": [
-        "Andy",
         "Noor"
       ],
       "restaurant": [
-        "Peter"
+        "Leo"
       ],
       "train_station": []
     },
-    "time": "2:00 PM"
+    "time": "3:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "museum",
+      "location": "park",
       "memory": {
         "summary": " The conversation between Andy, Caroline, Diego, Peter, and Noor about their mural project continues at the community garden. They plan team-building activities such as a yoga session led by Noor's students, a visit from the Saturday zine club, and including stray cats in their project, while also planning to have a quadruple date at Caroline's Cafe. Andy speaks with Peter about inviting his students for the yoga session, incorporating community connections, and meeting at Main Street Tacos to discuss further details. During this conversation, they agree to incorporate Leo's squirrel song into the mural design, which Noor had previously run by her students, resulting in their excitement. Peter thanks Andy for suggesting Samantha perform with Leo at the park event, making it more special. They express enthusiasm about the project and push each other to keep pushing their creative boundaries. Andy is reminded to bring his thermos of tea to their upcoming meeting, which will be a brainstorming session at the park in the morning.",
         "messages": [
@@ -152,7 +153,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "gym",
+      "location": "school",
       "memory": {
         "summary": " At 4:00 AM, Samantha spoke with Leo at the gym and discussed potential collaboration on a park performance. Leo asked if she could help with the tech for the event, and Samantha agreed, provided her furry friends are taken care of first. They looked forward to their future collaboration at the park.",
         "messages": [
@@ -263,21 +264,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "school",
-      "memory": {
-        "summary": " At 7:00 PM, Caroline spoke to Noor at the cafe. They discussed Noor's day and brainstorming ideas for the mural. Caroline mentioned speaking with Diego about their yoga session at the community garden the following day, which Noor was also looking forward to. They exchanged updates on sunflowers for the mural and the squirrel song project incorporation. Later in the evening, they planned a library duet performance session at El Charro, and Noor agreed to participate. The conversation ended with both parties expressing excitement about keeping the creative energy flowing.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Andy at park around 9:00 PM",
+              "content": "Talked to Peter at school around 2:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -289,7 +280,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Andy: Hey Caroline, I couldn't resist that lavender latte inspired by my sunrise sketch. It's amazing!\n\nCaroline: Thank you, Andy! I'm glad you enjoyed it. I've been thinking about our meeting at the community garden tomorrow. Are you ready to work on the fusion arts touch in our mural?\n\nAndy: Absolutely! I spoke to Mei and she's bringing references and resources. Can't wait to see where this takes us.\n\nCaroline: That sounds fantastic, Andy. Let's make sure Noor's students join us for the yoga session before we start on the sunrise scene at my cafe. See you there!\n\nAndy: I'll be there bright and early. Can't wait to collaborate more!",
+              "content": " Samantha: \"Hey Peter, I was thinking about our mural project and Noor would be a great addition. She has some unique ideas that could really enhance it.\"\n\nPeter: \"That's a fantastic idea! I think she'd bring just the right touch of creativity to our cat-themed design. Let's make sure to include her in our discussions moving forward.\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -300,7 +291,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "hospital",
+      "memory": {
+        "summary": " At 7:00 PM, Caroline spoke to Noor at the cafe about their mural and squirrel song project. Later that evening, she also talked to Andy at the park about their upcoming collaboration on a fusion arts touch for the mural at the community garden. Andy shared that Mei would bring references and resources. Caroline suggested involving Noor's students in the yoga session before starting on the sunrise scene at her cafe. Both parties expressed excitement about continuing their creative projects.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -381,6 +382,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Diego at hospital around 2:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego, I heard you're planning a duet for Friday at the library? Noor mentioned you discussed it with Leo.\n\nDiego: Absolutely, Caroline! I was thinking we could use some of your indie magic to make it special. Plus, I saw Samantha at the library discussing our potential post-yoga latte meetup. Could Noor join us too?\n\nCaroline: Of course! It'd be great if she did. By the way, you mentioned a yoga session at the community garden tomorrow? I'd love to attend and bring some ideas for that mural sunflower we discussed earlier.\n\nDiego: Sounds like a plan! And as for the stray cats team-building event, Noor suggested meeting at Main Street Tacos to finalize plans. How about Friday evening, quadruple date style? I'd love to catch up with you both and hear more about your squirrel song project.\n\nCaroline: That works perfectly for me! Let's keep the creative energy flowing, just like those sunflowers for our mural. See you tomorrow then!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -388,7 +416,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "restaurant",
+      "location": "school",
       "memory": {
         "summary": " The conversation between Peter, Caroline, Leo, Samantha, Andy, Noor, and Mei continues regarding their collaborative efforts on the park mural project. They agree to meet at El Charro tonight at 7 PM for dinner, a quadruple date with Noor, and lavender lattes tomorrow.\n\nPeter suggests making it a triple date with Mei tonight as they discuss incorporating yoga fusion ideas from Mei into their cat-themed mural project. Samantha agrees to the idea and looks forward to their double date at 7 PM.\n\nLater in the evening, Peter talks to Samantha at a museum around 3:00 AM, discussing their collaboration on the mural project, and Samantha proposes involving Noor in their collaboration.",
         "messages": [
@@ -526,6 +554,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at school around 2:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Hey Peter, I was thinking about our mural project and Noor would be a great addition. She has some unique ideas that could really enhance it.\"\n\nPeter: \"That's a fantastic idea! I think she'd bring just the right touch of creativity to our cat-themed design. Let's make sure to include her in our discussions moving forward.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -533,7 +588,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "market",
+      "location": "home",
       "memory": {
         "summary": " In addition to her discussions about collaborative projects, Mei talks with Diego at the town hall around 12:00 AM and Samantha at school around 2:00 AM. With Diego, they discuss the integration of fusion arts into Andy's mural and plan a yoga session for the extravaganza, while also considering setting up a regular feeding schedule for stray cats behind the café. Samantha suggests turning their double date with Mei into a joint event between her zine club and Mei's collaborative group, including treats for the strays and potentially involving the library for book recommendations. Mei agrees to coordinate schedules and make it a unique community gathering that strengthens bonds.",
         "messages": [
@@ -651,7 +706,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "school",
+      "location": "hospital",
       "memory": {
         "summary": " On Thursday, Diego discusses plans for their duet performance at the library on Friday with Leo at the hospital in the afternoon. Later that day, he talks to Samantha at the library about involving Caroline in their duet and planning a post-yoga lavender latte meetup. They also talk about discussing yoga ideas for the community garden during this meetup. That evening, Diego talks to Noor at the town hall, who shares an idea about adding sunflowers to the mural project and suggests collaborating on stretching exercises during work sessions. He also mentions a squirrel song idea that might fit with her robotics project. They discuss a team-building event at Caroline's Café for the stray cats, and Noor proposes meeting at Main Street Tacos to finalize plans for their collaborative projects, with a quadruple date planned for Friday evening.",
         "messages": [
@@ -725,6 +780,33 @@
             "type": "ai",
             "data": {
               "content": " Caroline: Hey Diego, I heard you're cooking up something at the library tomorrow?\nDiego: Ah, Caroline! Yeah, Leo and I are doing a duet there. You should come by for some tacos afterwards.\n\nCaroline: That sounds great! I was thinking we could do a little impromptu performance at the park event too, what do you think?\nDiego: Absolutely! With your lavender latte magic and my stretching routine, we'll have the perfect pre-show warmup.\n\nCaroline: It's a deal then! And I saw Mei earlier; she mentioned something about yoga ideas for the garden. Shall we discuss it during our meetup at El Charro tonight?\nDiego: Definitely! Let's make this community event truly memorable. See you later, Caroline!\n\nCaroline: Can't wait, Diego! Don't forget to bring your violin!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at hospital around 2:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego, I heard you're planning a duet for Friday at the library? Noor mentioned you discussed it with Leo.\n\nDiego: Absolutely, Caroline! I was thinking we could use some of your indie magic to make it special. Plus, I saw Samantha at the library discussing our potential post-yoga latte meetup. Could Noor join us too?\n\nCaroline: Of course! It'd be great if she did. By the way, you mentioned a yoga session at the community garden tomorrow? I'd love to attend and bring some ideas for that mural sunflower we discussed earlier.\n\nDiego: Sounds like a plan! And as for the stray cats team-building event, Noor suggested meeting at Main Street Tacos to finalize plans. How about Friday evening, quadruple date style? I'd love to catch up with you both and hear more about your squirrel song project.\n\nCaroline: That works perfectly for me! Let's keep the creative energy flowing, just like those sunflowers for our mural. See you tomorrow then!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -860,7 +942,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "school",
+      "location": "restaurant",
       "memory": {
         "summary": " At 12:00 PM, Leo and Noor discuss shared projects including mural plans, yoga sessions, and a possible double date at a cafe. Noor mentions Mei suggesting that Leo's zine club be involved in the robotics club performance at the park.\n\nAt 3:00 PM, Leo talks to Peter at a museum where Peter proposes collaborating on the park mural project with all of them and suggests Peter brings his self-help books for motivation. Peter also mentions that Leo could compose music inspired by the mural and discusses their squirrel-themed performance at the park concert.\n\nAt 9:00 PM, Leo talks to Peter at a train station where Peter comments on Leo's multi-talented bird act for the mural project and suggests they collaborate further over dinner at El Charro that night. They also discuss Samantha's plans for stray animals behind the cafe.\n\nLeo then proposes inviting Samantha to their duet performance at the park the next day, which Peter agrees to enthusiastically. The conversation ends with Peter expressing excitement about making their collaborations count.",
         "messages": [
