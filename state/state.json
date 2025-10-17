@@ -1,59 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [
+      "home": [],
+      "park": [
+        "Caroline",
         "Leo"
       ],
-      "park": [
-        "Samantha"
-      ],
-      "cafe": [
-        "Andy",
-        "Diego"
-      ],
+      "cafe": [],
       "library": [],
       "school": [],
-      "hospital": [],
-      "market": [
-        "Peter",
-        "Mei"
+      "hospital": [
+        "Samantha",
+        "Mei",
+        "Diego"
       ],
-      "town_hall": [
-        "Caroline"
-      ],
+      "market": [],
+      "town_hall": [],
       "theater": [
         "Noor"
       ],
       "gym": [],
       "museum": [],
       "restaurant": [],
-      "train_station": []
+      "train_station": [
+        "Andy",
+        "Peter"
+      ]
     },
-    "time": "1:00 PM"
+    "time": "2:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "cafe",
+      "location": "train_station",
       "memory": {
-        "summary": " After discussing the cat mural project further with Diego at the theater at 9 PM, Andy proposed incorporating sunrise seeds from Noor's garden into the design. Diego agreed it was a fantastic idea and suggested they finalize details at Main Street Tacos the next day at 10:30 AM. They also planned to bring their respective instruments (violin for Diego) and noise-cancelling headphones. Meanwhile, the human spoke with Peter at the gym around 4 AM, but no further details about the project were discussed in that conversation. The cat mural project continues to be a collaborative effort that blends art and technology and is anticipated to make history in their town.",
+        "summary": " After discussing the cat mural project further with Diego at the theater at 9 PM, Andy proposed incorporating sunrise seeds from Noor's garden into the design. Diego agreed it was a fantastic idea and suggested they finalize details at Main Street Tacos the next day at 10:30 AM. Meanwhile, Andy had a conversation with Peter at the gym around 4 AM, where he updated him about the cat mural project going well. Peter expressed interest in being involved and suggested expanding their collaboration to include music. They agreed to meet over tacos the following day at noon, inviting Leo and others from the Zine Club. Peter also mentioned bringing his squirrel robots, and they considered involving Noor too. The cat mural project continues to be a collaborative effort that blends art and technology, with potential additions of music and robotics, aiming to make history in their town.",
         "messages": [
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Peter, great seeing you at the gym so early! How was your workout?\n\nPeter: Morning, Andy! I've been meaning to ask - how did that cat mural brainstorming go with Caroline?\n\nAndy: It went well, actually! We're looking to expand and collaborate more. You should come by the community center sometime, I think you'd enjoy it.\n\nPeter: That sounds awesome, Andy. I'd love to be involved. What about that musical collaboration we talked about? Could we start brainstorming on that too?\n\nAndy: Absolutely! Let's do it over tacos tomorrow at Main Street Tacos around noon? I invited Leo and a few others from the Zine Club.\n\nPeter: Sounds like a plan, Andy. I'll bring some of my squirrel robots to show off too. Maybe we can even get Noor involved.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -161,21 +144,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Samantha",
-      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "park",
-      "memory": {
-        "summary": " The conversation between Samantha, Caroline, Leo, Peter, Mei, Andy, and Diego continues regarding their community project. After speaking with Mei at the library at 4:00 PM, Samantha has planted sunrise seeds by the gazebo for their cat mural project and suggests involving Noor's students in design discussions. Mei agrees to meet at Main Street Tacos the next day and discusses the possibility of collaborating with Leo's robotics club for interactive elements. Samantha also proposes incorporating Andy's bird duet idea into this collaboration.\n\nLater, at the train station around 5:00 PM, Samantha talks to Peter about their project ideas and agrees to discuss them further over dinner at Main Street Tacos that week. They also plan to grab coffee before their meeting the next day. Both express enthusiasm for the collaboration and aim to make a positive impact in their town.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Andy at theater around 7:00 PM",
+              "content": "Talked to Peter at train_station around 1:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -187,7 +160,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Andy: Hey Samantha, I just spoke with Leo about our mural project. He's bringing his violin for the bird duets!\n\nSamantha: That sounds wonderful, Andy. I'm also excited to see Noor's students involved in the design discussions. Let's make sure we don't forget the interactive squirrel latte art details.\n\nAndy: Absolutely! Looking forward to our meeting at Main Street Tacos this week and tomorrow at the fountain. This is going to be something special for our town, isn't it?\n\nSamantha: Indeed, Andy. It's incredible how art and technology can blend so seamlessly in a project like this. Let's make history together.",
+              "content": " Andy: Hey Peter, I heard about your idea with the interactive tree at the gazebo. It sounds amazing!\n\nPeter: Thanks, Andy. I was hoping you could help me brainstorm some more. How about we grab coffee tomorrow morning before our meeting?\n\nAndy: That works for me. By the way, Diego mentioned something about incorporating sunrise seeds from Noor's garden into the cat mural design. Have you talked to him about it yet?\n\nPeter: Not specifically, but I'll definitely bring that up with him at our meeting tomorrow. Thanks for reminding me!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -198,7 +171,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Samantha",
+      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
+      "location": "hospital",
+      "memory": {
+        "summary": " The conversation between Samantha, Caroline, Leo, Peter, Mei, Andy, and Diego continues regarding their community project. After speaking with Mei at the library at 4:00 PM, Samantha has planted sunrise seeds by the gazebo for their cat mural project and suggests involving Noor's students in design discussions. Mei agrees to meet at Main Street Tacos the next day, and they discuss the possibility of collaborating with Leo's robotics club for interactive elements. Samantha also proposes incorporating Andy's bird duet idea into this collaboration.\n\nLater, at the train station around 5:00 PM, Samantha talks to Peter about their project ideas and agrees to discuss them further over dinner at Main Street Tacos that week. They also plan to grab coffee before their meeting the next day. Both express enthusiasm for the collaboration and aim to make a positive impact in their town.\n\nSamantha then speaks with Andy at the theater around 7:00 PM, where Andy shares that he has discussed the project with Leo, and Leo will bring his violin for the bird duets. Samantha is excited about Noor's students' involvement and suggests not forgetting the interactive squirrel latte art details. Andy agrees, looking forward to their meetings at Main Street Tacos this week and the next day at the fountain. They both agree that the project will be a unique blend of art and technology for their town, aiming to make history together.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -306,21 +289,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "town_hall",
-      "memory": {
-        "summary": " At 11:00 PM, Caroline exchanges sunrise seeds with Mei at school and discusses involving Noor's students and the robotics club in the cat mural project. They agree on maintaining a collaborative spirit in their town.\nAt 12:00 AM, Caroline talks to Samantha at the hospital where they discuss Caroline's new latte art and feed stray cats, which Samantha reminds her not to forget about that evening.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Diego at library around 2:00 AM",
+              "content": "Talked to Mei at hospital around 1:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -332,7 +305,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Caroline: Hey Diego, I heard about your squirrel latte art idea for the cat mural. That's brilliant!\n\nDiego: Thanks Caroline! I thought it could be a fun way to bring together our love for art and community. I reached out to Mei about collaborating with her garden seeds too.\n\nCaroline: That sounds amazing! Can't wait to see the squirrels in action at Main Street Tacos. Let's make sure to involve Noor's students in the design discussions, as planned.\n\nDiego: Absolutely! And I'm also excited to join Andy's musical performance with you. This project is going to be something special for our town.\n\nCaroline: It certainly will be. Let's make sure we feed those stray cats tonight, as promised. They deserve some love too.\n\nDiego: Agreed! I'll see you later at the library. Let's catch up more about everything then.",
+              "content": " Samantha: Hey Mei, I planted those sunrise seeds you gave me by the gazebo for our cat mural project. Have you thought more about involving Noor's students in design discussions?\n\nMei: Absolutely! I love that idea. Let's talk about it further over tacos tomorrow at Main Street Tacos, and I'll bring Diego along to discuss his squirrel characters idea too.\n\nSamantha: Sounds great! And don't forget our gym sessions – let's keep each other motivated. See you tomorrow at the cafe before heading to Main Street Tacos.\n\nMei: Agreed, Samantha. Let's make a positive impact in this town together. Can't wait for our quadruple date after the project!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -343,7 +316,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "park",
+      "memory": {
+        "summary": " At 11:00 PM, Caroline exchanges sunrise seeds with Mei at school and discusses involving Noor's students and the robotics club in the cat mural project, agreeing on maintaining a collaborative spirit in their town. Later, at midnight, Caroline talks to Samantha at the hospital where they discuss Caroline's new latte art and feeding stray cats. At 2:00 AM, Caroline talks to Diego at the library. They discuss Diego's squirrel latte art idea for the cat mural, and he informs her about his collaboration with Mei. They plan to involve Noor's students in design discussions and agree to feed the stray cats that evening. Diego also invites Caroline to join him in Andy's musical performance, promising a special event for their town. They agree to meet up again at the library later.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -424,21 +407,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Peter",
-      "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "market",
-      "memory": {
-        "summary": " The group continues their discussions about the cat mural project. At 10:00 PM, Peter talks to Samantha at a train station and proposes collaborating with Diego's robotics club for an interactive tree near the gazebo, as well as incorporating squirrel latte art from Noor. The next day at 11:00 AM, Peter meets Andy at Main Street Tacos to discuss project progress. They plan to hash out the details over dinner this week and grab coffee before their meeting tomorrow.\n\nAt around 8:00 PM, Peter talks to Noor at the park about the squirrel latte art and interactive characters for the mural. Noor suggests incorporating bird sounds using Peter's love for improvisation, which Peter agrees to. They also discuss ensuring their gym sessions don't clash so neither misses out on project discussions.\n\nLater that night, Peter talks to Mei at a museum around 12:00 AM about the cat mural project. Peter shows Mei his sketches for the interactive tree and they plan to catch up on the project details at Main Street Tacos the next day. Mei suggests involving Noor's zine club members in their discussions, which Peter agrees to. Everyone is working towards making this project something special for everyone involved.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Andy at gym around 4:00 AM",
+              "content": "Talked to Leo at park around 1:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -450,7 +423,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Andy: Hey Peter, great seeing you at the gym so early! How was your workout?\n\nPeter: Morning, Andy! I've been meaning to ask - how did that cat mural brainstorming go with Caroline?\n\nAndy: It went well, actually! We're looking to expand and collaborate more. You should come by the community center sometime, I think you'd enjoy it.\n\nPeter: That sounds awesome, Andy. I'd love to be involved. What about that musical collaboration we talked about? Could we start brainstorming on that too?\n\nAndy: Absolutely! Let's do it over tacos tomorrow at Main Street Tacos around noon? I invited Leo and a few others from the Zine Club.\n\nPeter: Sounds like a plan, Andy. I'll bring some of my squirrel robots to show off too. Maybe we can even get Noor involved.",
+              "content": " Caroline: \"Hey Leo! Busking again? Your improvisations with the birds are quite a sight.\"\n\nLeo: \"Just trying to find the perfect harmony between nature and music, like our town's collaborative spirit. Speaking of which, I heard about your sunrise seeds and cat mural project at school.\"\n\nCaroline: \"Yes! Mei and I are working with Noor's students and the robotics club to create something magical for our town. Samantha reminded me not to forget about feeding those stray cats tonight.\"\n\nLeo: \"I'll make sure to bring some cat food if you need help. And I've been thinking, that old oak tree in the park could make a great canvas for the cat mural.\"\n\nCaroline: \"That sounds perfect! Let's discuss more details tomorrow at Main Street Tacos. Oh, and don't forget about the interactive squirrel latte art details we discussed with Andy.\"\n\nLeo: \"Of course, Caroline. I'll bring my violin and some spare parts for tech troubleshooting. See you at 6 PM!\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -461,7 +434,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Peter",
+      "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
+      "location": "train_station",
+      "memory": {
+        "summary": " The group continues their discussions about the cat mural project. At various times, Peter talks to different members about it. He discusses collaborating with Diego's robotics club for an interactive tree near the gazebo and incorporating squirrel latte art from Noor with Samantha at a train station, Andy at Main Street Tacos, and Noor at the park. Peter also proposes a musical collaboration involving Leo and others from the Zine Club to Andy at the gym around 4:00 AM, which they plan to discuss further over tacos the next day at noon. Everyone is working towards making this project something special for everyone involved.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -569,21 +552,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Mei",
-      "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "market",
-      "memory": {
-        "summary": " The cat mural project continues to evolve with the addition of new ideas, such as incorporating squirrel characters in latte art from Diego. Mei finds this idea appealing and plans to discuss it further at Main Street Tacos the next day. Diego also mentions a potential quadruple date after the project's completion, which excites Mei. In addition, they agree to keep each other motivated during gym sessions.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Noor at restaurant around 5:00 AM",
+              "content": "Talked to Andy at train_station around 1:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -595,7 +568,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Mei: Hey Noor, I was just thinking about our cat mural project, and I thought your students might enjoy being a part of it!\n\nNoor: That sounds fantastic, Mei! I'm sure they'd love to contribute. Speaking of which, have you heard about Diego's idea for squirrel latte art? It fits perfectly with our cat theme.\n\nMei: Yes! He mentioned it to me yesterday at the park. I think incorporating seeds from our community garden would make it even more interactive. Let's discuss further over tacos tomorrow, shall we?\n\nNoor: Absolutely! I can't wait for our collaborative meeting at Main Street Tacos. It'll be great to work together on something so exciting for our town.",
+              "content": " Andy: Hey Peter, I heard about your idea with the interactive tree at the gazebo. It sounds amazing!\n\nPeter: Thanks, Andy. I was hoping you could help me brainstorm some more. How about we grab coffee tomorrow morning before our meeting?\n\nAndy: That works for me. By the way, Diego mentioned something about incorporating sunrise seeds from Noor's garden into the cat mural design. Have you talked to him about it yet?\n\nPeter: Not specifically, but I'll definitely bring that up with him at our meeting tomorrow. Thanks for reminding me!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -606,7 +579,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mei",
+      "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
+      "location": "hospital",
+      "memory": {
+        "summary": " The cat mural project progresses with the addition of new ideas such as incorporating squirrel characters in latte art from Diego, and using seeds from the community garden. Mei discusses this idea with Noor at a restaurant, who expresses interest in involving her students in the project and appreciates the interactive aspect. They agree to further discuss and collaborate on the project over tacos the next day at Main Street Tacos. The potential quadruple date after the project's completion remains exciting for Mei. Additionally, they continue their gym motivation plans with each other.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -714,6 +697,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at hospital around 1:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Mei, I planted those sunrise seeds you gave me by the gazebo for our cat mural project. Have you thought more about involving Noor's students in design discussions?\n\nMei: Absolutely! I love that idea. Let's talk about it further over tacos tomorrow at Main Street Tacos, and I'll bring Diego along to discuss his squirrel characters idea too.\n\nSamantha: Sounds great! And don't forget our gym sessions – let's keep each other motivated. See you tomorrow at the cafe before heading to Main Street Tacos.\n\nMei: Agreed, Samantha. Let's make a positive impact in this town together. Can't wait for our quadruple date after the project!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -721,7 +731,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "cafe",
+      "location": "hospital",
       "memory": {
         "summary": " During their conversation at different times, Diego discussed further plans for the cat event mural with several people. With Noor at the park, they collaborated on incorporating robotics into the mural design and starting a garden at the park. At 4:00 PM, Diego spoke to Leo who shared plans for an improvised bird duet performance during the cat mural session, suggesting noise-cancelling headphones to avoid disturbing neighbors and bringing seeds for stray cats. Later in the day, Diego talked to Andy at the theater who suggested incorporating sunrise seeds from Noor's garden into the cat mural design. They agreed to finalize the details at Main Street Tacos tomorrow at 10:30 AM, with Andy bringing his violin for their bird duet performance and both of them using noise-cancelling headphones.\n\nAt the market around 3:00 AM, Diego spoke to Mei about incorporating squirrel characters in latte art for the mural. Mei agreed to discuss it further at Main Street Tacos tomorrow. Diego also mentioned a quadruple date after the project is complete, and Mei expressed excitement about it.\n\nAt a cafe around 4:00 AM, Diego spoke to Caroline about the cat mural project. They discussed Noor's ideas for incorporating robotics into the design, collaborating with Mei's garden seeds, involving Noor's students in the design discussions, and starting a garden at the park as a nod to their favorite cafe. They also planned details for Andy's bird duet performance during the event and agreed to keep each other motivated during gym sessions. Diego promised to take care of his knee for the project, and they decided to feed the stray cats regularly as planned. Looking forward to their quadruple date after it all comes together!",
         "messages": [
@@ -999,64 +1009,10 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "home",
+      "location": "park",
       "memory": {
-        "summary": " The human continues their collaborative discussions with Andy, Samantha, Leo, Caroline, Mei, and others on various projects such as a cat mural, bird improvisations, interactive squirrel latte art details, and a robot project. They plan to have meetings at the park, gym, and Main Street Tacos to brainstorm ideas and finalize details for their collaborative work. After discussing this earlier at the museum, they had another conversation about the cat mural location, with Andy suggesting an old oak tree in the park as a perfect canvas. They agreed to further discuss their projects, including bringing bird duets to life with robotics, at Main Street Tacos the next day. Mei shared plans for the cat mural project with Diego and Peter. All of them are excited about creating something magical for their town. Andy invites more people, including Caroline, Noor's students, Samantha, and Peter to join the discussions tomorrow at 6 PM. Leo mentions he will bring his violin and some spare parts for the tech side of things.",
+        "summary": " The human continues their collaborative discussions with various individuals, including Mei at a cafe and Diego at the park, about various projects such as a cat mural, bird improvisations, interactive squirrel latte art details, and a robot project. They plan to have meetings at the park, gym, and Main Street Tacos to finalize details for their collaborative work. Andy suggested an old oak tree in the park as a perfect canvas for the cat mural. Mei shared plans for the cat mural with Diego and mentioned finding a great spot near the park. Leo invited others, including Caroline, Noor's students, Samantha, and Peter to join the discussions tomorrow at 6 PM. Additionally, Mei and Leo had an impromptu musical performance together discussing the cat mural location, while Diego promised to bring noise-cancelling headphones for their neighbors. They all look forward to creating something magical for their town.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at cafe around 2:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Mei: \"Hi Leo! I see you've been practicing your tunes. Would love to hear a duet with those birds of yours.\"\n\nLeo: \"Hey, Mei! You're just in time for an impromptu performance. Sit down, let's make some music together.\"\n\nMei: \"That sounds lovely! And by the way, we found a great spot for the cat mural near the park. I thought you might like to know.\"\n\nLeo: \"Ah, perfect! That place always inspired our collaborations in the past. Looking forward to bringing back those memories.\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Diego at park around 4:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Diego: Hey Leo, nice to see you again at the park! I was just telling Noor about our meeting here tomorrow with Samantha.\n\nLeo: Ah, yes! I can't wait for that quadruple date. Speaking of which, I ran into Andy earlier and we're planning to bring instruments for some bird improvisations at the cat mural site.\n\nDiego: That sounds amazing! I'll make sure to bring my noise-cancelling headphones so we don't disturb any of our neighbors. And don't forget your seeds for the stray cats, as per Samantha's suggestion.\n\nLeo: Absolutely! We're shaping up to have a fantastic collaboration. Looking forward to some street tacos and lab equipment too. Here's hoping for a beautiful symphony of art and music in our town.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -1154,6 +1110,33 @@
             "type": "ai",
             "data": {
               "content": " Noor: Hey Leo, running a bit late to our meeting, huh?\nLeo: Apologies, Noor! My violin had a little mishap earlier. But I've got some exciting news about our collaborative project!\nNoor: Ah, that sounds intriguing! Do tell while we grab some coffee before heading to Main Street Tacos.\nLeo: Well, Andy suggested integrating bird duets with robotics, and Mei shared plans for the cat mural project with Diego and Peter. We're all set for a creative powwow at the park tomorrow!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at park around 1:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: \"Hey Leo! Busking again? Your improvisations with the birds are quite a sight.\"\n\nLeo: \"Just trying to find the perfect harmony between nature and music, like our town's collaborative spirit. Speaking of which, I heard about your sunrise seeds and cat mural project at school.\"\n\nCaroline: \"Yes! Mei and I are working with Noor's students and the robotics club to create something magical for our town. Samantha reminded me not to forget about feeding those stray cats tonight.\"\n\nLeo: \"I'll make sure to bring some cat food if you need help. And I've been thinking, that old oak tree in the park could make a great canvas for the cat mural.\"\n\nCaroline: \"That sounds perfect! Let's discuss more details tomorrow at Main Street Tacos. Oh, and don't forget about the interactive squirrel latte art details we discussed with Andy.\"\n\nLeo: \"Of course, Caroline. I'll bring my violin and some spare parts for tech troubleshooting. See you at 6 PM!\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
