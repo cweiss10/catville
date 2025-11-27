@@ -1,73 +1,43 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Peter"
-      ],
+      "home": [],
       "park": [
         "Noor"
       ],
       "cafe": [],
       "library": [],
-      "school": [
-        "Andy"
-      ],
+      "school": [],
       "hospital": [
-        "Caroline"
+        "Caroline",
+        "Leo"
       ],
       "market": [
         "Mei"
       ],
       "town_hall": [],
-      "theater": [],
-      "gym": [
-        "Samantha"
+      "theater": [
+        "Peter"
       ],
+      "gym": [],
       "museum": [],
-      "restaurant": [
-        "Leo"
-      ],
+      "restaurant": [],
       "train_station": [
+        "Andy",
+        "Samantha",
         "Diego"
       ]
     },
-    "time": "12:00 AM"
+    "time": "1:00 AM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "school",
+      "location": "train_station",
       "memory": {
-        "summary": " The cat mural project progresses with artists including Mei, Diego, and now Peter. Andy plans a meeting tonight at Main Street Tacos for both a double date, exchange of ideas for the mural, and discussions on chamomile tea for stray cats. Caroline has a separate meeting with Noor today to further collaborate on the project. In earlier conversations around 1:00 AM and 3:00 AM, Andy and Peter have arranged to meet at different locations to discuss the cat mural project and gather chamomile. Leo, who improvises with birds at the park, is now also involved in the project and plans to meet Peter tonight before their coffee meeting under the old oak tree to gather more ideas. Peter has invited Samantha and Diego for tonight's get-together at Main Street Tacos, and he and Leo are looking forward to a double date with Andy and Caroline tomorrow.",
+        "summary": " The cat mural project continues with artists including Mei, Diego, Peter, and now potentially Leo. Andy plans a meeting tonight at Main Street Tacos for both a double date, exchange of ideas for the mural, discussions on chamomile tea for stray cats, and a coffee meeting with Peter and Diego under the old oak tree tomorrow. Andy suggested running together with Diego to prepare for their meeting, as Diego has been nursing a knee injury. Additionally, Andy offered some chamomile for stray cats that Noor had requested. Both Andy and Diego look forward to their get-together tomorrow.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Diego at theater around 5:00 AM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Diego, heard you're still nursing that knee injury. How about we run together tomorrow at the park before our coffee meeting?\n\nDiego: Sounds great, Andy! I could use some company on my route and chat about the cat mural project. Let's meet by the old oak tree as usual.\n\nAndy: Perfect! And don't forget, I've got some chamomile for stray cats that Noor had asked for. See you tomorrow then!\n\nDiego: Appreciate it, Andy. Looking forward to seeing you in the morning.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -202,21 +172,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Samantha",
-      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "gym",
-      "memory": {
-        "summary": " At 9:00 AM, Samantha spoke with Mei at the hospital discussing their cat mural project further. They decided to meet first at Mei's zine club for brainstorming sessions. They also agreed to invite Leo and Noor due to their creative input. Additionally, they planned to feed the strays beforehand and share chamomile tea, as suggested by Diego. The meeting is scheduled for the following evening.\n\nAround 1:00 PM, Samantha spoke with Leo at the library about the cat mural project. He shared that he had been working on his symphony idea and tried some stretching routines that Diego suggested to alleviate knee pain while playing. Samantha discussed her progress with the open-source library for Diego's jams, mentioning a community event at the museum as an opportunity to showcase it. She invited Leo and Diego to join them under the old oak tree that evening.\n\nLeo agreed, expressing his intention to play some music on his violin during their meeting. He also suggested discussing the duet Caroline wanted them to work on. They finalized details about the community event for their upcoming meeting.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Mei at theater around 2:00 PM",
+              "content": "Talked to Samantha at train_station around 12:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -228,7 +188,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Theater, 2:00 PM\n\nSamantha: Hi Mei, I didn't expect to see you here! We seem to have a common project in the works.\n\nMei: Hello Samantha! It's serendipitous indeed. I was just discussing our cat mural with Diego at the gazebo earlier today.\n\nSamantha: Oh, small world! I spoke with Leo about it as well and we're planning a meeting under the old oak tree tonight. Care to join?\n\nMei: That sounds wonderful! Let's collaborate and perhaps bring some chamomile tea for the occasion. Our communities will certainly benefit from our combined talents.",
+              "content": " Andy: Hey Samantha, I hope your day went well! Excited about tonight at Main Street Tacos?\n\nSamantha: Hi Andy, yes, looking forward to it! By the way, I spoke with Mei and Leo today about the cat mural project. We're all meeting this evening for brainstorming sessions.\n\nAndy: That sounds fantastic! Peter and Caroline are excited too. I'm glad we're all coming together on this project.\n\nSamantha: Agreed, it's great to see our creative minds merge. And I invited Diego to join us under the old oak tree tonight, he's been quite helpful with his musical ideas.\n\nAndy: Perfect! Can't wait for that double date tomorrow then. Let's make this mural something special!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -239,7 +199,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Samantha",
+      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
+      "location": "train_station",
+      "memory": {
+        "summary": " At 9:00 AM, Samantha discussed their cat mural project with Mei at the hospital, deciding to meet first at Mei's zine club for brainstorming sessions and inviting Leo and Noor. They also planned to feed the strays and share chamomile tea as suggested by Diego. The meeting is scheduled for the following evening.\n\nAround 1:00 PM, Samantha spoke with Leo at the library about the cat mural project. He shared his symphony idea and knee pain alleviation techniques, while Samantha discussed her progress on the open-source library for Diego's jams. They invited Diego to join them under the old oak tree that evening, where they planned to discuss their duet with Caroline and finalize details about the community event at the museum.\n\nLater in the day, around 2:00 PM, Samantha encountered Mei at the theater who was discussing the cat mural project with Diego. After learning about each other's conversations, they agreed to join forces, collaborate and bring chamomile tea to their meeting under the old oak tree that evening.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -347,21 +317,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "hospital",
-      "memory": {
-        "summary": " The human, Caroline, had multiple conversations regarding a double date, cat mural project, and collaboration with various individuals including Noor, Andy, Diego, Leo, Mei, Samantha, and now Peter. They discussed using sunrise seeds in a mural, setting up chamomile tea for stray cats, and involving Diego in their conversations and events.\n\nCaroline and Andy planned to meet at the cafe tomorrow, with Caroline bringing her ideas for latte art inspired by cats. Andy also mentioned Peter's involvement in the project and suggested discussing project ideas at the gazebo tonight.\n\nLater, Caroline conversed with Samantha at a hospital around 2:00 AM about their ongoing cat mural project and an upcoming community event under the old oak tree. They agreed to finalize details over coffee later that day at Main Street Tacos, where they will also discuss Noor's community event involving sunrise seeds and chamomile tea for stray cats.\n\nIn a subsequent conversation with Samantha at home around 3:00 AM, Caroline was informed about another community event organized by Noor. They also discussed maintaining their cozy cafe's vibe throughout all their projects.\n\nLater in the day, Caroline spoke to Noor at the cafe around 9:00 AM and they agreed to incorporate sunrise seeds into the mural design as a symbol of new beginnings. They also planned to meet with Leo, Andy, and possibly Peter at Main Street Tacos tomorrow to finalize their collaboration and coordinate ideas for the cat mural project while maintaining the cozy cafe's vibe.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Mei at train_station around 10:00 AM",
+              "content": "Talked to Andy at train_station around 12:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -373,7 +333,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Caroline: Hey Mei, I was just thinking about our cat mural project – did you manage to gather everyone at your zine club?\n\nMei: Hi Caroline! Yes, we had a great meeting. We discussed using sunrise seeds and chamomile tea for the mural, just like you suggested. Diego's tacos were quite the creative boost too!\n\nCaroline: That's amazing! I can't wait to see how it all comes together. By the way, have you talked with Andy about meeting at the gazebo tonight? We need to finalize our plans for the double date and discuss some latte art ideas inspired by cats.\n\nMei: I have actually! Peter suggested we gather everyone this weekend at Main Street Tacos to discuss details further, including Leo's idea for an improvised symphony to accompany the mural. It should be quite a spectacle!\n\nCaroline: Sounds like a fantastic plan. I'll make sure to bring my latte art ideas and Andy will bring his sketchbook. Let's work together to make this happen, Mei.\n\nMei: Absolutely, Caroline! I can't wait to see how it all unfolds. Let's catch up at the cafe tomorrow before everyone meets at the gazebo. Thanks for your enthusiasm and collaborative spirit!\n\nCaroline: You're welcome, Mei. Let's make this project memorable! See you soon.",
+              "content": " Andy: Hey Samantha, I hope your day went well! Excited about tonight at Main Street Tacos?\n\nSamantha: Hi Andy, yes, looking forward to it! By the way, I spoke with Mei and Leo today about the cat mural project. We're all meeting this evening for brainstorming sessions.\n\nAndy: That sounds fantastic! Peter and Caroline are excited too. I'm glad we're all coming together on this project.\n\nSamantha: Agreed, it's great to see our creative minds merge. And I invited Diego to join us under the old oak tree tonight, he's been quite helpful with his musical ideas.\n\nAndy: Perfect! Can't wait for that double date tomorrow then. Let's make this mural something special!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -384,7 +344,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "hospital",
+      "memory": {
+        "summary": " The human, Caroline, spoke to Mei at a train station around 10:00 AM regarding their cat mural project. They discussed using sunrise seeds and chamomile tea for the mural as suggested by Caroline. Diego's tacos were mentioned as a creative boost during the meeting.\n\nCaroline asked about a potential meeting with Andy at the gazebo that evening to finalize plans for the double date and discuss latte art ideas inspired by cats. Mei informed her that Peter suggested everyone gather this weekend at Main Street Tacos instead, to further discuss details and include Leo's idea for an improvised symphony accompanying the mural.\n\nCaroline agreed to bring her latte art ideas and Andy his sketchbook to the meeting. They both expressed enthusiasm for working together on the project and planned to catch up at the cafe tomorrow before everyone meets at the gazebo or Main Street Tacos, depending on the final arrangements.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -465,6 +435,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Leo at hospital around 12:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Leo, I see you're playing your violin here tonight. It's a bit late, aren't you?\n\nLeo: Just keeping the hospital serene, Caroline. I heard about our double date and the cat mural project. How are things with Andy and Peter?\n\nCaroline: Things are going well! We plan to meet tomorrow at Main Street Tacos to discuss ideas. Have you thought more about your symphony idea for the mural?\n\nLeo: Yes, I've been working on it. Diego suggested some stretches for his knee, too. We should gather chamomile under the old oak tree tonight and plan the musical collaboration in detail.\n\nCaroline: That sounds perfect! Let's make sure we maintain our cafe's cozy vibe throughout all this. I can't wait to see how it all comes together.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -472,7 +469,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "home",
+      "location": "theater",
       "memory": {
         "summary": " The conversation between Peter, Leo, and Caroline continues with updates about their cat mural project. At 3:00 AM, Peter spoke with Andy at school who offered chamomile for the stray cats they were helping. They agreed to meet at a gazebo and discuss the project further over tacos that night with Andy inviting Samantha and Diego as well.\n\nPeter also suggested gathering chamomile under the old oak tree before their coffee meeting later that night, which Leo agreed to. Additionally, they plan to have a double date with Caroline and Andy the next day. The new summary of their ongoing conversation includes their arrangements for gathering chamomile and the taco gathering.",
         "messages": [
@@ -1079,37 +1076,10 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "restaurant",
+      "location": "hospital",
       "memory": {
-        "summary": " The group further discusses their cat mural project with updates on Leo's symphony idea and Diego's stretching routines for his knee. They plan to gather chamomile under the old oak tree tonight to discuss the project in more detail, possibly expanding it into a musical collaboration using sunrise seeds, showcasing everyone's contributions at their community event, and including a duet that Caroline wants them to work on. In addition, Leo suggests meeting Peter tomorrow morning at 5:00 AM under the old oak tree for a run, followed by a discussion about robotics ideas from Andy and gym routines from Diego.",
+        "summary": " The group continues their discussion about the cat mural project with references to sunrise seeds, a possible musical collaboration, showcasing everyone's contributions at a community event, and a planned duet. They also make plans to gather chamomile under the old oak tree tonight for further discussions.\n\nIn addition, they talk about tomorrow's early morning meeting under the old oak tree with Leo suggesting a run followed by a discussion about robotics ideas from Andy and gym routines from Diego. There is also mention of a conversation with Noor at the museum, where she expresses excitement for tomorrow's gathering and the potential of Mei's sunrise seeds in the cat mural.\n\nLeo also mentions inviting Samantha for what would essentially be a double date at tonight's taco gathering under the gazebo. Noor praises the group's creativity and energy, expressing her enthusiasm for the upcoming events.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Noor at museum around 3:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Noor: \"You know, I can't wait for tomorrow under the old oak tree. Mei's sunrise seeds in that cat mural could be something special.\"\n\nLeo: \"Absolutely! And with Samantha joining us, it'll be a double date to remember. Let's make sure we bring our A-game for the taco gathering tonight under the gazebo.\"\n\nNoor: \"Sounds like a plan. I can hardly wait to hear your bird duets among those chamomile fields.\"\n\nLeo: \"I can't either, Noor. Your energy and creativity are contagious. This town is truly coming alive because of people like you.\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -1234,6 +1204,33 @@
             "type": "ai",
             "data": {
               "content": " Noor: \"Caroline, I'm really excited about incorporating those sunrise seeds into our mural design.\"\n\nLeo: \"Absolutely! And speaking of unique elements, how about we include a musical collaboration in our community event?\"\n\nNoor: \"That sounds fantastic, Leo! With Andy's latte art and your violin, it could be quite something.\"\n\nCaroline: \"I can't wait to see it all come together. Let's finalize the design over lunch tomorrow.\"\n\nLeo: \"Count me in for that, Caroline. Looking forward to brainstorming with everyone.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at hospital around 12:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Leo, I see you're playing your violin here tonight. It's a bit late, aren't you?\n\nLeo: Just keeping the hospital serene, Caroline. I heard about our double date and the cat mural project. How are things with Andy and Peter?\n\nCaroline: Things are going well! We plan to meet tomorrow at Main Street Tacos to discuss ideas. Have you thought more about your symphony idea for the mural?\n\nLeo: Yes, I've been working on it. Diego suggested some stretches for his knee, too. We should gather chamomile under the old oak tree tonight and plan the musical collaboration in detail.\n\nCaroline: That sounds perfect! Let's make sure we maintain our cafe's cozy vibe throughout all this. I can't wait to see how it all comes together.",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
