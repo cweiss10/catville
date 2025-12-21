@@ -2,40 +2,39 @@
   "world": {
     "locations": {
       "home": [
-        "Andy",
         "Diego"
       ],
-      "park": [
-        "Mei"
-      ],
+      "park": [],
       "cafe": [],
       "library": [],
       "school": [
-        "Caroline"
+        "Peter",
+        "Noor"
       ],
-      "hospital": [],
+      "hospital": [
+        "Andy",
+        "Mei"
+      ],
       "market": [],
       "town_hall": [],
-      "theater": [
-        "Samantha"
-      ],
+      "theater": [],
       "gym": [
-        "Peter"
+        "Caroline"
       ],
       "museum": [],
       "restaurant": [
-        "Noor",
-        "Leo"
+        "Leo",
+        "Samantha"
       ],
       "train_station": []
     },
-    "time": "11:00 AM"
+    "time": "12:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "home",
+      "location": "hospital",
       "memory": {
         "summary": " Andy spoke with Peter at school around 10:00 PM, discussing their collaborative projects such as the cat mural. They exchanged information about their respective progress on the project, including Noor's offer of seeds for the garden and Andy's meeting with Leo to finalize the watering system automation plan. Peter suggested inviting Andy, Noor, and Caroline to their meeting under the old oak tree the following day. They also discussed a possible musical interlude for the mural that would involve Andy's artistic touch. Andy proposed grabbing tea from Mei before their meeting and discussing symphony plans under the old oak tree the next day. Additionally, Peter shared his hope of finding love through this project.",
         "messages": [
@@ -173,21 +172,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Samantha",
-      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "theater",
-      "memory": {
-        "summary": " During their conversation at the gym around 7:00 PM, Samantha and Andy discuss expanding the cat mural project to include Diego. They propose inviting Leo to collaborate on automating the garden watering system. They plan a meeting at the lake the following day at 6 PM and decide to have an early jog under the old oak tree at 6:30 AM before their meeting, with Andy suggesting they enjoy oolong tea beforehand at his place. Samantha agrees to bring fresh cat food for their shared pets and perhaps play the violin during their walk through the park. Diego's suggestion of providing tea for stray cats before meeting is also agreed upon, and they eagerly look forward to their rendezvous under the oak tree.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Noor at train_station around 8:00 PM",
+              "content": "Talked to Mei at hospital around 11:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -199,7 +188,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Samantha: \"Hey Noor, I was thinking about our shared project. Perhaps we could incorporate some melodies into it? Maybe even meet at that oak tree tonight instead of morning?\"\n\nNoor: \"That sounds lovely! I've been excited to discuss the musical interlude with you. Bring your violin, and let's make it happen under the old oak tree tonight!\"\n\nSamantha: \"I'll bring my noise-cancelling headphones just in case the echo gets too much. Looking forward to our collaboration.\"\n\nNoor: \"Perfect! I'll bring chamomile tea for the stray cats we often feed behind the cafe. See you there, Samantha!\"",
+              "content": " Andy: \"Hey Mei, I grabbed your tea like we planned! I can't wait to catch up and discuss those symphony ideas under the old oak tree.\"\n\nMei: \"Hello Andy! It's always a pleasure to share my tea with you. Looking forward to our meeting today, especially since we'll be discussing the cat mural project and your musical interlude.\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -210,7 +199,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Samantha",
+      "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
+      "location": "restaurant",
+      "memory": {
+        "summary": " During their conversation at the gym around 7:00 PM, Samantha and Andy discuss expanding the cat mural project to include Diego and invite Leo to collaborate on automating the garden watering system. They plan a meeting at the lake the following day at 6 PM and decide to have an early jog under the old oak tree at 6:30 AM before their meeting, with Andy suggesting they enjoy oolong tea beforehand at his place. Samantha agrees to bring fresh cat food for their shared pets and perhaps play the violin during their walk through the park. Diego's suggestion of providing tea for stray cats before meeting is also agreed upon.\n\nAfter speaking with Noor at the train station around 8:00 PM, Samantha proposes a musical interlude in their shared project and suggests they meet under the old oak tree that night instead of the next day. Noor agrees, bringing chamomile tea for stray cats and noise-cancelling headphones to address any potential echo issues during their collaboration. They are all looking forward to their meeting under the old oak tree that evening.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -345,6 +344,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Leo at restaurant around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Good morning, Leo. I've been thinking about your improvised duets – could they be translated into a rhythm-based algorithm?\"\n\nLeo: \"That sounds intriguing, Samantha! Maybe we can work on that during our jog under the oak tree tomorrow. And I'd love to collaborate on automating the garden watering system too.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -352,7 +378,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "school",
+      "location": "gym",
       "memory": {
         "summary": " During their conversation at 5:00 PM, Caroline contacted Diego at home and expressed her excitement about his involvement in the cat mural project, praising his artistic skills. Later that evening around 9:00 PM, Caroline talked to Andy at the theater who appreciated her performance and was excited for their collaboration at the gallery show. They discussed setting up a meeting with Noor to plan their stray cat tea station. Andy also proposed meeting the next day at the park during Caroline's sunrise sketch session, sharing thoughts on their symphony rehearsals. Caroline agreed and mentioned bringing fresh coffee for them. The conversation showed that both Caroline and Andy were eagerly looking forward to their collaborative projects.",
         "messages": [
@@ -497,25 +523,10 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "gym",
+      "location": "school",
       "memory": {
-        "summary": " During their interactions, Peter spoke with various individuals about their collaborative projects at different times and locations. At the school around 11:00 PM, he discussed symphony plans with Leo for their project. They agreed to meet under the old oak tree the next day along with other members to further discuss details.",
+        "summary": " During their interactions at various times and locations, Peter discussed collaborative projects with several individuals. At the school around 11:00 PM, he spoke with Leo about their cat mural project. They agreed to meet under the old oak tree the next day along with other members to further discuss details, as they had also arranged a meeting with Diego.\n\nPeter suggested inviting Caroline and Stray-13 to join their brainstorming session for automating the garden watering system. Leo agreed and promised to reach out to them. In addition, Leo shared his sunrise symphony collaboration at the museum and mentioned that Samantha wanted to incorporate her logic puzzles into it. Peter suggested discussing further details under the old oak tree that same evening at sunset.\n\nPeter offered to bring his sketchbooks and noise-cancelling headphones to their meeting, as he was aware of Leo's concerns about echo. They both expressed enthusiasm for making these projects successful.",
         "messages": [
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Leo, nice to see you again, under different circumstances this time. I've been thinking about our collaboration for the cat mural. Have you made any progress with Diego?\n\nLeo: Hey Peter! Yeah, actually Noor ran into him at the gym earlier. We agreed to meet up tomorrow under the old oak tree before dinner at Main Street Tacos. Are you joining us? I could use your startup ideas for this project.\n\nPeter: Absolutely! Let's make it happen. Speaking of which, I spoke with Samantha about automating the garden watering system. She suggested inviting Caroline and Stray-13 to join our brainstorming session. What do you think?\n\nLeo: That sounds great! I'll reach out to them. By the way, have you heard about my sunrise symphony collaboration at the museum? Samantha wants to bring her logic puzzles into it. We should discuss further details under the old oak tree tonight at sunset. Sound good?\n\nPeter: Definitely! I'll bring my sketchbooks and noise-cancelling headphones if the echo bothers you, as you mentioned earlier. Let's make these projects something special. Looking forward to it!",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -596,6 +607,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at school around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Peter: Hey Noor, I hope you're doing well! I was thinking about our symphony project and thought it would be great if we could incorporate some logic puzzles and cat-themed art to engage everyone at the event under the old oak tree tomorrow.\n\nNoor: Hi Peter! That sounds like a fantastic idea! I was actually planning to host a musical performance there in the morning, followed by dinner at Main Street Tacos in the evening for our collaborators. I've even prepared some chamomile tea for the stray cats. I think your ideas will fit perfectly and make it a memorable event for all of us! Let's work together to make this happen.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -603,7 +641,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "park",
+      "location": "hospital",
       "memory": {
         "summary": " In their latest exchange of conversations, Mei discusses the collaboration between Noor's robotics club and the cat mural project at around 11:00 PM under an old oak tree. She talks about Leo's ideas for automating the watering system and a surprise for Diego from her and Andy. They agree to maintain quiet moments during their evening meetings, such as Leo's shared symphony.\n\nIn a subsequent conversation with Peter at home around 2:00 AM, they discuss incorporating Mei's sunrise seeds initiative into the cat mural project. Peter suggests that Leo's sketches and ideas from the zine club could be used to incorporate music during the event. They also plan a double date at Main Street Tacos, as suggested by Noor, and decide to meet early the next day for Peter's sunrise sketch session.\n\nMei mentions that she met with Diego earlier in the day to discuss preparations for their meeting and plans a group run before dinner. They also consider involving Diego and Caroline to help with the violin repair for the music project. Peter agrees, noting that it's not just about networking but finding real connections like this one. Both agree that they are turning their projects into something special.",
         "messages": [
@@ -731,6 +769,33 @@
             "type": "ai",
             "data": {
               "content": " Caroline: \"Hey Mei, have you heard about Diego joining our cat mural project? He's quite talented!\"\n\nMei: \"Indeed! I've been talking with Noor about integrating robotics for the watering system. It'll be quite a sight under that old oak tree.\"\n\nCaroline: \"That sounds fantastic! We should get them all together and plan something special over some tea for the stray cats.\"\n\nMei: \"Sounds like a great idea, Caroline. Let's make sure we maintain those quiet moments too – they add such charm to our gatherings.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Andy at hospital around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: \"Hey Mei, I grabbed your tea like we planned! I can't wait to catch up and discuss those symphony ideas under the old oak tree.\"\n\nMei: \"Hello Andy! It's always a pleasure to share my tea with you. Looking forward to our meeting today, especially since we'll be discussing the cat mural project and your musical interlude.\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -893,37 +958,10 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "restaurant",
+      "location": "school",
       "memory": {
-        "summary": " The cat mural project continues with collaborative events and discussions. Tomorrow, Noor will host a musical performance under the old oak tree in the morning followed by dinner at Main Street Tacos. She has planned snacks for everyone involved, including chamomile tea for stray cats. Peter contacts Noor, discussing their collaboration under the old oak tree tomorrow which will include music, logic puzzles, and cat-themed art. Both are excited about the prospect of this event and appreciate each other's efforts in bringing everyone together for the project.",
+        "summary": " The cat mural project is progressing, with Noor hosting a musical performance under the old oak tree tomorrow morning followed by dinner at Main Street Tacos. Today, however, Noor will collaborate with Samantha at the old oak tree instead, incorporating melodies into their shared project. Both Noor and Samantha will bring their respective instruments (violin and noise-cancelling headphones), and they'll provide chamomile tea for stray cats during the event. They look forward to their collaboration and appreciate each other's efforts in contributing to the project.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Samantha at train_station around 8:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Samantha: \"Hey Noor, I was thinking about our shared project. Perhaps we could incorporate some melodies into it? Maybe even meet at that oak tree tonight instead of morning?\"\n\nNoor: \"That sounds lovely! I've been excited to discuss the musical interlude with you. Bring your violin, and let's make it happen under the old oak tree tonight!\"\n\nSamantha: \"I'll bring my noise-cancelling headphones just in case the echo gets too much. Looking forward to our collaboration.\"\n\nNoor: \"Perfect! I'll bring chamomile tea for the stray cats we often feed behind the cafe. See you there, Samantha!\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -1058,21 +1096,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Leo",
-      "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "restaurant",
-      "memory": {
-        "summary": " During their conversation at the cafe at 5:00 AM, Noor offers snacks for their upcoming meeting under the old oak tree and discuss plans for dinner at Main Street Tacos. Later, Leo talks to Mei about their cat mural project ideas over chamomile tea at the market around 8:00 AM. The zine club will collaborate on the mural as well. Around 9:00 AM, Leo speaks with Caroline at the library who suggests integrating Leo's cat mural ideas into her sunrise seeds project. Both agree to bring their sketches to the meeting under the old oak tree and discuss interactive elements over chamomile tea at Main Street Tacos where Diego and Peter will be present. Overall, the conversations suggest a productive and collaborative week ahead for the group with various art and music projects in progress.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Diego at cafe around 8:00 PM",
+              "content": "Talked to Peter at school around 11:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -1084,7 +1112,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Diego: Hey Leo, how was your day at the park? I heard you were improvising with some birds.\n\nLeo: Indeed, Diego! The music of those birds was simply enchanting today. And guess what? Noor shared that she might bring Samantha along to our meeting under the old oak tree.\n\nDiego: Wow, that'll be great! I can already see the vibrant colors of our cat mural blending with her unique blue hair. Mei and I are excited about bringing seeds for the garden too, remember?\n\nLeo: Absolutely! I can't wait to share my sketches for the sunrise symphony project with Andy during our meeting at the park tomorrow. I've heard he's been discussing our cat mural plans over at Main Street Tacos.\n\nDiego: Sounds like things are falling into place nicely. Don't forget, let's grab some street tacos afterwards! Maybe we can even convince Noor to join us for a quick bite.\n\nLeo: Agreed on both counts, Diego. I think Main Street Tacos should start preparing for our late-night meetups!",
+              "content": " Peter: Hey Noor, I hope you're doing well! I was thinking about our symphony project and thought it would be great if we could incorporate some logic puzzles and cat-themed art to engage everyone at the event under the old oak tree tomorrow.\n\nNoor: Hi Peter! That sounds like a fantastic idea! I was actually planning to host a musical performance there in the morning, followed by dinner at Main Street Tacos in the evening for our collaborators. I've even prepared some chamomile tea for the stray cats. I think your ideas will fit perfectly and make it a memorable event for all of us! Let's work together to make this happen.",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -1095,7 +1123,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Leo",
+      "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
+      "location": "restaurant",
+      "memory": {
+        "summary": " During their conversation at the cafe at 8:00 PM, Leo talks to Diego about his experience improvising with birds at the park. Diego expresses excitement over Noor potentially bringing Samantha along to their meeting under the old oak tree and discusses the cat mural project ideas. They also mention planning to bring seeds for a garden and agree to collaborate on the sunrise symphony project. Later, they decide to grab street tacos at Main Street Tacos after their meeting and suggest inviting Noor to join them. The conversations further emphasize the upcoming collaborative art and music projects in progress among the group members.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -1193,6 +1231,33 @@
             "type": "ai",
             "data": {
               "content": " Noor: \"I heard you've got some exciting ideas for the cat mural, Leo! Let's catch up over dinner at Main Street Tacos after our meeting under the old oak tree.\"\n\nLeo: \"Absolutely, I'm looking forward to it. Remember those nights we busked there? It'll be like old times.\"\n\nNoor: \"Indeed, and this collaboration might just lead us to new melodies and discoveries.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at restaurant around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Good morning, Leo. I've been thinking about your improvised duets – could they be translated into a rhythm-based algorithm?\"\n\nLeo: \"That sounds intriguing, Samantha! Maybe we can work on that during our jog under the oak tree tomorrow. And I'd love to collaborate on automating the garden watering system too.\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
