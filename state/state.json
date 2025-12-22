@@ -1,41 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Samantha"
+      "home": [],
+      "park": [
+        "Andy"
       ],
-      "park": [],
       "cafe": [
-        "Andy",
         "Noor"
       ],
       "library": [],
-      "school": [],
-      "hospital": [],
-      "market": [],
-      "town_hall": [],
-      "theater": [
+      "school": [
         "Leo"
       ],
-      "gym": [
+      "hospital": [],
+      "market": [
+        "Samantha",
+        "Caroline"
+      ],
+      "town_hall": [
         "Peter"
       ],
+      "theater": [],
+      "gym": [],
       "museum": [
         "Mei"
       ],
-      "restaurant": [],
-      "train_station": [
-        "Caroline",
+      "restaurant": [
         "Diego"
-      ]
+      ],
+      "train_station": []
     },
-    "time": "7:00 PM"
+    "time": "8:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "cafe",
+      "location": "park",
       "memory": {
         "summary": " The human talks to Leo at the hospital around 4:00 AM, discussing various plans such as the mural project and automating the watering system. At around 7:00 AM, they talk to Noor at the theater about Andy's new sketch for the cat mural, inviting Leo to join them, and also suggesting Diego to help repair violins. They discuss a double date with Peter, setting aside time for community center events and street tacos from Main Street Tacos. Additionally, they plan a pre-event gathering at Andy's place featuring oolong tea and a violin serenade.",
         "messages": [
@@ -180,7 +181,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "home",
+      "location": "market",
       "memory": {
         "summary": " During their late-night conversation at the library, Samantha asked Caroline for help with cat food and seeds for their meeting under the old oak tree. The plans expanded to include a double date, musical collaboration with Leo, and assisting with the garden watering system. Diego suggested joining in for a morning run before the gathering and invited Mei and Andy.\n\nLater, Samantha proposed a sunset music project at the lake involving Peter. Diego agreed and expressed interest in incorporating Stray-13 into their projects. They also discussed meeting at the park that evening to work on the automated watering system and have tea for the stray cats. Both looked forward to making tomorrow count.",
         "messages": [
@@ -291,6 +292,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at market around 7:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Caroline, you've got quite the day ahead! I'm excited about our plans for the sunset music project at the lake.\n\nCaroline: You too, Samantha! It's going to be a wonderful event, especially with Diego incorporating Stray-13 into it all. Speaking of which, have you thought about what role they could play?\n\nSamantha: I was thinking they might help with the automated watering system for the stray cats during our gathering at the park this evening. What do you think?\n\nCaroline: That sounds perfect! They've always been so helpful, and their touch adds something unique to our projects. Let's make sure we have enough tea for them as well.\n\nSamantha: Definitely. I'm looking forward to making tomorrow count together. See you at the park later!\n\nCaroline: You bet! And don't forget our morning run beforehand, as suggested by Diego. Let's get moving and make it a memorable day for all of us.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -298,64 +326,10 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "train_station",
+      "location": "market",
       "memory": {
-        "summary": " During the morning, Caroline had two more conversations. At the market around 8:00 AM, she thanked Mei for her zine club ideas and discussed seeds for their cat mural project collaboration. Mei suggested a musical interlude during their park walk which they both agreed would be a great addition to the event.\n\nAt the restaurant around 10:00 AM, Caroline updated Peter on the progress of the cat mural project and shared her plans for a tea time collaboration with Samantha. They discussed potential collaborations between Diego's mural and the sunrise symphony event. Peter praised Caroline for creating a special place in their town.",
+        "summary": " During the morning, Caroline had four conversations. At the market around 8:00 AM, she thanked Mei for her zine club ideas and discussed seeds for their cat mural project collaboration. Mei suggested a musical interlude during their park walk which they both agreed would be a great addition to the event (previously summarized).\n\nAt the restaurant around 10:00 AM, Caroline updated Peter on the progress of the cat mural project and shared her plans for a tea time collaboration with Samantha. They discussed potential collaborations between Diego's mural and the sunrise symphony event, with Peter praising Caroline for creating a special place in their town (previously summarized).\n\nAround 11:00 AM, Caroline talked to Leo at the train station about new tunes for their garden rendezvous. Leo had suggestions involving Samantha's violin and Peter's watering system ideas, and they agreed to make music under the old oak tree for the stray cats (newly summarized).\n\nAt school around 12:00 PM, Caroline met Andy who shared ideas about their collaboration with Peter from Main Street Tacos. They discussed a cat mural project incorporating some of Caroline's melodic elements into the symphony and involving Samantha's logic puzzles. Caroline suggested providing tea for the stray cats during the event, and they agreed to plan a tea time activity. Andy also offered his thermos blend for the community project under the old oak tree, and they agreed to keep each other updated (newly summarized).",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Leo at train_station around 11:00 AM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Caroline: \"Hey Leo, got any new tunes for our garden rendezvous?\"\n\nLeo: \"Absolutely! Samantha's bringing her violin too, and Peter has some ideas for the watering system.\"\n\nCaroline: \"That sounds delightful! I can't wait to see how it all comes together under that old oak tree.\"\n\nLeo: \"Me neither. Let's make some music and create a bit of magic for those stray cats tonight.\"",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Andy at school around 12:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Caroline, thanks for meeting up. I've been brewing some ideas about our collaboration and I'd love to bounce them off you.\n\nCaroline: Of course, Andy! It's always great to catch up. So, tell me more about your plans with Peter from Main Street Tacos. And how's that musical collaboration coming along?\n\nAndy: Well, I was thinking we could create a cat mural together and incorporate some of your melodic elements into the symphony for a unique touch. Plus, I want to involve Samantha's logic puzzles as well.\n\nCaroline: That sounds fantastic! I've been discussing seeds and oolong tea with Samantha for our community project by the old oak tree too. Let's make sure we provide tea for the stray cats there as well.\n\nAndy: Absolutely, I'll bring some of my thermos blend along. We should also plan a tea time activity during the symphony event to keep things interactive and engaging.\n\nCaroline: Agreed! And don't forget our meeting under the old oak tree tomorrow at 3 PM. I can't wait to see how everything comes together.\n\nAndy: Excited for it too, Caroline. Let's make sure to keep each other updated and collaborate on some tasty tea blends as well. Here's to a successful project!\n\nCaroline: Cheers to that, Andy! And hey, I still remember your order at the café even when you visit late at night. You're one of my favorites, after all.",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -436,6 +410,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at market around 7:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Caroline, you've got quite the day ahead! I'm excited about our plans for the sunset music project at the lake.\n\nCaroline: You too, Samantha! It's going to be a wonderful event, especially with Diego incorporating Stray-13 into it all. Speaking of which, have you thought about what role they could play?\n\nSamantha: I was thinking they might help with the automated watering system for the stray cats during our gathering at the park this evening. What do you think?\n\nCaroline: That sounds perfect! They've always been so helpful, and their touch adds something unique to our projects. Let's make sure we have enough tea for them as well.\n\nSamantha: Definitely. I'm looking forward to making tomorrow count together. See you at the park later!\n\nCaroline: You bet! And don't forget our morning run beforehand, as suggested by Diego. Let's get moving and make it a memorable day for all of us.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -443,7 +444,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "gym",
+      "location": "town_hall",
       "memory": {
         "summary": " During their discussions about collaborative projects, Peter made plans with Leo for a sunset meeting under the old oak tree, involving others like Noor, Andy, Samantha, and potentially Stray-13 and Caroline. At this meeting, they planned to work on the cat mural project, discuss logic puzzles, and make music as Leo brought his violin. They also looked forward to a double date and logic puzzle session at the lake, with Peter sharing some prepared puzzles.\n\nLater, Peter had a conversation with Caroline at school around 3:00 AM about their upcoming collaboration on the cat mural project and the symphony event. They also discussed setting up logic puzzles for added fun during their meeting under the old oak tree. Main Street Tacos was booked for dinner to allow them to catch up more after their busy day. Caroline reassured Peter that he was still her favorite regular at school despite his late hours.\n\nIn another conversation, Peter spoke with Leo at the museum around 7:00 AM about the upcoming meeting under the old oak tree. They agreed to bring sketchbooks and music instruments, with Samantha joining them with logic puzzles. They also discussed automating the watering system and improvising music during their collaborative session. The group planned to meet at 7:00 PM sharp and looked forward to the double date at Main Street Tacos this weekend.",
         "messages": [
@@ -760,7 +761,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "train_station",
+      "location": "restaurant",
       "memory": {
         "summary": " The human talks to Samantha at the theater around 6:00 AM. Samantha invites Diego and Peter (who is a regular at his gym) to join her sunset music project at the lake, where they plan to use Peter's musical talents. Diego suggests involving Stray-13 in their project as well, and mentions that he brought some samples for Andy earlier regarding an evening meeting at the park to work on the automated watering system. Samantha agrees to join them and proposes having tea for Stray-13 and his friends. They both express looking forward to making tomorrow count.",
         "messages": [
@@ -1050,7 +1051,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "theater",
+      "location": "school",
       "memory": {
         "summary": " During their late-night library visit at 3:00 AM, Leo and Andy discussed the upcoming collaborative meeting under the old oak tree. They shared their musical ideas for the mural project, with Leo working on a rhythm-based algorithm based on his bird duets. Andy revealed that Mei promised to bring tea later that night. The discussion also included plans about automating the garden watering system and integrating Samantha's logic puzzles into their symphony. Both were excited about the collaboration, looking forward to their upcoming meeting with fresh cups of tea.",
         "messages": [
