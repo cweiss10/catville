@@ -2,40 +2,39 @@
   "world": {
     "locations": {
       "home": [],
-      "park": [],
+      "park": [
+        "Andy"
+      ],
       "cafe": [
-        "Diego"
+        "Peter"
       ],
       "library": [
         "Samantha",
-        "Peter"
-      ],
-      "school": [
-        "Andy"
-      ],
-      "hospital": [
         "Mei"
       ],
+      "school": [],
+      "hospital": [],
       "market": [],
-      "town_hall": [
-        "Noor"
-      ],
+      "town_hall": [],
       "theater": [],
-      "gym": [],
-      "museum": [
+      "gym": [
         "Caroline",
         "Leo"
       ],
-      "restaurant": [],
+      "museum": [],
+      "restaurant": [
+        "Diego",
+        "Noor"
+      ],
       "train_station": []
     },
-    "time": "3:00 AM"
+    "time": "4:00 AM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "school",
+      "location": "park",
       "memory": {
         "summary": " The conversation between Andy, Leo, Noor, Mei, Caroline, and Diego at the park continues. Around 3 PM, Andy speaks with Caroline about their cat mural project under the old oak tree, suggesting chamomile-inspired latte art and mechanical birds integration for their gathering. Later, around 5 PM, Andy talks to Samantha at the library about their collaboration with Peter and Mei the next day. Samantha confirms her readiness for the event, bringing her headphones, seeds from Noor, and cat food for Stray-13, while also mentioning that she has started practicing the old busking duets with bird melodies Andy had suggested. The group agrees to bring creativity to life for their memorable town event.",
         "messages": [
@@ -291,21 +290,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "museum",
-      "memory": {
-        "summary": " In addition to their earlier conversations, Caroline spoke with Mei at the library around 1:00 PM and Peter at the café around 2:00 PM. Mei offered chamomile seeds for Stray-13's drinks to help her relax during busy hours and discussed further ideas under the old oak tree that evening, mentioning plans to incorporate sunflowers and lavender into their cat mural design. Peter proposed a latte art idea for the project, which Caroline found intriguing. They agreed to discuss details later in the week over coffee and Peter mentioned his excitement about collaborating with Samantha. Caroline also shared her successful collaboration with Leo on the cat mural details at the restaurant the previous night. Peter expressed interest in joining the gathering under the old oak tree that weekend, making it a collaborative event among them all.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Andy at park around 3:00 PM",
+              "content": "Talked to Mei at library around 3:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -317,7 +306,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Andy: Hey Caroline, I heard from Leo about our meeting under the old oak tree. Excited for the collaboration!\n\nCaroline: Hi Andy! It's going to be a fantastic project, isn't it? I've been brainstorming some chamomile-inspired latte art for our gathering. Do you have any suggestions for incorporating the mechanical birds into your sketches?\n\nAndy: I was thinking we could make them look as if they're singing along with our busking duets. What do you think?\n\nCaroline: I love it! Let's make sure to practice and perfect our parts beforehand. You know, to keep the cozy vibe of our little park intact. Can't wait for tomorrow!",
+              "content": " Samantha: Hey Mei, I heard about your chamomile seeds for Stray-13. That's a great idea for the project!\n\nMei: Hi Samantha! Thanks! I think it will help create a calming atmosphere around our cat mural. Speaking of which, did you get a chance to practice those bird melodies yet?\n\nSamantha: Yes, I have been working on them every day. Diego's mechanical bird sketch is really inspiring!\n\nMei: It certainly is! I can't wait for our collaboration at Caroline's. Let's make this town's mural something truly memorable.",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -328,7 +317,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "gym",
+      "memory": {
+        "summary": " In addition to previous conversations, Caroline spoke with Andy at the park around 3:00 PM. Andy expressed excitement for their upcoming collaboration under the old oak tree. Caroline suggested a chamomile-inspired latte art design and asked for suggestions on incorporating mechanical birds into her sketches. Andy proposed making them look as if they're singing along with their busking duets. They agreed to practice and perfect their parts beforehand, aiming to maintain the cozy vibe of the park. Both were looking forward to the gathering the next day.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -436,6 +435,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Leo at gym around 3:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: \"Hey Leo, I was thinking about our latte art idea for the mural. Mei's sunflowers and lavender sound perfect!\"\n\nLeo: \"Absolutely! And I've got some new bird sketches that might fit in nicely too. Let's discuss them over your signature chamomile latte tomorrow?\"\n\nCaroline: \"Sounds like a plan, let's not forget to bring Noor and Samantha along. They'll love the collaboration!\"\n\nLeo: \"Agreed! It's going to be a musical and artistic feast under that old oak tree.\"",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -443,7 +469,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "library",
+      "location": "cafe",
       "memory": {
         "summary": " During their conversation on Wednesday, Peter spoke with Leo at the library around 4:00 PM, discussing plans for their cat mural project. They discussed incorporating bird melodies into Leo's music at Caroline's Cafe and decided to meet the next day before rehearsals. Additionally, Peter spoke to Mei at the hospital around 5:00 PM, discussing how Samantha's bird melodies could tie in with Mei's design ideas for the cat mural project. They agreed to finalize their plans the following day under the old oak tree and also discussed collaborating on the zine club.",
         "messages": [
@@ -561,37 +587,10 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "hospital",
+      "location": "library",
       "memory": {
-        "summary": " In their continued conversations, Mei discusses chamomile seeds for Stray-13 with Caroline at the library in the afternoon. The seeds are intended to help Stray-13 relax during busy hours in relation to the robot latte art project for their cat mural collaboration. Later in the day, around 1:00 PM, Mei confirms her participation in a gathering under the old oak tree later that evening to further discuss ideas for the cat mural project and integrating various elements such as sunflowers, lavender, and chamomile seeds into their design.",
+        "summary": " In their continued conversations, Mei discusses chamomile seeds for Stray-13's robot latte art project with Caroline at the library in the afternoon. Later, at 5:00 PM, Mei talks to Peter at the hospital about their cat mural project. Peter suggests integrating Samantha's bird melodies into the design. Mei agrees and proposes Diego's mechanical birds sketches as a fitting addition. They plan to meet under the old oak tree later that evening to further discuss ideas, and Mei offers to bring chamomile seeds for the community garden next time she sees Peter at Caroline's café.\n\nTomorrow, they plan to finalize their plans at 10 AM under the old oak tree, with Mei bringing her headphones for a tea meeting. They also discuss collaborating on other projects that could strengthen their town's creative scene and planning for the zine club, with Andy showing enthusiasm. Mei promises to bring tea from her thermos to the meetings.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Peter at hospital around 5:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Mei, I've been thinking about our cat mural project and how Samantha's bird melodies could tie in beautifully with your design ideas.\n\nMei: That sounds amazing, Peter! I was just discussing this with the gang and I thought Diego's mechanical birds sketches would be a perfect fit. I'll bring chamomile seeds for the community garden next time I see you at Caroline's café. Let's finalize our plans tomorrow under the old oak tree, shall we?\n\nPeter: Absolutely! I've got some ideas for our collaborative projects that I think could really strengthen our town's creative scene. Don't forget to bring your headphones for our tea meeting tomorrow at 10 AM.\n\nMei: You got it! And while we're at it, let's discuss the zine club too. Andy seems pretty excited about it. I'll see you there with tea from my thermos. Cheers to fostering creativity in our town!",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "ai",
-              "name": null,
-              "id": null,
-              "example": false,
-              "tool_calls": [],
-              "invalid_tool_calls": [],
-              "usage_metadata": null
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -699,21 +698,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Diego",
-      "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "cafe",
-      "memory": {
-        "summary": " In addition to their previous conversations about the mural project and an unrelated street taco collaboration with Samantha at the hospital, Diego and Samantha also discussed another idea related to the cat-themed mural project. During a conversation at the museum around 10:00 AM, Samantha proposed adding mechanical birds to the design. Diego expressed enthusiasm for this idea and suggested meeting under the old oak tree after his practice session to further discuss it. They also agreed to enjoy chamomile tea during their meeting, and Diego reminded Samantha not to forget the street tacos. The conversation ended with both parties looking forward to catching up on their projects and health updates, with Diego even suggesting a quick workout before their meeting if Samantha is up for it.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Samantha at museum around 4:00 PM",
+              "content": "Talked to Samantha at library around 3:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -725,7 +714,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Samantha: Hey Diego, did you get my message about bringing cat food for Stray-13?\n\nDiego: Yes, I did, Sam. I'll grab it on my way there tomorrow. By the way, Mei had some interesting ideas about incorporating Leo's bird sketches into the mural design.\n\nSamantha: Oh, that sounds amazing! I'm looking forward to seeing how they blend with our busking duets. Let's make sure we have enough noise-cancelling headphones for everyone.\n\nDiego: Agreed. And don't worry about the robot latte art idea, I think it'll be a fun addition. See you tomorrow at Caroline's!",
+              "content": " Samantha: Hey Mei, I heard about your chamomile seeds for Stray-13. That's a great idea for the project!\n\nMei: Hi Samantha! Thanks! I think it will help create a calming atmosphere around our cat mural. Speaking of which, did you get a chance to practice those bird melodies yet?\n\nSamantha: Yes, I have been working on them every day. Diego's mechanical bird sketch is really inspiring!\n\nMei: It certainly is! I can't wait for our collaboration at Caroline's. Let's make this town's mural something truly memorable.",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -736,7 +725,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diego",
+      "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
+      "location": "restaurant",
+      "memory": {
+        "summary": " In addition to their earlier conversations about the mural project and a street taco collaboration with Samantha at the hospital, Diego and Samantha also had another discussion at the museum around 4:00 PM. During this conversation, Samantha reminded Diego about bringing cat food for Stray-13. Diego mentioned some innovative ideas from Mei regarding incorporating Leo's bird sketches into the mural design, which Samantha found exciting and suggested they ensure they have enough noise-cancelling headphones for everyone. Diego also mentioned a potential fun addition of robot latte art. They planned to meet tomorrow at Caroline's.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -844,21 +843,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Noor",
-      "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "town_hall",
-      "memory": {
-        "summary": " The team discussing their cat mural project further with Noor meeting Leo at the theater around 11:00 PM. They agreed to practice with Diego beforehand and decided to grab Caroline's special chamomile-inspired latte art. Leo had introduced a new logic puzzle created by Samantha, which they postponed for another time in favor of focusing on the mural project. Later, Noor talked to Caroline at town_hall around 4:00 AM where Caroline suggested collaborating with her on a latte inspired by Leo's mechanical birds for their project. They agreed to meet under the old oak tree later and discussed bringing chamomile seeds for the stray cats at the event, while Noor would bring snacks for overwhelmed students as usual. The team continued to show excitement and collaboration for their artistic endeavor involving music, community engagement, and various creative elements.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Mei at library around 7:00 AM",
+              "content": "Talked to Noor at restaurant around 3:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -867,6 +856,31 @@
               "example": false
             }
           },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Diego: Hey Noor, great meeting you under the oak tree! Samantha filled me in on your plans for the mural. Excited about those mechanical birds!\n\nNoor: Hi Diego! Nice to see you too. I knew you'd be thrilled about the birds. Leo and I discussed it with Caroline's latte art in mind. Want to grab some chamomile tea and practice before we work on the design?\n\nDiego: Absolutely, let's do it. Plus, if you're up for it, we could squeeze in a quick workout first. I feel my old knee could use a good stretch.\n\nNoor: That sounds perfect! I brought some snacks for our students and chamomile seeds for the stray cats too. Let's get started then!",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Noor",
+      "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
+      "location": "restaurant",
+      "memory": {
+        "summary": " The team members, including Noor, Leo, Diego, Caroline, and possibly others, continued their discussions about their cat mural project. On a separate occasion, Noor spoke with Mei at the library early in the morning around 7:00 AM, furthering their collaborative efforts for their artistic endeavor involving music, community engagement, and various creative elements. The team's excitement and collaboration remained strong throughout these discussions.",
+        "messages": [
           {
             "type": "ai",
             "data": {
@@ -989,21 +1003,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Leo",
-      "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "museum",
-      "memory": {
-        "summary": " During their conversation at 10:00 AM, Leo spoke to Andy at a cafe regarding the cat mural project they had previously discussed. At around 2:00 PM, Leo also conversed with Caroline at the town hall, where she complimented Leo's music and suggested collaborating on a latte inspired by their mechanical birds project. Leo agreed to meet up after his rehearsal with Samantha that night and bring some new bird sketches for discussion.\n\nAt 5:00 PM, Leo also talked to Samantha at the gym. They discussed their meeting at the café that night, with Samantha suggesting bringing headphones and a violin. Leo confirmed his preparation for the duet and shared that he had been practicing some melodies. Samantha revealed she had prepared a logic puzzle to help with the bird mural, which excited Leo.\n\nAt 11:00 PM, Leo talked to Noor at the theater. They discussed practicing together on their cat mural project and decided to grab Caroline's special latte art inspired by chamomile beforehand. Noor had not yet tried Samantha's logic puzzle but agreed to save it for another night, focusing instead on the mural. They also discussed finding their headphones for practicing under the oak tree the next day.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Caroline at restaurant around 12:00 AM",
+              "content": "Talked to Diego at restaurant around 3:00 AM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -1015,7 +1019,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Caroline: \"Hey Leo, looks like we've got quite a jam-packed day ahead tomorrow. I hope those mechanical birds of yours will blend seamlessly with my latte art.\"\n\nLeo: \"Absolutely, Caroline! And don't worry about the stretch routines or street tacos - we've got this covered. Let's make that gathering something special.\"\n\nCaroline: \"I couldn't agree more! I'm excited to see what kind of music we can create together.\"\n\nLeo: \"Same here, Caroline. It's been a while since we last collaborated, and I've missed our shared performances.\"\n\nCaroline: \"Indeed, it has. Here's to another magical day in the cafe, and even more so at the theater tomorrow!\"",
+              "content": " Diego: Hey Noor, great meeting you under the oak tree! Samantha filled me in on your plans for the mural. Excited about those mechanical birds!\n\nNoor: Hi Diego! Nice to see you too. I knew you'd be thrilled about the birds. Leo and I discussed it with Caroline's latte art in mind. Want to grab some chamomile tea and practice before we work on the design?\n\nDiego: Absolutely, let's do it. Plus, if you're up for it, we could squeeze in a quick workout first. I feel my old knee could use a good stretch.\n\nNoor: That sounds perfect! I brought some snacks for our students and chamomile seeds for the stray cats too. Let's get started then!",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -1026,7 +1030,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Leo",
+      "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
+      "location": "gym",
+      "memory": {
+        "summary": " During their conversation at 12:00 AM, Leo spoke with Caroline at a restaurant. Caroline complimented Leo's mechanical birds project and suggested that they make their upcoming gathering special. They discussed collaborating on music, expressing excitement about reuniting for another shared performance since it had been a while. Both looked forward to the day ahead, including their meeting at the café and event at the theater.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -1124,6 +1138,33 @@
             "type": "ai",
             "data": {
               "content": " Caroline: Hey Leo, your music was really something last night at the restaurant. I love how you brought our cat mural to life with those bird improvisations.\n\nLeo: Thanks, Caroline! That collaboration felt magical, didn't it? I've been sketching some new ideas for the mechanical birds and thought we could work on them here at the museum tonight. What do you think?\n\nCaroline: That sounds fantastic! I'd love to see what you come up with. Let's meet by the Egyptian exhibit around 8:00 PM, after you finish your rehearsal with Samantha. Bring your violin, and maybe we can create something special together under the watchful eyes of those ancient statues.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at gym around 3:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: \"Hey Leo, I was thinking about our latte art idea for the mural. Mei's sunflowers and lavender sound perfect!\"\n\nLeo: \"Absolutely! And I've got some new bird sketches that might fit in nicely too. Let's discuss them over your signature chamomile latte tomorrow?\"\n\nCaroline: \"Sounds like a plan, let's not forget to bring Noor and Samantha along. They'll love the collaboration!\"\n\nLeo: \"Agreed! It's going to be a musical and artistic feast under that old oak tree.\"",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
