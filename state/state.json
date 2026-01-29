@@ -2,39 +2,40 @@
   "world": {
     "locations": {
       "home": [],
-      "park": [],
-      "cafe": [
-        "Caroline"
+      "park": [
+        "Andy"
       ],
-      "library": [
-        "Andy",
-        "Mei",
+      "cafe": [
         "Noor"
       ],
-      "school": [],
-      "hospital": [
-        "Samantha",
-        "Leo"
+      "library": [
+        "Samantha"
       ],
+      "school": [
+        "Peter"
+      ],
+      "hospital": [],
       "market": [
-        "Diego"
+        "Mei"
       ],
       "town_hall": [],
       "theater": [],
-      "gym": [],
+      "gym": [
+        "Caroline",
+        "Diego",
+        "Leo"
+      ],
       "museum": [],
       "restaurant": [],
-      "train_station": [
-        "Peter"
-      ]
+      "train_station": []
     },
-    "time": "11:00 AM"
+    "time": "12:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "library",
+      "location": "park",
       "memory": {
         "summary": " The human group, consisting of Andy, Leo, potentially others, and collaborators from Mei's students, Noor's robotics club, and Peter's bird duet, continue planning for their art project involving a cat mural, mechanical birds, improvised melodies, and various collaborations.\n\nLeo suggests meeting at the garden and brewing tea before discussing details about the mechanical bird melodies with Andy. Andy invites Caroline to join them under the oak tree later that afternoon.\n\nCaroline proposes a creative jam session after their discussion, suggesting inviting Diego, Noor, Mei, Peter, Andy's students, and Samantha as well. They all agree it will be an exciting collaboration and look forward to the event.",
         "messages": [
@@ -179,7 +180,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "hospital",
+      "location": "library",
       "memory": {
         "summary": " During their meeting at Caroline's cafe, Samantha discusses with Peter about incorporating Leo's bird melodies into the cat mural project. Peter suggests involving Mei, who could contribute her mechanical bird designs. They also discuss reviewing Whiskers' little brother's designs based on Diego's sketches before their evening meeting at the garden. Additionally, they plan to exercise together in the morning and meet up again for breakfast discussions the next day.",
         "messages": [
@@ -324,7 +325,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "cafe",
+      "location": "gym",
       "memory": {
         "summary": " At 11:00 PM, Caroline spoke with Peter at a cafe about the cat mural project. She informed him of Mei and Andy's excitement for his input regarding mechanical bird duets and logic puzzles discussed earlier in the day. Peter agreed to contribute and even mentioned rehearsing a melody or two with Kitty. He also suggested incorporating Leo's kitten as the mural's little mascot. The event, including a tea party under the old oak tree, was agreed upon, with Peter confirming his attendance. They looked forward to making the mural unforgettable and planned to meet at Caroline's place the following day.",
         "messages": [
@@ -462,6 +463,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Diego at gym around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego! How's that knee feeling?\nDiego: Hi Caroline! It's doing alright, thanks for asking. Heard about your cat mural project - it sounds amazing!\n\nCaroline: Indeed! You should come by on Saturday for the tea party under the old oak tree. There'll be street tacos too!\nDiego: That sounds like a plan! I can help with finalizing designs and maybe even collaborate on the bird duet. See you then, Caroline.\n\nCaroline: Great to have you involved, Diego. Can't wait for Saturday!\nDiego: Looking forward to it as well, Caroline. Catch you later at the gym.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -469,7 +497,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "train_station",
+      "location": "school",
       "memory": {
         "summary": " The human, Peter, discusses further plans for the cat mural event with Andy at a park around 1:00 PM and meets Mei to discuss her botany involvement in the event. They agree to incorporate small rituals and traditions to make the event memorable. Later that evening, Peter talks to Samantha at a train station who invites him for breakfast at Caroline's to discuss the cat mural project with the zine club. The following day, they meet at a cafe to work on the project plans and catch up on ideas.",
         "messages": [
@@ -614,7 +642,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "library",
+      "location": "market",
       "memory": {
         "summary": " The human catches up with Peter at a cafe, discusses their cat mural project and plans for a pre-event workout, a chamomile tea chat about the garden project afterward, rehearsals for Diego's kitten Kitty, and considers her as the event's mascot. Later, they meet again at home around 10:00 PM, discussing additional details of the cat mural event, including a bird duet, native plants, street tacos, inviting Samantha and Leo, group workouts, and mechanical birds created by Noor's robotics students. The event will take place under an old oak tree with kittens joining to inspire creativity.",
         "messages": [
@@ -747,22 +775,10 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "market",
+      "location": "gym",
       "memory": {
-        "summary": " The group planning for Diego's cat mural project continues, with new developments and collaborations. At the gym, Diego meets Caroline who shares exciting news about the project - they are planning a communal tea party under the old oak tree, involving Mei's students in creating mechanical birds and having Leo join for a jam session. Diego suggests meeting tomorrow to finalize designs and discuss the bird duet. They also plan on including street tacos at the gathering.",
+        "summary": " The group planning for Diego's cat mural project continues, with new developments and collaborations. At the gym, Diego meets Caroline who shares exciting news about the project – they are planning a communal tea party under the old oak tree, involving Mei's students in creating mechanical birds and having Leo join for a jam session. Diego suggests meeting tomorrow to finalize designs and discuss the bird duet, and he also talks to Mei at the museum around 7:00 PM. The group continues planning, with an added involvement of Mei and her students in creating mechanical birds, and the inclusion of street tacos at the gathering.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at museum around 7:00 PM",
-              "additional_kwargs": {},
-              "response_metadata": {},
-              "type": "human",
-              "name": null,
-              "id": null,
-              "example": false
-            }
-          },
           {
             "type": "ai",
             "data": {
@@ -885,6 +901,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at gym around 11:00 AM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Diego! How's that knee feeling?\nDiego: Hi Caroline! It's doing alright, thanks for asking. Heard about your cat mural project - it sounds amazing!\n\nCaroline: Indeed! You should come by on Saturday for the tea party under the old oak tree. There'll be street tacos too!\nDiego: That sounds like a plan! I can help with finalizing designs and maybe even collaborate on the bird duet. See you then, Caroline.\n\nCaroline: Great to have you involved, Diego. Can't wait for Saturday!\nDiego: Looking forward to it as well, Caroline. Catch you later at the gym.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -892,7 +935,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "library",
+      "location": "cafe",
       "memory": {
         "summary": " The cat mural team continues discussing their collaboration plans. Noor and Caroline discuss the details of the project at the library, including a tea party under the old oak tree planned for the weekend. They also mention involving Mei and her zine club in the project, as well as having a joint jam session afterward. In addition, Leo might bring his kitten to their meetings as a mascot for the project. Everyone is excited about the progress of the mural collaboration and the new additions to the project.",
         "messages": [
@@ -1064,7 +1107,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "hospital",
+      "location": "gym",
       "memory": {
         "summary": " During their conversation at 8:00 PM, Leo and Mei spoke about their plans for the upcoming cat mural event. Mei expressed admiration for Leo's improvisational violin melodies from the park the previous night. She also shared some sunflowers and basil seeds she collected from the market for their community garden. Leo brought chamomile tea to contribute to the event under the old oak tree, as previously discussed. Mei mentioned that kittens would be joining them to inspire creativity. Furthermore, Noor's robotics students will be working on the mechanical birds for the project, making it a unique and collaborative event for the townsfolk.",
         "messages": [
