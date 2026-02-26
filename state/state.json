@@ -1,42 +1,41 @@
 {
   "world": {
     "locations": {
-      "home": [],
-      "park": [
+      "home": [
         "Andy"
       ],
-      "cafe": [
+      "park": [
+        "Diego"
+      ],
+      "cafe": [],
+      "library": [],
+      "school": [
         "Noor"
       ],
-      "library": [
+      "hospital": [
+        "Mei"
+      ],
+      "market": [
         "Leo"
       ],
-      "school": [],
-      "hospital": [
+      "town_hall": [],
+      "theater": [],
+      "gym": [],
+      "museum": [],
+      "restaurant": [
+        "Samantha",
         "Caroline",
         "Peter"
       ],
-      "market": [],
-      "town_hall": [
-        "Mei"
-      ],
-      "theater": [],
-      "gym": [
-        "Diego"
-      ],
-      "museum": [],
-      "restaurant": [],
-      "train_station": [
-        "Samantha"
-      ]
+      "train_station": []
     },
-    "time": "10:00 PM"
+    "time": "11:00 PM"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "park",
+      "location": "home",
       "memory": {
         "summary": " At 1:00 AM, Andy contacted Caroline at the town hall regarding their garden project and robotics collaboration for the mechanical birds component, agreeing to meet up the following day at her cafe over mint tea. Caroline also prepared spicy tacos for the meeting and reminded Andy about their mural collaboration under the old oak tree that night.\n\nAndy talked to Samantha at the restaurant about the robotics project, learning Peter suggested the birds should sing in harmony. They planned to meet the next day to discuss further details and plans, while also discussing involving Caroline in a community garden discussion scheduled for the week. Andy also expressed excitement about the double date that night with Diego and Noor under the old oak tree for a choir performance.\n\nLater, at 2:00 AM, Andy talked to Noor at the park around 4:00 AM, discussing the upcoming events. They agreed it would be a great idea to plant seedlings for the community garden tomorrow morning before school starts, and Noor expressed excitement about the double date with spicy tacos being served.\n\nAt 7:00 AM, Andy talked to Samantha at the restaurant. Andy mentioned seeing Samantha under the oak tree earlier and discussed their collaborative spirit. Samantha appreciated Andy's help in coordinating their projects. They finalized plans for the choir performance and Andy invited Samantha to discuss robotics club plans at the community center the next day.",
         "messages": [
@@ -181,7 +180,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "train_station",
+      "location": "restaurant",
       "memory": {
         "summary": " After their conversation about city sounds for a cat mural and a robotics collaboration with Peter, Samantha had another discussion with Andy at the same restaurant the next day around 7:00 AM. Andy praised Samantha's initiative under the oak tree, comparing it to his own cat mural project. They expressed excitement about their collaborative efforts and agreed that the street taco night would be special. Samantha inquired about Andy's plans with Noor for the choir, and they confirmed everyone was excited. Andy requested Samantha's help with robotics club plans at the community center, which she agreed to provide. They planned to meet again the following day.",
         "messages": [
@@ -319,21 +318,11 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          }
-        ]
-      }
-    },
-    {
-      "name": "Caroline",
-      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "hospital",
-      "memory": {
-        "summary": " On the fourth day of the community event, Caroline spoke with various individuals. At different times, she discussed plans for their gathering under the old oak tree that night involving street tacos and a violin duet, as well as bringing mint tea and seedlings for Caroline's garden, with Leo at the library at 9:00 PM. Later in the evening, she also talked to Andy at town_hall about collaborating on the community garden project with Diego and brainstormed robotic elements for mechanical birds.\n\nIn the late hours of the night, Caroline had a conversation with Noor at the market where they discussed materials and designs for the mechanical bird project. They agreed to use their open mic night as a platform to showcase it and bring the community together. They also decided to ensure that Diego is on board with this plan.",
-        "messages": [
+          },
           {
             "type": "human",
             "data": {
-              "content": "Talked to Peter at library around 12:00 PM",
+              "content": "Talked to Caroline at restaurant around 10:00 PM",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "human",
@@ -345,7 +334,7 @@
           {
             "type": "ai",
             "data": {
-              "content": " Caroline: Hey Peter, I heard you're bringing the chamomile lattes?\nPeter: Yes, Caroline! And Noor's making spicy tacos, right? I can't wait for that double date under the old oak tree.\n\nCaroline: Absolutely! And don't forget about our mural project and the cat mural idea we discussed with Andy.\nPeter: Right, right! He also filled me in on Diego joining us too. I'm looking forward to the street tacas afterwards.\n\nCaroline: Oh, and Noor mentioned that her choir might join for an impromptu duet. I hope they do, it would be amazing!\nPeter: Yeah, me too! It's going to be quite the creative gathering in our town. Thanks for keeping up with all of this, Caroline. You always make things happen.\n\nCaroline: (smiling) Well, I couldn't do it without you, Peter. Let's make sure we keep our café cozy vibe going strong during the event too.\nPeter: Agreed! See you at 12 sharp, and I can't wait for your set at the theater later that evening.",
+              "content": " Samantha: Hey Caroline, I heard about our street taco night. Excited for the collaboration!\n\nCaroline: Hey Samantha! You too! And thanks for helping with the robotics club plans. The community center is buzzing with anticipation!\n\nSamantha: I'm also looking forward to that choir collaboration with Andy and Noor. It's going to be beautiful.\n\nCaroline: Absolutely! Speaking of which, Noor and I were discussing our mechanical bird project at the market last night. We should definitely showcase it at our open mic night. What do you think?\n\nSamantha: That sounds like a wonderful idea! Let's make sure Diego is on board too. Maybe he can help with the mechanics.",
               "additional_kwargs": {},
               "response_metadata": {},
               "type": "ai",
@@ -356,7 +345,17 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "name": "Caroline",
+      "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
+      "location": "restaurant",
+      "memory": {
+        "summary": " On the fourth day of the community event, Caroline spoke with various individuals about different aspects of the gathering under the old oak tree that night. She discussed plans including street tacos, a violin duet, mint tea, and seedlings for Caroline's garden, with Leo at the library at 9:00 PM.\n\nCaroline also talked to Andy at town_hall about collaborating on the community garden project with Diego and brainstormed robotic elements for mechanical birds. She had a conversation with Noor at the market where they discussed materials and designs for the mechanical bird project, agreed to use their open mic night as a platform to showcase it, and ensured that Diego is on board with this plan.\n\nLater, Caroline spoke with Peter at the library around 12:00 PM about the upcoming double date under the old oak tree, mentioning the mural project they discussed with Andy, Diego joining them, and Noor's choir potentially joining for a duet. They agreed to keep the café cozy vibe going during the event and Peter expressed excitement for Caroline's set at the theater later that evening.",
+        "messages": [
           {
             "type": "human",
             "data": {
@@ -464,6 +463,33 @@
               "invalid_tool_calls": [],
               "usage_metadata": null
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at restaurant around 10:00 PM",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "human",
+              "name": null,
+              "id": null,
+              "example": false
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Caroline, I heard about our street taco night. Excited for the collaboration!\n\nCaroline: Hey Samantha! You too! And thanks for helping with the robotics club plans. The community center is buzzing with anticipation!\n\nSamantha: I'm also looking forward to that choir collaboration with Andy and Noor. It's going to be beautiful.\n\nCaroline: Absolutely! Speaking of which, Noor and I were discussing our mechanical bird project at the market last night. We should definitely showcase it at our open mic night. What do you think?\n\nSamantha: That sounds like a wonderful idea! Let's make sure Diego is on board too. Maybe he can help with the mechanics.",
+              "additional_kwargs": {},
+              "response_metadata": {},
+              "type": "ai",
+              "name": null,
+              "id": null,
+              "example": false,
+              "tool_calls": [],
+              "invalid_tool_calls": [],
+              "usage_metadata": null
+            }
           }
         ]
       }
@@ -471,7 +497,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "hospital",
+      "location": "restaurant",
       "memory": {
         "summary": " The conversation between Peter, Andy, Mei, Diego, and Noor continues, with Peter proposing a brainstorming session under the old oak tree at 2:00 PM. In a separate conversation, Peter suggests grabbing chamomile lattes beforehand with Mei, and Mei adds the idea of picking up street tacos for energy during the session. Peter agrees to make it a double date with Andy, and Mei looks forward to seeing their ideas come together for the benefit of their town.",
         "messages": [
@@ -616,7 +642,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "town_hall",
+      "location": "hospital",
       "memory": {
         "summary": " During their project, Mei and Samantha planned to integrate city sounds into the cat mural and discussed potential sounds with Andy under an old oak tree at 11:00 PM. They expressed excitement about Andy's mechanical bird designs and Mei's labeled seedlings. Later in the evening, Mei met Noor at the theater and planned a brainstorming session with fresh mint tea and snacks for 7:00 PM under the old oak tree, inviting Andy, Peter, and Leo.\n\nWhile discussing logistics, Mei talked to Peter at home around 10:00 AM. They decided to meet at 5:30 PM under the oak tree, grabbing chamomile lattes before their meeting, and adding street tacos to their gathering for energy during the brainstorming session. The group planned to discuss mechanical bird designs and the cat mural updates, making it a double date with Andy. Mei and Peter were looking forward to seeing their ideas come together for the benefit of their town.\n\nIn addition, Mei conversed with Andy at home around 11:00 AM, where Andy expressed his excitement about the cat mural and mentioned the upcoming brainstorming session. Mei shared her enthusiasm for the event and its potential to bring creative energy to their town. They also discussed the mechanical bird designs and chamomile lattes in the next session.",
         "messages": [
@@ -788,7 +814,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "gym",
+      "location": "park",
       "memory": {
         "summary": " At 3:00 PM, Diego discusses their shared project – the mechanical birds for the mural – with Samantha at the train station. They plan to collaborate on the project together at the library later, also agreeing to bring snacks and catch up soon. Around 4:00 PM, Diego talks to Noor at a restaurant, discussing their extraordinary project and bringing a gym mat as suggested by Noor. Since Leo mentioned Caroline might join them, they find a comfortable spot for everyone and raise a toast.\n\nAround 6:00 PM, Diego talks to Mei at a cafe under an old oak tree, discussing creative brainstorming for the mural project with other collaborators. He invites Leo and Peter, and Noor offers fresh mint tea. They plan to have street tacos during their sessions. Around 7:00 PM, Diego talks to Samantha at home, discussing collaborating more closely on the mechanical bird designs for the mural project.\n\nAt 8:00 PM, Diego talks to Andy at the gym. Andy praises Diego's timing and his involvement in multiple projects, suggesting they grab chamomile lattes later to plan their next steps for the cat mural and catch up on everyone's projects. Diego proposes involving Peter in the music aspect of the bird project and suggests regrouping at taco night that evening. Andy agrees to bring Noor and Mei, with the possibility of a surprise duet. The group plans to make sure Peter is present for the music aspect of the bird project's creative brainstorming.",
         "messages": [
@@ -960,7 +986,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "cafe",
+      "location": "school",
       "memory": {
         "summary": " The current summary now includes additional conversations between Noor and various individuals. In their conversation with Leo at the gym around 11:00 PM, they discussed plans for incorporating city sounds into the mural, exchanging seedlings, and a collaborative violin duet with singing birds in the mural, as well as making plans for tacos after the gathering. Later, Noor spoke to Mei at the theater around 1:00 AM about their mechanical bird project, agreeing to meet under the old oak tree that evening for a brainstorming session with fresh mint tea and snacks. Mei also suggested involving Leo, Andy, and Peter in the collaboration.",
         "messages": [
@@ -1132,7 +1158,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "library",
+      "location": "market",
       "memory": {
         "summary": " During the evening of the same day, Leo met Noor at the gym and discussed their plans for a brainstorming session under the old oak tree. They agreed to have tea, seedlings, and chamomile lattles during the session. Leo informed Noor that he had the seedlings she asked for, and they also talked about incorporating city sounds into their mural project. Additionally, Noor shared a unique idea from Diego for their violin duet, aiming to make it a night to remember. They also looked forward to street tacos afterwards.",
         "messages": [
