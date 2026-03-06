@@ -1,41 +1,41 @@
 {
   "world": {
     "locations": {
-      "home": [],
+      "home": [
+        "Mei"
+      ],
       "park": [],
       "cafe": [
-        "Caroline"
+        "Caroline",
+        "Peter",
+        "Noor"
       ],
       "library": [],
       "school": [],
       "hospital": [
-        "Peter",
         "Leo"
       ],
-      "market": [
-        "Noor"
-      ],
+      "market": [],
       "town_hall": [
-        "Mei"
+        "Andy"
       ],
-      "theater": [],
+      "theater": [
+        "Diego"
+      ],
       "gym": [],
-      "museum": [
-        "Andy",
-        "Samantha"
-      ],
+      "museum": [],
       "restaurant": [],
       "train_station": [
-        "Diego"
+        "Samantha"
       ]
     },
-    "time": "2025-10-08 16:00"
+    "time": "2025-10-08 17:00"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "museum",
+      "location": "town_hall",
       "schedule": [
         {
           "date": "2025-10-16",
@@ -133,7 +133,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "museum",
+      "location": "train_station",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -207,19 +207,35 @@
       "schedule": [
         {
           "date": "2025-10-08",
+          "time": "19:00",
+          "location": "studio",
+          "commitment": "meet with Andy to discuss new sketches",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-08",
+          "time": "19:00",
+          "location": "cafe",
+          "commitment": "discuss new latte art with Peter",
+          "status": "completed",
+          "completed_at": "2025-10-08 16:00"
+        },
+        {
+          "date": "2025-10-13",
+          "time": "15:00",
+          "location": "park",
+          "commitment": "meet with Andy to discuss art work",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-08",
           "time": "12:00",
           "location": "park",
           "commitment": "met with Caroline to discuss project proposals",
           "status": "completed",
           "completed_at": "2025-10-08 12:00"
-        },
-        {
-          "date": "2025-10-13",
-          "time": "3PM",
-          "location": "park",
-          "commitment": "meet with Andy to discuss art work",
-          "status": "pending",
-          "completed_at": ""
         },
         {
           "date": "2025-10-08",
@@ -255,20 +271,8 @@
         }
       ],
       "memory": {
-        "summary": " The human had a conversation with Andy on October 8, 2025 at 08:00. Andy greeted Caroline and shared that he's been sketching her. Caroline was flattered and agreed to catch up later about project updates, suggesting they meet at Andy's studio that evening at 6. Andy agreed and they discussed meeting at his studio, looking forward to progress discussions and sharing sketches. Caroline mentioned that they would also enjoy some tea, reminiscing about their past creative collaborations. Andy wished Caroline a great day at the park before the call ended.",
+        "summary": " The human had a conversation with Andy on October 8, 2025 at 08:00, and also talked to Mei at home around 09:00. Caroline discussed Mei's new book 'The Chronicles of Sparrow Island' and expressed missing their usual chats. They agreed to meet next Saturday after the zine club at a cafe at 10 AM sharp to catch up and exchange notes.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at home around 2025-10-08 09:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Caroline: \"Hey Mei! Your usual, I see? And how about that new book you were telling me about?\"\n\nMei: \"Indeed, Caroline! 'The Chronicles of Sparrow Island'. I've been meaning to discuss it with someone. How has the theater been treating you?\"\n\nCaroline: \"Oh, it's been a blast! But I miss our little chats here. Let's make a date for next Saturday after the zine club, shall we? 10 AM sharp at the cafe?\"\n\nMei: \"That sounds perfect, Caroline. Can't wait to catch up and exchange notes!\""
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -316,6 +320,18 @@
             "data": {
               "content": " Caroline: Hey Noor, it's great to see you here! I've been practicing some new latte art designs. Have you tried the swan lately?\n\nNoor: Hi Caroline! I haven't had a chance to stop by for a while. I'd love to see your latest creations. And speaking of swans, I've been trying to get the school's robots to replicate one – it's quite the challenge!\n\nCaroline: That sounds incredible! Maybe we can collaborate on a project where my art meets your robots. How about we meet here next Tuesday, October 13th, at 3 PM to discuss some ideas?\n\nNoor: That works for me, Caroline. I'm looking forward to it! Let's make sure to have a few more of those delicious swan lattes then."
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Peter at cafe around 2025-10-08 16:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hi Peter, your usual latte waiting for you! I've been meaning to show you some new latte art I've been working on.\n\nPeter: Hey Caroline, always a pleasure! You know I can't resist your art. So, how's Andy's project coming along? I saw you two chatting the other day.\n\nCaroline: Yes, we're making good progress. I'm actually meeting him this evening at his studio to discuss some new sketches. You should join us if you're free.\n\nPeter: That sounds amazing! I'd love to swing by. Let's make it 7 PM then, shall we? I'd like to hear more about your creative ideas.\n\nCaroline: Perfect! I'm looking forward to it. Let's catch up then.\n\nPeter: Sounds great, Caroline. See you at 7 PM.\n\nCaroline: I'll save you a spot."
+            }
           }
         ]
       },
@@ -324,8 +340,17 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "hospital",
-      "schedule": [],
+      "location": "cafe",
+      "schedule": [
+        {
+          "date": "2025-10-08",
+          "time": "19:00",
+          "location": "Andy\"s studio",
+          "commitment": "discuss new sketches with Andy and Peter",
+          "status": "pending",
+          "completed_at": ""
+        }
+      ],
       "completed_tasks": [],
       "memory": {
         "summary": "",
@@ -365,6 +390,18 @@
             "data": {
               "content": " Peter: Hey Leo, long time no see! Didn't expect to run into you here.\n\nLeo: Hey Peter, same here! I didn't realize you were a hospital regular. How's your health?\n\nPeter: Oh, just a friend in need. But enough about that, I've missed your music! Any new pieces?\n\nLeo: Actually, I was planning to play a new one at the park tomorrow at 1 PM. Want to come by and hear it?\n\nPeter: Absolutely! That works perfectly for me. I'll see you there then.\n\nLeo: Great! Looking forward to it, Peter. See you tomorrow.\n\nPeter: See you then, Leo. Take care."
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at cafe around 2025-10-08 16:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hi Peter, your usual latte waiting for you! I've been meaning to show you some new latte art I've been working on.\n\nPeter: Hey Caroline, always a pleasure! You know I can't resist your art. So, how's Andy's project coming along? I saw you two chatting the other day.\n\nCaroline: Yes, we're making good progress. I'm actually meeting him this evening at his studio to discuss some new sketches. You should join us if you're free.\n\nPeter: That sounds amazing! I'd love to swing by. Let's make it 7 PM then, shall we? I'd like to hear more about your creative ideas.\n\nCaroline: Perfect! I'm looking forward to it. Let's catch up then.\n\nPeter: Sounds great, Caroline. See you at 7 PM.\n\nCaroline: I'll save you a spot."
+            }
           }
         ]
       },
@@ -373,7 +410,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "town_hall",
+      "location": "home",
       "schedule": [],
       "completed_tasks": [],
       "memory": {
@@ -398,7 +435,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "train_station",
+      "location": "theater",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -456,7 +493,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "market",
+      "location": "cafe",
       "schedule": [
         {
           "date": "10/12/2024",
