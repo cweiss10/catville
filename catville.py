@@ -1,7 +1,7 @@
 from agent import Agent
 from langchain_ollama import ChatOllama
 from datetime import datetime, timedelta
-from state_io import load_state, save_state
+from state_io import load_state, save_state, normalize_time
 
 
 # === Default World (used on first run or if state missing) ===
@@ -21,7 +21,7 @@ DEFAULT_WORLD = {
         "restaurant": [],
         "train_station": [],
     },
-    "time": "08:00 AM",
+    "time": "2025-10-08 08:00",
 }
 
 
@@ -32,50 +32,50 @@ def default_agents_factory(world, llm):
             "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, "
             "and mentors kids at the community center; carries a dented thermos of tea, fears creative block, "
             "and dreams of a solo gallery show",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Samantha",
             "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source "
             "libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; "
             "finds comfort in routines and logic puzzles",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Caroline",
             "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter "
             "who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Peter",
             "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, "
             "is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Mei",
             "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday "
             "zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Diego",
             "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with "
             "beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Noor",
             "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, "
             "keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-            world, llm
+            world, llm, "{ }"
         ),
         Agent(
             "Leo",
             "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, "
             "collects stories for a future musical, and fixes broken amps with improbable spare parts",
-            world, llm
+            world, llm, "{ }"
         ),
     ]
 
@@ -119,6 +119,7 @@ def default_agents_factory(world, llm):
 # === Boot ===
 llm = ChatOllama(model="mistral")
 world, agents = load_state(llm, DEFAULT_WORLD, default_agents_factory)
+normalize_time(world)
 
 # Ensure initial occupancy if fresh
 for agent in agents:
@@ -127,12 +128,15 @@ for agent in agents:
 
 
 def parse_time_label(t: str) -> datetime:
-    # "08:00 AM" → today’s date + that time (date is irrelevant for sim)
-    return datetime.strptime(t, "%I:%M %p")
+    try:
+        return datetime.strptime(t.strip(), "%Y-%m-%d %H:%M")
+    except ValueError:
+        # fallback for older time-only format
+        return datetime.strptime(datetime.today().strftime("%Y-%m-%d ") + t.strip(), "%Y-%m-%d %H:%M")
 
 
 def format_time_label(dt: datetime) -> str:
-    return dt.strftime("%I:%M %p").lstrip("0")
+    return dt.strftime("%Y-%m-%d %H:%M")
 
 
 # === Simulation Tick ===
@@ -140,8 +144,14 @@ def tick():
     print(f"\n--- {world['time']} ---")
 
     # 1) Each agent decides and (maybe) moves
+    due_tasks = {}
     for agent in agents:
-        action = agent.decide_action()
+        if agent.schedule is None:
+            agent.schedule = []
+        action, due_task = agent.decide_action()
+        if due_task:
+            due_tasks[agent.name] = due_task
+
         if action == "stay":
             continue
 
@@ -153,22 +163,30 @@ def tick():
 
         print(agent.observe())
 
-    # 2) Interactions (pairwise per location, simple pairing)
+    # 2) Mark due tasks as completed if the agent made it to the scheduled location.
+    for agent in agents:
+        task = due_tasks.get(agent.name)
+        if not task:
+            continue
+        if task.get("status") == "completed":
+            continue
+        if agent.location == task.get("location"):
+            agent.complete_task(task)
+            print(f"{agent.name} completed: {task.get('commitment')} at {agent.location}")
+
+    # 3) Interactions (pairwise per location, simple pairing)
     for loc in world["locations"]:
         present = [a for a in agents if a.location == loc]
         if len(present) >= 2:
-            present[0].interact(present[1])
+            commitment = due_tasks.get(present[0].name, {}).get("commitment", "catch up")
+            present[0].interact(present[1], commitment)
 
-    # 3) Advance time by one hour, rolling AM/PM properly
-    try:
-        t = parse_time_label(world["time"])
-    except ValueError:
-        # Fallback if someone edits state manually
-        t = datetime.strptime("08:00 AM", "%I:%M %p")
-    t = t + timedelta(hours=1)
+    # 4) Advance time by one hour, rolling AM/PM properly
+    t = parse_time_label(world["time"])
+    t += timedelta(hours=1)
     world["time"] = format_time_label(t)
 
-    # 4) Persist state (world + agents + their memories)
+    # 5) Persist state (world + agents + their memories)
     save_state(world, agents)
 
 

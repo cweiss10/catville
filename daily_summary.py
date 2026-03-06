@@ -92,8 +92,10 @@ You are the town chronicler. Summarize the day's events from the simulation logs
 Constraints:
 - Be concise but vivid (300–600 words).
 - Prefer specifics (who, where, when) over generalities.
-- Organize into sections: "Timeline Highlights", "Notable Conversations", "Agent Arcs", "Locations Activity", "Seeds for Tomorrow".
+- Organize into 3 sections with the following headings: "Timeline Highlights", "Notable Conversations", and "Seeds for Tomorrow"
 - Do NOT invent characters; only use names present.
+- Do NOT begin with "It appears", "It seems", or anything similar
+- Do NOT say that it is a simulation town. Treat this as a newsletter about town happenings.
 - If information is missing, acknowledge briefly.
 
 DATE: {target_date.strftime('%Y-%m-%d')}
