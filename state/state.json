@@ -1,47 +1,55 @@
 {
   "world": {
     "locations": {
-      "home": [
-        "Samantha"
+      "home": [],
+      "park": [
+        "Andy",
+        "Caroline"
       ],
-      "park": [],
       "cafe": [],
       "library": [],
-      "school": [],
-      "hospital": [],
-      "market": [
-        "Mei"
-      ],
-      "town_hall": [
-        "Andy",
+      "school": [
         "Peter"
       ],
+      "hospital": [],
+      "market": [],
+      "town_hall": [
+        "Mei"
+      ],
       "theater": [
+        "Diego"
+      ],
+      "gym": [
+        "Samantha",
         "Noor"
       ],
-      "gym": [],
-      "museum": [
-        "Diego",
+      "museum": [],
+      "restaurant": [
         "Leo"
       ],
-      "restaurant": [],
-      "train_station": [
-        "Caroline"
-      ]
+      "train_station": []
     },
-    "time": "2025-10-10 01:00"
+    "time": "2025-10-10 02:00"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "town_hall",
+      "location": "park",
       "schedule": [
         {
           "date": "2025-10-13",
-          "time": "14:00",
+          "time": "11:00",
           "location": "park",
-          "commitment": "Meet Diego to discuss his knee rehab and Andy\"s latest sketches",
+          "commitment": "Meet Andy at the park to share sketches and have tea",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-13",
+          "time": "14:00",
+          "location": "none",
+          "commitment": "Meeting with Leo",
           "status": "pending",
           "completed_at": ""
         },
@@ -54,10 +62,26 @@
           "completed_at": ""
         },
         {
+          "date": "2025-10-14",
+          "time": "19:00",
+          "location": "none",
+          "commitment": "Meeting with Peter",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-14",
+          "time": "19:00",
+          "location": "none",
+          "commitment": "Meeting with Diego",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
           "date": "2025-10-16",
           "time": "19:00",
           "location": "none",
-          "commitment": "Double date with Andy after meeting with Noor",
+          "commitment": "Double date with Andy after meeting with Peter and Diego",
           "status": "pending",
           "completed_at": ""
         },
@@ -66,14 +90,6 @@
           "time": "15:00",
           "location": "park",
           "commitment": "Collaborate on musical with Andy",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-13",
-          "time": "11:00",
-          "location": "park",
-          "commitment": "Meet Andy at the park to share sketches and have tea",
           "status": "pending",
           "completed_at": ""
         },
@@ -124,14 +140,6 @@
           "commitment": "discuss art and share stories",
           "status": "completed",
           "completed_at": "2025-10-08 22:00"
-        },
-        {
-          "date": "2025-10-14",
-          "time": "16:00",
-          "location": "park",
-          "commitment": "Lunch at cozy café with Andy",
-          "status": "pending",
-          "completed_at": ""
         }
       ],
       "completed_tasks": [
@@ -144,20 +152,8 @@
         }
       ],
       "memory": {
-        "summary": " On October 9, Andy proposes a meeting with Leo at the park on October 13 at 2 PM by the lake to discuss new musical ideas and share lunch at a café afterwards. Leo agrees, and they look forward to it. Andy also requests Leo to show him his stretch routine for workouts, which they agree to do after their meeting on October 13 at 4 PM at the park, by the lake. Andy talks to Caroline at the gym on October 9 at 1 AM, and they arrange to catch up at Andy's studio that same night at 6 PM to discuss creative projects. Andy also talks to Mei at the train station on October 9 at 3 AM. Mei plans to start labeling new books over the weekend. Andy invites Mei to join the meeting with Caroline at his studio that evening, and Mei agrees to do so at 7 PM. Andy also talks to Samantha at the theater around 6 PM on October 9, and they arrange to meet near the fountain to discuss sketches at 6 PM that same day. The meetings with Mei and Samantha have been added to their schedules.",
+        "summary": " On October 9, Andy proposes a meeting with Leo at the park on October 13 at 2 PM by the lake to discuss new musical ideas and share lunch at a café afterwards. They agree to this meeting and also discuss another meeting on October 13 at 11 AM at the park, where Andy will bring sketches to share and they will grab some tea. Leo suggests they start working on their collaboration on the musical on October 15 at 3 PM at the park. Andy mentions a meeting with Noor at his studio on October 13 at 4 PM, and they decide to make it a double date with their sketches and music.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Leo at restaurant around 2025-10-09 09:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Leo, it's great to see you! I've got a sketch of the sunrise I want to share with you.\n\nLeo: Hey Andy! I've got a new duet to play for you. Let's grab some tea and catch up.\n\nAndy: That sounds wonderful! How about we meet next Tuesday at 11 AM at the park? I can bring my sketches and some tea to share.\n\nLeo: Perfect! I can't wait. See you then, Andy.\n\nLeo: By the way, I've been thinking about our collaboration on the musical. How about we start working on it next Thursday at 3 PM at the park?\n\nAndy: That works for me! Looking forward to it.\n\nAndy: Oh, and Leo, I should mention that I've got a meeting with Noor at my studio on Tuesday at 4 PM. Maybe we can grab a bite after that?\n\nLeo: Absolutely, Andy. Sounds like a plan. Let's make it a double date with our sketches and music. See you soon!"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -193,6 +189,18 @@
             "data": {
               "content": " Andy: Hey Peter, nice to see you at the town hall! I was just admiring the architecture.\n\nPeter: Hey Andy, same here. I've been coming here to work on my startup ideas. How's your latest project with Leo going?\n\nAndy: It's going well, actually. We're meeting on the 13th at the park to discuss new musical ideas. I'd love to show you some sketches if you're free that day?\n\nPeter: That sounds interesting, Andy. How about we grab a coffee afterwards? I'm free on the 13th at 2 PM at the café by the park if that works for you.\n\nAndy: That works perfectly for me! Let's do it. And I'd love to hear more about your startup ideas too. Maybe we can discuss them over coffee sometime?\n\nPeter: Absolutely, Andy. I'd appreciate your artistic perspective. Let's make it a double date with our partners too if they're free. How about the 16th at 7 PM at a nice restaurant?\n\nAndy: That sounds lovely, Peter. I'll confirm with Caroline and we can add it to our schedules. Looking forward to it!"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at park around 2025-10-10 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Caroline, I saw you at the park this morning. Caught you making beautiful latte art as usual.\n\nCaroline: Hey Andy! Morning to you too! I didn't expect to see you here so early. We've got a big day ahead, don't we?\n\nAndy: Indeed, we do! I've got my meeting with Leo this afternoon, and I'm excited to share my latest sketches. We're also catching up with Mei and Samantha today. How about you?\n\nCaroline: I just finished a coffee meeting with Peter, and we discussed a potential venture. I'm planning to meet with Diego later today to discuss it. Have you heard about it?\n\nAndy: Not yet, but I'm sure we'll catch up on that tonight at the studio. It's good to have a shared space for creative ideas. How about we grab dinner after our meeting with Peter and Diego tomorrow? It'll be a nice double date with you and Diego.\n\nCaroline: That sounds perfect, Andy. I'll add it to my schedule for 7 PM at the cozy Italian place downtown. Looking forward to it!"
+            }
           }
         ]
       },
@@ -201,7 +209,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "home",
+      "location": "gym",
       "schedule": [
         {
           "date": "2025-10-09",
@@ -338,20 +346,8 @@
         }
       ],
       "memory": {
-        "summary": " On October 9th, 2025, Samantha meets Andy near the fountain at 6 PM and Diego at the theater at 8 AM, as previously planned. She also meets Diego in the afternoon to discuss her running app project and plans to collaborate more, suggesting a follow-up meeting next Friday at 2 PM with fresh coffee.\n\nSamantha talks to Noor at the theater, who shares that the robotics club is thriving with Diego offering to mentor them. They confirm a productive meeting with Diego the previous day and plan to regroup at the museum next Friday at 2 PM. They also plan to feed the strays behind the café before their meeting, as usual.\n\nLater that day, Samantha meets Caroline at the cafe for a lunch meeting about the project at 13:00. Caroline suggests meeting for coffee at the cafe behind the cat café at 15:00, just like old times, which Samantha agrees to.\n\nSamantha talks to Noor at the museum around 2 PM and discusses their collaboration plans. They agree to meet next Thursday at 1 PM at the library café to work on refining the project. Noor adds the meeting to her schedule, looking forward to their productive collaboration with Samantha.\n\nSamantha's updated schedule: 2025-10-09 13:00 @ cafe: lunch meeting with Samantha for project discussion (completed)\n                                     2025-10-09 15:00 @ cafe: coffee meeting with Samantha for project discussion (new)\n                                     2025-10-14 13:00 @ library café: meet with Noor to refine the project (new)\n\nCaroline's updated schedule: 2025-10-09 08:00 @ (unchanged)\n                                     2025-10-09 17:00 @ studio: discuss new project with Diego (unchanged)\n                                     2025-10-09 18:00 @ cafe: catch up with Caroline and discuss creative ideas (unchanged)",
+        "summary": " On October 9th, 2025, Samantha meets Andy near the fountain at 6 PM and Diego at the theater at 8 AM, as previously planned. She also meets Diego in the afternoon to discuss her new project, suggesting a follow-up meeting at the cafe later that day. They relocate to an empty table to discuss the project, with Diego offering his feedback on Samantha's sketches. They agree to meet again on the same day at 17:00 at the cafe to continue their discussion. Samantha also meets Noor at the theater, museum, and museum again on the 9th, planning a meeting next Friday at 1 PM at the library café to work on refining the project. Her updated schedule includes a new coffee meeting with Caroline at the cafe at 15:00 on the 9th. Caroline's schedule remains unchanged.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Caroline at cafe around 2025-10-09 17:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Samantha: (Pauses her music, looking up from her laptop) Hey, Diego. I've got some interesting ideas for the new project, if you're ready to discuss.\n\nDiego: (Grinning, he sets down his espresso) Of course, Samantha. I've been looking forward to this. Let's talk shop. (He gestures towards an empty table nearby.)\n\nSamantha: Perfect. Let's move over there, shall we? (They relocate to the table.)\n\nDiego: (Nods, opening his notebook) Let's dive in. I've been thinking about your sketches from yesterday. What's your take on them?\n\nSamantha: I've been mulling it over since then, Diego. I think there's potential for a more efficient, modular structure. I'll walk you through it.\n\n(Add to Samantha's schedule: 2025-10-09 18:00 @ cafe: discuss new project with Diego)\n(Add to Diego's schedule: 2025-10-09 18:00 @ cafe: discuss new project with Samantha)"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -399,6 +395,18 @@
             "data": {
               "content": " Samantha: \"Hello Leo, it's nice to finally meet you in person. I've been admiring your street performances.\"\n\nLeo: \"Ah, Samantha! The silent coder with a heart for the neighborhood strays. I've heard about you from Andy and Diego. It's an honor to meet you.\"\n\nSamantha: \"I've also been looking forward to discussing our shared interest in music and technology. Shall we meet for coffee tomorrow at 12 PM at the cafe behind the cat café?\"\n\nLeo: \"That sounds perfect, Samantha. I'll bring my violin for a small performance. Looking forward to it!\"\n\nSamantha's updated schedule: 2025-10-10 12:00 @ cafe: coffee meeting and music discussion with Leo (new)\nLeo's updated schedule: 2025-10-10 12:00 @ cafe: coffee meeting and music discussion with Samantha (new)"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at gym around 2025-10-10 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Noor, it's good to see you again. I hope our project collaboration will be as fruitful as our shared love for the café's mocha.\n\nNoor: Absolutely, Samantha! I'm excited to see where our combined skills can take our project. How about we meet next Thursday at 1 PM at the library café to get started? I've marked it in my calendar.\n\nSamantha: That sounds perfect. I'll make sure to arrive with a fresh pot of our favorite brew. See you then!\n\nNoor: Can't wait, Samantha! Let's make some great things happen!"
+            }
           }
         ]
       },
@@ -407,14 +415,38 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "train_station",
+      "location": "park",
       "schedule": [
         {
-          "date": "2025-10-09",
-          "time": "08:00",
-          "location": "",
-          "commitment": "",
-          "status": "",
+          "date": "2025-10-10",
+          "time": "19:00",
+          "location": "restaurant",
+          "commitment": "double date dinner with Diego",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-15",
+          "time": "13:00",
+          "location": "cafe",
+          "commitment": "meet with Peter, Diego, and Caroline to discuss startup idea",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-15",
+          "time": "14:00",
+          "location": "cafe",
+          "commitment": "meet with Leo, Caroline, and Andy",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-10",
+          "time": "19:00",
+          "location": "restaurant",
+          "commitment": "double date dinner with Diego",
+          "status": "confirmed",
           "completed_at": ""
         },
         {
@@ -432,38 +464,6 @@
           "commitment": "discuss new project with Diego",
           "status": "completed",
           "completed_at": "2025-10-09 17:00"
-        },
-        {
-          "date": "2025-10-09",
-          "time": "18:00",
-          "location": "studio",
-          "commitment": "catch up with Caroline and discuss creative ideas",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-10",
-          "time": "15:00",
-          "location": "studio",
-          "commitment": "discuss startup idea with Peter and Diego",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-15",
-          "time": "13:00",
-          "location": "cafe",
-          "commitment": "meet with Leo and Caroline to discuss creative ideas and potentially invite Andy",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-15",
-          "time": "14:00",
-          "location": "cafe",
-          "commitment": "meet with Leo, Caroline, and Andy",
-          "status": "pending",
-          "completed_at": ""
         },
         {
           "date": "2025-10-08",
@@ -553,20 +553,8 @@
         }
       ],
       "memory": {
-        "summary": " The human and Caroline caught up with Peter at a hospital on October 9th, 10 AM. Peter suggested discussing a venture they had previously discussed, and they agreed to meet for a coffee the next day at 1 PM. Their schedules were updated accordingly. Later, the human also had a lunch meeting with Samantha at a cafe around the same time to discuss a project. After their meeting, they made plans for a coffee meeting at the same cafe later in the day. Samantha's schedule was updated to reflect these changes, and Caroline's schedule was also updated to include the coffee meeting with Samantha.",
+        "summary": " The human, Caroline, and Peter discussed a venture on October 9th at a hospital, and agreed to meet for a coffee the next day at 1 PM. They also had a lunch meeting with Samantha, and made plans for a coffee meeting later in the day. All schedules were updated accordingly. During a trip to the market on October 9th at 2 PM, Caroline ran into Diego, who expressed interest in joining their startup venture. They agreed to meet at Caroline's studio at 3 PM the next day to discuss the details, and both their schedules were updated.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Diego at market around 2025-10-09 14:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Caroline: Hey Diego! I didn't expect to see you here so soon. You're looking good, by the way.\n\nDiego: Hi Caroline! I thought I'd stop by and grab a coffee before heading to the gym. I've been meaning to ask, how's the new startup idea with Peter coming along?\n\nCaroline: It's going great! We're meeting tomorrow at my studio to discuss the details. Have you thought about joining us?\n\nDiego: That sounds interesting. Count me in. Let's make it 3 PM sharp, same place?\n\nCaroline: Perfect! I'll see you then.\n\n(Add to Caroline's schedule: 2025-10-10 15:00 @ studio: discuss startup idea with Peter and Diego)\n(Add to Diego's schedule: 2025-10-10 15:00 @ studio: discuss startup idea with Caroline and Peter)"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -602,6 +590,18 @@
             "data": {
               "content": " Caroline: Hey Peter, it's good to see you again! I didn't expect to run into you at the hospital. How's Noor doing?\n\nPeter: Hey Caroline, things are looking up. I'm glad we had a chance to catch up. I was thinking about our startup idea we talked about. Could we meet at your café tomorrow at 1 PM to discuss it further?\n\nCaroline: Absolutely, Peter! I've updated my schedule. Let's make it happen. See you then!"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Andy at park around 2025-10-10 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Caroline, I saw you at the park this morning. Caught you making beautiful latte art as usual.\n\nCaroline: Hey Andy! Morning to you too! I didn't expect to see you here so early. We've got a big day ahead, don't we?\n\nAndy: Indeed, we do! I've got my meeting with Leo this afternoon, and I'm excited to share my latest sketches. We're also catching up with Mei and Samantha today. How about you?\n\nCaroline: I just finished a coffee meeting with Peter, and we discussed a potential venture. I'm planning to meet with Diego later today to discuss it. Have you heard about it?\n\nAndy: Not yet, but I'm sure we'll catch up on that tonight at the studio. It's good to have a shared space for creative ideas. How about we grab dinner after our meeting with Peter and Diego tomorrow? It'll be a nice double date with you and Diego.\n\nCaroline: That sounds perfect, Andy. I'll add it to my schedule for 7 PM at the cozy Italian place downtown. Looking forward to it!"
+            }
           }
         ]
       },
@@ -610,7 +610,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "town_hall",
+      "location": "school",
       "schedule": [
         {
           "date": "2025-10-08",
@@ -692,7 +692,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "market",
+      "location": "town_hall",
       "schedule": [
         {
           "date": "2025-10-16",
@@ -796,7 +796,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "museum",
+      "location": "theater",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -882,7 +882,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "theater",
+      "location": "gym",
       "schedule": [
         {
           "date": "10/12/2024",
@@ -923,24 +923,20 @@
           "commitment": "discuss community garden projects with Mei",
           "status": "pending",
           "completed_at": ""
+        },
+        {
+          "date": "10/10/2025",
+          "time": "1PM",
+          "location": "cafe",
+          "commitment": "project collaboration meeting with Noor",
+          "status": "pending",
+          "completed_at": ""
         }
       ],
       "completed_tasks": [],
       "memory": {
-        "summary": " The human, Noor, met with Samantha at the museum on October 9, 2025, at 2 PM, discussing their collaboration plans for their project. During their conversation, Noor suggested closer collaboration to make significant progress. Samantha agreed and proposed meeting at the library café next Thursday at 1 PM for further discussion. Noor added the meeting to their schedule, and they both look forward to a productive collaboration.",
+        "summary": " The human, Noor, meets with Leo at the park on October 9, 2025, at 3 PM, discussing their collaboration on an AI project. During their conversation, Noor mentions that Diego has offered to mentor their robotics club, and she has also been offered a collaboration by Peter for a school project. Leo suggests meeting next Tuesday, October 13, 2025, at 4 PM, at the cafe to discuss ideas for both collaborations. Noor agrees, and they both add the meeting to their respective schedules. The updated schedules for both Noor and Leo now include the new meeting.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Leo at park around 2025-10-09 15:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Noor: Hey Leo, it's great to see you at the park! I was just thinking about our discussion with Caroline and Diego about the AI project.\n\nLeo: Hello Noor! Yes, that was quite an interesting meeting, wasn't it? I'm looking forward to that collaboration. By the way, how's your robotics club doing?\n\nNoor: They're doing well, thanks! Diego offered to mentor them, which is fantastic news. I was also offered a collaboration by Peter for a school project. We're meeting tomorrow to discuss.\n\nLeo: That sounds exciting, Noor! Perhaps we can collaborate on that too? Let's meet next Tuesday, say 4 PM at the cafe, to discuss our ideas?\n\nNoor: I'd love that! Let's do it, Leo. See you then.\n\nLeo: Looking forward to it, Noor. Take care!\n\nNoor's upcoming schedule: 10/12/2024 5PM @ cafe: attend an art show with Juan | 10/25/2024 8PM @ library: attend halloween party with Marge | 10/13/2025 3PM @ cafe: discuss latte art collaboration with Noor | 10/13/2025 4PM @ cafe: collaborate on school project with Noor and Peter.\n\nLeo's upcoming schedule: 2025-10-09 15:30 @ cafe: lunch and catch up with Andy | 10/13/2025 4PM @ cafe: collaborate on school project with Noor | 10/16/2025 1PM @ park: impromptu duet with Caroline | 10/20/2025 1PM @ park: musical collaboration meeting with Mei."
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -976,6 +972,18 @@
             "data": {
               "content": " Mei: \"Hello Noor, it's wonderful to see you here in the park. I've brought some seeds for the community garden, as we discussed.\"\n\nNoor: \"Hi Mei! I love the initiative. And speaking of initiatives, I've got some news about the project with Samantha. We're meeting at the museum next Friday at 2 PM.\"\n\nMei: \"That sounds fantastic! Let's have a cup of swan lattes beforehand at the café, just like you suggested.\"\n\nNoor: \"Excellent idea, Mei. Let's meet there at 1 PM. I'm looking forward to it.\"\n\nMei: \"See you then, Noor. And don't forget, we have a meeting next Saturday at the café to discuss our zine and robotics club projects for the community garden.\"\n\nNoor: \"Noted, Mei. Let's make our small town stronger together.\""
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at gym around 2025-10-10 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: Hey Noor, it's good to see you again. I hope our project collaboration will be as fruitful as our shared love for the café's mocha.\n\nNoor: Absolutely, Samantha! I'm excited to see where our combined skills can take our project. How about we meet next Thursday at 1 PM at the library café to get started? I've marked it in my calendar.\n\nSamantha: That sounds perfect. I'll make sure to arrive with a fresh pot of our favorite brew. See you then!\n\nNoor: Can't wait, Samantha! Let's make some great things happen!"
+            }
           }
         ]
       },
@@ -984,7 +992,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "museum",
+      "location": "restaurant",
       "schedule": [
         {
           "date": "2026-03-07",
