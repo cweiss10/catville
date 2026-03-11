@@ -1,41 +1,42 @@
 {
   "world": {
     "locations": {
-      "home": [
+      "home": [],
+      "park": [],
+      "cafe": [
         "Leo"
       ],
-      "park": [],
-      "cafe": [],
       "library": [],
-      "school": [],
-      "hospital": [],
-      "market": [
+      "school": [
+        "Noor"
+      ],
+      "hospital": [
+        "Diego"
+      ],
+      "market": [],
+      "town_hall": [
         "Andy"
       ],
-      "town_hall": [
+      "theater": [
         "Mei"
       ],
-      "theater": [],
       "gym": [
-        "Noor",
+        "Samantha",
         "Peter"
       ],
       "museum": [
-        "Caroline",
-        "Diego"
+        "Caroline"
       ],
       "restaurant": [],
-      "train_station": [
-        "Samantha"
-      ]
+      "train_station": []
     },
-    "time": "2025-10-13 06:00"
+    "time": "2025-10-13 07:00"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "market",
+      "location": "town_hall",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -266,7 +267,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "train_station",
+      "location": "gym",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -392,6 +393,30 @@
           "date": "2025-10-09",
           "time": "21:00",
           "location": "cafe",
+          "commitment": "coffee meeting with Samantha before project discussion",
+          "status": "completed",
+          "completed_at": "2025-10-09 21:00"
+        },
+        {
+          "date": "2025-10-13",
+          "time": "17:00",
+          "location": "theater",
+          "commitment": "attend a play with Samantha",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-13",
+          "time": "15:00",
+          "location": "library café",
+          "commitment": "catch up with Peter",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-09",
+          "time": "21:00",
+          "location": "cafe",
           "commitment": "discuss project structure with Diego",
           "status": "completed",
           "completed_at": "2025-10-09 21:00"
@@ -451,22 +476,6 @@
           "commitment": "coffee meeting with Samantha for project discussion",
           "status": "completed",
           "completed_at": "2025-10-10 07:00"
-        },
-        {
-          "date": "2025-10-13",
-          "time": "17:00",
-          "location": "theater",
-          "commitment": "attend a play with Samantha",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-09",
-          "time": "21:00",
-          "location": "cafe",
-          "commitment": "coffee meeting with Samantha before project discussion",
-          "status": "completed",
-          "completed_at": "2025-10-09 21:00"
         }
       ],
       "completed_tasks": [
@@ -528,20 +537,8 @@
         }
       ],
       "memory": {
-        "summary": " On October 12th, 2025, Samantha met Peter at the market, Noor at the gym, and spoke to Caroline at the town hall and the park. At the park, they discussed plans for a community garden and decided to meet at the library café the following day at 2 PM. They also grabbed coffee at the park and discussed Samantha's project updates with Andy and Caroline's community project with Mei. Andy and Samantha agreed to meet again at the library café the next day at 3 PM to discuss details for their collaboration. Later, Samantha also made arrangements to meet Mei at the library café on Thursday at 3 PM to discuss updates on their community projects.",
+        "summary": " On October 12th, 2025, Samantha met Peter at the market, Noor at the gym, and spoke to Caroline at the town hall and the park. At the park, they discussed plans for a community garden and decided to meet at the library café the following day at 2 PM. They also grabbed coffee at the park and discussed Samantha's project updates with Andy and Caroline's community project with Mei. Andy and Samantha agreed to meet again at the library café the next day at 3 PM to discuss details for their collaboration. Later, Samantha made arrangements to meet Mei at the library café on Thursday at 3 PM to discuss updates on their community projects. Additionally, Samantha and Noor planned to meet at the park by the fountain on the following Sunday at 1 PM to discuss a stray cat and their ongoing projects.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Noor at cafe around 2025-10-12 21:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Samantha: Hey Noor, it's great to see you again at our usual spot. I've been meaning to ask about that stray cat you mentioned last time.\n\nNoor: Hi Samantha! Yes, the tabby by the fountain. I've left some food there, but he's still skittish. Maybe we can try to approach him together sometime?\n\nSamantha: That sounds like a plan. How about we meet at the park by the fountain this coming Sunday at 1 PM? It fits well with my schedule.\n\nNoor: Perfect! I'll bring some treats for the cat and we can discuss our ongoing projects as well. See you then!"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -588,6 +585,18 @@
             "type": "ai",
             "data": {
               "content": " Samantha: \"Hey Peter, good to see you again. It's been a while since our last coffee chat at the park.\"\n\nPeter: \"Samantha, absolutely! I was just thinking about our project update we were supposed to have last week. Any progress to share?\"\n\nSamantha: \"Yes, I made some changes to the structure as we discussed. I'd love to go over it with you at the library café tomorrow at 3 PM, if that works for you?\"\n\nPeter: \"Sounds great, Samantha. I'll be there. And maybe we can also finalize the details for the community garden?\"\n\nSamantha: \"That's perfect, Peter. Looking forward to it.\""
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Peter at gym around 2025-10-13 06:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Hi Peter, I wasn't expecting to see you here so early. We last spoke about the community garden, right?\"\n\nPeter: \"Hey Samantha, yeah, I was just thinking about that. I saw the notes you left for the strays behind the cafe. Impressive, as always.\"\n\nSamantha: \"Thanks, I find them therapeutic. Maybe we can discuss the project updates over coffee later today?\"\n\nPeter: \"That sounds great, how about we meet at the library café at 3 PM? It's where we agreed to catch up after the town hall meeting.\"\n\nSamantha: \"Sounds perfect. See you there then.\""
             }
           }
         ]
@@ -990,26 +999,8 @@
       ],
       "completed_tasks": [],
       "memory": {
-        "summary": " Peter's conversation with Mei at the town_hall on October 12 was extended, discussing the community AI project. Mei suggested meeting the following day, October 13, at 1 PM at the park to exchange ideas and discuss further. Peter agreed, and his updated schedule includes this meeting. Mei's schedule has also been updated accordingly, and they are both looking forward to discussing potential solutions for the community.",
+        "summary": " Peter's conversation with Mei at the town hall on October 12, discussing the community AI project, extended further at the market on October 13. They agreed to meet at the park by the big oak tree at 1 PM, updating their respective schedules for the meeting. During the meeting, they will discuss potential solutions for the community, as well as share ideas about new seeds for the community garden and plans for the zine club. Both are looking forward to the meeting.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at market around 2025-10-13 00:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Mei, good to see you again! I've been meaning to catch up on our AI project and discuss some community initiatives. How about we meet at the park by the big oak tree at 1 PM today?\n\nMei: That sounds great, Peter! I'd love to catch up as well. I've got some new seeds for the community garden and we can discuss our plans for the zine club too. See you there at 1 PM sharp!"
-            }
-          },
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at market around 2025-10-13 01:00"
-            }
-          },
           {
             "type": "ai",
             "data": {
@@ -1051,6 +1042,18 @@
             "data": {
               "content": " Peter: Hey Noor, didn't expect to see you here so early! I thought you'd be at the robotics club.\n\nNoor: Hi Peter! I needed a change of pace. I heard about your meeting with Mei about the AI project today. Care to join us for coffee later?\n\nPeter: That sounds great! Let's meet at the café behind the cat café at 5 PM. I've got a meeting with Mei there at 1 PM, but I'd love to chat with you before then.\n\nNoor: Perfect! I'll see you there then. I might even bring some snacks for the kids, if they're around.\n\nPeter: That'd be awesome. Looking forward to it!\n\nNoor: Me too! Let's catch up and talk about our projects and maybe exchange some ideas.\n\nPeter: Absolutely! See you at 5 PM.\n\nNoor: See you then, Peter.\n\n(Added to their schedules:)\nPeter: 2025-10-13 17:00 @ café: Chat with Noor and discuss projects\nNoor: 2025-10-13 17:00 @ café: Chat with Peter and discuss projects"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at gym around 2025-10-13 06:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Hi Peter, I wasn't expecting to see you here so early. We last spoke about the community garden, right?\"\n\nPeter: \"Hey Samantha, yeah, I was just thinking about that. I saw the notes you left for the strays behind the cafe. Impressive, as always.\"\n\nSamantha: \"Thanks, I find them therapeutic. Maybe we can discuss the project updates over coffee later today?\"\n\nPeter: \"That sounds great, how about we meet at the library café at 3 PM? It's where we agreed to catch up after the town hall meeting.\"\n\nSamantha: \"Sounds perfect. See you there then.\""
+            }
           }
         ]
       },
@@ -1059,7 +1062,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "town_hall",
+      "location": "theater",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -1286,7 +1289,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "museum",
+      "location": "hospital",
       "schedule": [
         {
           "date": "2025-10-13",
@@ -1455,7 +1458,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "gym",
+      "location": "school",
       "schedule": [
         {
           "date": "10/13/2025",
@@ -1693,7 +1696,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "home",
+      "location": "cafe",
       "schedule": [
         {
           "date": "2025-10-13",
