@@ -1,43 +1,51 @@
 {
   "world": {
     "locations": {
-      "home": [],
+      "home": [
+        "Diego"
+      ],
       "park": [],
-      "cafe": [],
-      "library": [],
-      "school": [
-        "Leo"
+      "cafe": [
+        "Andy",
+        "Mei"
       ],
+      "library": [
+        "Samantha"
+      ],
+      "school": [],
       "hospital": [
-        "Caroline"
-      ],
-      "market": [
-        "Andy"
-      ],
-      "town_hall": [
         "Peter"
       ],
+      "market": [],
+      "town_hall": [],
       "theater": [
-        "Mei"
+        "Caroline"
       ],
       "gym": [],
       "museum": [],
       "restaurant": [
-        "Diego",
-        "Noor"
+        "Leo"
       ],
       "train_station": [
-        "Samantha"
+        "Noor"
       ]
     },
-    "time": "2025-10-21 11:00"
+    "time": "2025-10-21 12:00"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "market",
+      "location": "cafe",
       "schedule": [
+        {
+          "date": "2025-10-21",
+          "time": "12:00",
+          "location": "none",
+          "commitment": "Tea with Andy",
+          "status": "pending",
+          "completed_at": ""
+        },
         {
           "date": "2025-10-26",
           "time": "13:00",
@@ -95,6 +103,22 @@
           "completed_at": ""
         },
         {
+          "date": "2025-10-27",
+          "time": "14:00",
+          "location": "park",
+          "commitment": "AI musical project meeting with Andy, Mei, Samantha, and Noor",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-21",
+          "time": "12:00",
+          "location": "none",
+          "commitment": "Tea with Andy",
+          "status": "completed",
+          "completed_at": "2025-10-21 12:00"
+        },
+        {
           "date": "2025-10-20",
           "time": "18:00",
           "location": "park",
@@ -125,30 +149,6 @@
           "commitment": "AI project follow-up meeting with Andy and Peter",
           "status": "completed",
           "completed_at": "2025-10-19 17:00"
-        },
-        {
-          "date": "2025-10-27",
-          "time": "14:00",
-          "location": "park",
-          "commitment": "AI musical project meeting with Andy, Noor, Samantha and Mei",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-30",
-          "time": "14:00",
-          "location": "park",
-          "commitment": "Discuss community project with Andy, Noor, Samantha and Mei",
-          "status": "pending",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-11-03",
-          "time": "14:00",
-          "location": "park",
-          "commitment": "AI musical project meeting with Andy, Noor, Samantha, Mei and Diego",
-          "status": "pending",
-          "completed_at": ""
         },
         {
           "date": "2025-10-16",
@@ -527,6 +527,18 @@
             "data": {
               "content": " Andy: Hey Caroline, it's great running into you here! I was just thinking about our AI project discussions under the oak tree tomorrow at 1 PM.\n\nCaroline: Hi Andy! That sounds perfect. And Noor is joining us too, right? I have some exciting ideas to share about our musical collaborations with Leo and Diego. Let's make it a joint discussion over your famous vegan street tacos afterwards. See you then!\n\nAndy: Sounds like a plan. I'll bring my thermos of tea as always. Let's meet under the oak tree exactly at 1 PM, shall we?"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Mei at cafe around 2025-10-21 11:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Mei! I didn't expect to see you here today. Last we spoke was about our AI project, remember?\n\nMei: Indeed, Andy! It seems our schedules are aligning more often these days with all the collaborative projects we have going on. Fancy grabbing some coffee together before our meeting at the library café?\n\nAndy: That sounds delightful. Let's catch up over some tea instead – I always carry my dented thermos around. How about 12 o'clock sharp?\n\nMei: Perfect! See you then, Andy."
+            }
           }
         ]
       },
@@ -535,7 +547,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "train_station",
+      "location": "library",
       "schedule": [
         {
           "date": "2025-10-19",
@@ -1140,7 +1152,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "hospital",
+      "location": "theater",
       "schedule": [
         {
           "date": "2025-10-20",
@@ -1682,7 +1694,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "town_hall",
+      "location": "hospital",
       "schedule": [
         {
           "date": "2025-10-21",
@@ -2071,13 +2083,13 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "theater",
+      "location": "cafe",
       "schedule": [
         {
           "date": "2025-10-21",
           "time": "12:00",
           "location": "library_cafe",
-          "commitment": "coffee meeting with Mei before AI project discussion",
+          "commitment": "tea meeting with Mei before AI project discussion",
           "status": "pending",
           "completed_at": ""
         },
@@ -2171,14 +2183,6 @@
         },
         {
           "date": "2025-10-15",
-          "time": "14:00",
-          "location": "park",
-          "commitment": "community garden and zine club meeting.",
-          "status": "completed",
-          "completed_at": ""
-        },
-        {
-          "date": "2025-10-15",
           "time": "15:00",
           "location": "park",
           "commitment": "musical collaboration meeting",
@@ -2232,6 +2236,22 @@
           "commitment": "community garden work",
           "status": "completed",
           "completed_at": "2025-10-14 15:00"
+        },
+        {
+          "date": "2025-10-14",
+          "time": "16:00",
+          "location": "park",
+          "commitment": "share fresh seeds with Leo",
+          "status": "completed",
+          "completed_at": "2025-10-14 16:00"
+        },
+        {
+          "date": "2025-10-15",
+          "time": "14:00",
+          "location": "park",
+          "commitment": "community garden and zine club meeting.",
+          "status": "completed",
+          "completed_at": ""
         },
         {
           "date": "2025-10-13",
@@ -2431,20 +2451,8 @@
         }
       ],
       "memory": {
-        "summary": " On October 20, Mei met with Caroline at the town hall at 3 PM to discuss her projects, including the AI musical collaboration. Following their conversation, Mei proposes a meeting with Caroline at the library café the next day at 1 PM to further discuss ideas for the project. Additionally, they plan to meet Peter and Diego at the park on October 21st at 3 PM sharp to discuss the AI project together. Mei also arranges a meeting with Leo at the library café on the following day, October 21st, at 1 PM sharp, and plans to have coffee with him beforehand at 12 PM. It seems that Mei is actively engaging in various community initiatives such as the zine club, community garden, and technological music project with multiple individuals including Caroline, Peter, Diego, Samantha, Andy, Leo, and now also Leo.",
+        "summary": " On October 20, Mei met with Caroline at the town hall, discussed her projects including the AI musical collaboration, proposed a library café meeting with Caroline the next day, and planned a park meeting with Peter, Diego, and others on October 21st. She also arranged meetings with Leo at the library café and for coffee on October 21st. In a separate conversation at a restaurant around 7 PM on October 20th, Mei talked to Andy about AI projects, including setting up a meeting for their zine club event on Thursday at 3 PM in the library café. They also discussed an upcoming AI project discussion with Samantha and Noor in the park the following day, which Andy confirmed he would attend.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Andy at restaurant around 2025-10-20 19:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Mei, it's great to finally sit down and catch up! I've been running around with all these AI projects lately.\n\nMei: Hi Andy! It's been a while. I hope everything is going well for you. I wanted to talk about our zine club event next week. Do you have some time on Thursday at 3 PM to discuss details?\n\nAndy: That sounds perfect, Mei. Let's meet at the library cafe like we used to. Looking forward to it!\n\nMei: Sounds great, Andy. I'll see you then. And by the way, don't forget our AI project discussion tomorrow with Samantha and Noor in the park.\n\nAndy: Of course, I won't miss that one. Thanks for reminding me. See you tomorrow!"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -2504,6 +2512,18 @@
             "data": {
               "content": " Andy: Hey Mei, it's great running into you at the theater! I didn't expect our paths to cross here.\n\nMei: Hi Andy! It's certainly unexpected, but a pleasant surprise nonetheless. I was just on my way to the library café for a meeting about the AI musical project. Would you like to join me there at 1 PM tomorrow?\n\nAndy: That sounds fantastic! Let's do it. I'll bring my sketches and we can discuss some ideas over coffee. See you then!\n\nMei: Can't wait, Andy. Let's make this collaboration something truly special for our town. See you tomorrow at 1 PM sharp at the library café."
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Andy at cafe around 2025-10-21 11:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Mei! I didn't expect to see you here today. Last we spoke was about our AI project, remember?\n\nMei: Indeed, Andy! It seems our schedules are aligning more often these days with all the collaborative projects we have going on. Fancy grabbing some coffee together before our meeting at the library café?\n\nAndy: That sounds delightful. Let's catch up over some tea instead – I always carry my dented thermos around. How about 12 o'clock sharp?\n\nMei: Perfect! See you then, Andy."
+            }
           }
         ]
       },
@@ -2512,7 +2532,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "restaurant",
+      "location": "home",
       "schedule": [
         {
           "date": "2025-10-20",
@@ -3001,7 +3021,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "restaurant",
+      "location": "train_station",
       "schedule": [
         {
           "date": "2025-10-19",
@@ -3555,7 +3575,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "school",
+      "location": "restaurant",
       "schedule": [
         {
           "date": "2025-10-23",
