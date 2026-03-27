@@ -1,42 +1,50 @@
 {
   "world": {
     "locations": {
-      "home": [],
-      "park": [
+      "home": [
+        "Samantha"
+      ],
+      "park": [],
+      "cafe": [
         "Mei"
       ],
-      "cafe": [],
-      "library": [
-        "Leo"
-      ],
+      "library": [],
       "school": [
         "Peter"
       ],
       "hospital": [],
       "market": [],
       "town_hall": [
-        "Andy",
         "Caroline",
         "Noor"
       ],
       "theater": [],
       "gym": [],
-      "museum": [],
-      "restaurant": [
+      "museum": [
+        "Andy",
         "Diego"
       ],
-      "train_station": [
-        "Samantha"
-      ]
+      "restaurant": [
+        "Leo"
+      ],
+      "train_station": []
     },
-    "time": "2025-10-23 18:00"
+    "time": "2025-10-23 19:00"
   },
   "agents": [
     {
       "name": "Andy",
       "personality": "a cheerful, early-rising artist who sketches the sunrise at the park, paints watercolor murals, and mentors kids at the community center; carries a dented thermos of tea, fears creative block, and dreams of a solo gallery show",
-      "location": "town_hall",
+      "location": "museum",
       "schedule": [
+        {
+          "date": "2025-10-24",
+          "time": "13:00",
+          "location": "library",
+          "commitment": "Meeting with Andy and Diego for AI project discussion",
+          "status": "pending",
+          "completed_at": ""
+        },
         {
           "date": "2025-10-27",
           "time": "16:00",
@@ -108,6 +116,14 @@
           "commitment": "Vegan street tacos with Leo",
           "status": "completed",
           "completed_at": "2025-10-20 18:00"
+        },
+        {
+          "date": "2025-10-24",
+          "time": "13:00",
+          "location": "library",
+          "commitment": "Meeting with Andy and Diego for AI project discussion",
+          "status": "pending",
+          "completed_at": ""
         },
         {
           "date": "2025-10-19",
@@ -456,14 +472,8 @@
         }
       ],
       "memory": {
-        "summary": " The human informs the AI that they had a conversation with Peter at the market on October 22nd at 11 PM. In this conversation, Andy shared his excitement about the AI musical project he discussed with Noor at the hospital earlier in the day. They planned to have a double date with Diego at the library café tomorrow at 1 PM. Peter suggested meeting under the old oak tree at the park at 1 PM sharp on October 23rd for a quick catch-up before they part ways, and Andy agreed to this as well. Both of them are looking forward to discussing their plans further for the AI project.",
+        "summary": " The human informs the AI that they had a conversation with Peter on October 22nd at 11 PM and later spoke with Mei at the library on October 23rd, discussing plans for Andy's AI musical project. They are still planning to have a double date with Diego at the library café tomorrow at 1 PM and are also meeting under the old oak tree at the park at 1 PM sharp for a quick catch-up before they part ways. Both parties are looking forward to discussing their plans further for the AI project.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Mei at library around 2025-10-23 01:00"
-            }
-          },
           {
             "type": "ai",
             "data": {
@@ -529,6 +539,18 @@
             "data": {
               "content": " Andy: Hey Caroline, it's great catching up at the town hall! I hope your coffee is as amazing as always.\n\nCaroline: Hi Andy! Thanks for the kind words. My cafe's cozy vibe seems to have traveled here today, huh? I heard about our mutual project and I'm really excited! How about we continue this discussion at my café on Monday, October 24th, at 3 PM?\n\nAndy: That sounds perfect, Caroline. Let's make sure we both remember to bring our sketchbooks too! See you then!"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Diego at museum around 2025-10-23 18:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Diego, thanks for meeting me here today! I had a great chat with Peter yesterday about our AI project, and I thought it would be awesome if you could join us for a coffee to fill you in. How about we meet at the library café tomorrow at 1 PM sharp?\n\nDiego: Absolutely, Andy! That sounds perfect. Let's make sure to catch up on all the details and align our thoughts before the next big meeting. See you there tomorrow then!"
+            }
           }
         ]
       },
@@ -537,7 +559,7 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "train_station",
+      "location": "home",
       "schedule": [
         {
           "date": "2025-10-19",
@@ -1733,6 +1755,18 @@
             "data": {
               "content": " Andy: Hey Caroline, it's great catching up at the town hall! I hope your coffee is as amazing as always.\n\nCaroline: Hi Andy! Thanks for the kind words. My cafe's cozy vibe seems to have traveled here today, huh? I heard about our mutual project and I'm really excited! How about we continue this discussion at my café on Monday, October 24th, at 3 PM?\n\nAndy: That sounds perfect, Caroline. Let's make sure we both remember to bring our sketchbooks too! See you then!"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at town_hall around 2025-10-23 18:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Noor! Long time no see, last I remember we were brainstorming about that AI musical project at the library.\n\nNoor: Indeed, Caroline! And here we are again, but this time around, let's catch up over coffee at your cozy café, shall we? How about tomorrow at 17:00? That way, we can discuss our progress and plan our next steps together.\n\nCaroline: Sounds perfect, Noor! I'll save you a spot with my signature latte art, looking forward to it! See you then."
+            }
           }
         ]
       },
@@ -2186,7 +2220,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "park",
+      "location": "cafe",
       "schedule": [
         {
           "date": "2025-10-26",
@@ -2663,7 +2697,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "restaurant",
+      "location": "museum",
       "schedule": [
         {
           "date": "2025-10-23",
@@ -3151,20 +3185,8 @@
         }
       ],
       "memory": {
-        "summary": " The revised schedule now includes additional meetings for the AI project. Diego arranged a new meeting with Leo at the library café on 2025-10-23 at 1 PM, where they will grab street tacos afterwards, which was confirmed after their encounter at the market on 2025-10-22. The group also rescheduled a meeting with Noor for the same day, and added another meeting with Caroline at the library café to discuss AI-music fusion updates, both planned for the same day.\n\nDuring his gym session around 2025-10-22 17:00, Diego talked to Andy who suggested grabbing coffee together at the library café the following day at 1 PM to discuss ideas for their ongoing AI project. Diego agreed and proposed meeting at 13:00 sharp to avoid scheduling conflicts, both looking forward to this meet-up.\n\nLater on 2025-10-22, around 8:00 PM, Diego talked to Peter at the gym. They discussed Peter's knee issue and caught up, with Diego offering help. Peter also invited Diego for street tacos that night at a vegan spot on Main Street, which Diego accepted. They agreed to meet at 19:00, and Diego reminded Peter to stretch before their workout the next day.",
+        "summary": " The revised schedule now includes additional meetings for the AI project. Diego arranged a new meeting with Leo at the library café on 2025-10-23 at 1 PM, where they will grab street tacos afterwards, which was confirmed after their encounter at the market on 2025-10-22. The group also rescheduled a meeting with Noor for the same day, and added another meeting with Caroline at the library café to discuss AI-music fusion updates, both planned for the same day.\n\nDuring his gym session around 2025-10-22 17:00, Diego talked to Andy who suggested grabbing coffee together at the library café the following day at 1 PM to discuss ideas for their ongoing AI project. Diego agreed and proposed meeting at 13:00 sharp to avoid scheduling conflicts, both looking forward to this meet-up.\n\nLater on 2025-10-22, around 8:00 PM, Diego talked to Peter at the gym. They discussed Peter's knee issue and caught up, with Diego offering help. Peter also invited Diego for street tacos that night at a vegan spot on Main Street, which Diego accepted. They agreed to meet at 19:00, and Diego reminded Peter to stretch before their workout the next day.\n\nOn 2025-10-23, Diego met with Peter at the library café as planned. During their conversation, Peter shared updates from his project meeting the previous day and they further discussed their ongoing AI project after catching up on other topics. They agreed to meet again at 14:00 the following day.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Peter at cafe around 2025-10-23 03:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Peter: Hey Diego, good to see you again. I hope that knee is feeling better.\n\nDiego: Hi Peter! It's definitely improving, thanks for asking. I've been keeping up with my stretches. How did your meeting at the library go yesterday?\n\nPeter: It went great actually. We made some progress on our project and even set up a catch-up today at 2 PM sharp. Fancy grabbing coffee to discuss it further?\n\nDiego: Sounds good. Let's meet at the library café then, I can fill you in on what we talked about with Andy earlier as well. How does that sound for 14:00?\n\nPeter: Perfect! Looking forward to it. See you there."
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -3223,6 +3245,18 @@
             "type": "ai",
             "data": {
               "content": " Samantha: \"I must admit, it's been a while since we last collaborated on the project. I've made some interesting progress with AI-music fusion.\"\n\nDiego: \"That sounds intriguing! Let's catch up and discuss further. How about meeting at the library café tomorrow at 1 PM? It's perfect for us to avoid any scheduling conflicts.\"\n\nSamantha: \"I'd like that. See you there, Diego.\"\n\n(Add this commitment to their respective schedules: 2025-10-24 13:00 @ library_cafe: Discuss AI project progress with Diego)"
+            }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Andy at museum around 2025-10-23 18:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Andy: Hey Diego, thanks for meeting me here today! I had a great chat with Peter yesterday about our AI project, and I thought it would be awesome if you could join us for a coffee to fill you in. How about we meet at the library café tomorrow at 1 PM sharp?\n\nDiego: Absolutely, Andy! That sounds perfect. Let's make sure to catch up on all the details and align our thoughts before the next big meeting. See you there tomorrow then!"
             }
           }
         ]
@@ -3717,20 +3751,8 @@
         }
       ],
       "memory": {
-        "summary": " On October 22nd at around 3 AM, Noor has a conversation with Peter at the library. They are surprised to see each other early and discuss their upcoming busy day. Noor brings up Mei and Andy's AI musical project and suggests that they might need help. Peter agrees to meet tomorrow at 2 PM at the same location to discuss further, bringing ideas for the community garden. Noor offers snacks and her laptop for brainstorming, and they look forward to their meeting together to make something amazing.",
+        "summary": " On October 22nd, Noor meets Peter at the library early morning and they discuss their busy day ahead. Noor mentions a project involving AI music with Mei and Andy. They agree to meet the next day at 2 PM at the same location to further discuss it, with Peter bringing ideas for the community garden. Noor offers snacks and her laptop for brainstorming.\n\nLater on the same day, Noor has a conversation with Andy at the hospital. Andy suggests they discuss their AI musical project with Samantha and Mei. Noor is already heading to meet Mei at the library café and invites Andy to join them. Andy accepts and proposes making it a double date with Diego if he's available. They agree to meet the next day at 1 PM at the library café.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Andy at hospital around 2025-10-22 11:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Andy: Hey Noor, it's great running into you here at the hospital! I was just thinking about our AI musical project discussions with Samantha and Mei.\n\nNoor: Hi Andy! I was actually just heading to the library café to meet Mei about that same project. Would you like to join us today at 1 PM?\n\nAndy: That sounds perfect, Noor! Let's make it a double date with you and Diego too if he's available. We can discuss our plans in detail.\n\nNoor: Sounds great! I'll reach out to Diego and let him know. See you both at the library café tomorrow at 1 PM then!"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -3790,6 +3812,18 @@
             "data": {
               "content": " Noor: Hey Leo! I didn't expect to see you here at the town hall. Seems like our paths keep crossing.\n\nLeo: Hi Noor! Small world, isn't it? I was just practicing a new violin piece and thought about how much we've collaborated lately. Maybe we could discuss that AI musical project again?\n\nNoor: Absolutely! Let's meet tomorrow at the library café at 1 PM, same as our last meeting. Bring your ideas and let's see where this collaboration takes us.\n\nLeo: Sounds great! I'll be there with my laptop and some new improvised tunes to brainstorm over. See you then!"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Caroline at town_hall around 2025-10-23 18:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Caroline: Hey Noor! Long time no see, last I remember we were brainstorming about that AI musical project at the library.\n\nNoor: Indeed, Caroline! And here we are again, but this time around, let's catch up over coffee at your cozy café, shall we? How about tomorrow at 17:00? That way, we can discuss our progress and plan our next steps together.\n\nCaroline: Sounds perfect, Noor! I'll save you a spot with my signature latte art, looking forward to it! See you then."
+            }
           }
         ]
       },
@@ -3798,7 +3832,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "library",
+      "location": "restaurant",
       "schedule": [
         {
           "date": "2025-10-23",
