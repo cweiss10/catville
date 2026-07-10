@@ -1,6 +1,637 @@
 Couldn't find '/home/runner/.ollama/id_ed25519'. Generating new private key.
 Your new public key is: 
 
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEU4fqjDUesOUUcPobXoUsewytzqA7iZ80Ih7CHXQVG+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFJf475XtzGE3dSTKW6Jytzvi95XpqgB92CX9Sd6VYjb
 
-Error: listen tcp 127.0.0.1:11434: bind: address already in use
+time=2026-07-10T11:21:07.907-07:00 level=INFO source=routes.go:1947 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: LLAMA_ARG_FIT: LLAMA_ARG_FIT_TARGET: NO_PROXY: OLLAMA_CONTEXT_LENGTH:0 OLLAMA_DEBUG:INFO OLLAMA_DEBUG_LOG_REQUESTS:false OLLAMA_EDITOR: OLLAMA_FLASH_ATTENTION:false OLLAMA_GO_TEMPLATE:true OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_IGPU_ENABLE: OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MAX_TRANSFER_STREAMS:4 OLLAMA_MODELS:/home/runner/.ollama/models OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NO_CLOUD:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:true ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+time=2026-07-10T11:21:07.907-07:00 level=INFO source=routes.go:1949 msg="Ollama cloud disabled: false"
+time=2026-07-10T11:21:07.908-07:00 level=INFO source=images.go:883 msg="total blobs: 0"
+time=2026-07-10T11:21:07.908-07:00 level=INFO source=images.go:890 msg="total unused blobs removed: 0"
+time=2026-07-10T11:21:07.908-07:00 level=INFO source=routes.go:2004 msg="Listening on 127.0.0.1:11434 (version 0.31.2)"
+time=2026-07-10T11:21:07.909-07:00 level=INFO source=runner.go:60 msg="discovering available GPUs..."
+time=2026-07-10T11:21:07.910-07:00 level=INFO source=model_list_cache.go:112 msg="model list cache hydration complete" models=0 failures=0 elapsed=1.688431ms
+time=2026-07-10T11:21:07.992-07:00 level=INFO source=model_recommendations.go:177 msg="model recommendations cache sleep scheduled" wait=4h30m46.846520765s consecutive_failures=0
+time=2026-07-10T11:21:08.055-07:00 level=INFO source=types.go:50 msg="inference compute" id=cpu library=cpu compute="" name=cpu description=cpu libdirs=ollama driver="" pci_id="" type="" total="15.6 GiB" available="14.6 GiB"
+time=2026-07-10T11:21:08.055-07:00 level=INFO source=routes.go:2054 msg="vram-based default context" total_vram="0 B" default_num_ctx=4096
+[GIN] 2026/07/10 - 11:21:19 | 200 |      49.605µs |       127.0.0.1 | HEAD     "/"
+[GIN] 2026/07/10 - 11:21:19 | 200 |      89.268µs |       127.0.0.1 | GET      "/api/tags"
+[GIN] 2026/07/10 - 11:21:19 | 200 |      23.696µs |       127.0.0.1 | HEAD     "/"
+time=2026-07-10T11:21:20.605-07:00 level=INFO source=download.go:179 msg="downloading f5074b1221da in 16 273 MB part(s)"
+time=2026-07-10T11:21:30.921-07:00 level=INFO source=download.go:179 msg="downloading 43070e2d4e53 in 1 11 KB part(s)"
+time=2026-07-10T11:21:32.160-07:00 level=INFO source=download.go:179 msg="downloading 1ff5b64b61b9 in 1 799 B part(s)"
+time=2026-07-10T11:21:33.387-07:00 level=INFO source=download.go:179 msg="downloading ed11eda7790d in 1 30 B part(s)"
+time=2026-07-10T11:21:34.625-07:00 level=INFO source=download.go:179 msg="downloading 1064e17101bd in 1 487 B part(s)"
+[GIN] 2026/07/10 - 11:21:39 | 200 |  19.59001192s |       127.0.0.1 | POST     "/api/pull"
+time=2026-07-10T11:21:47.042-07:00 level=INFO source=sched.go:1158 msg="disabling mmap for llama-server load by default" model=/home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f reason=cpu
+time=2026-07-10T11:21:47.042-07:00 level=INFO source=server.go:109 msg="using llama-server for model" model=/home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f
+time=2026-07-10T11:21:47.042-07:00 level=INFO source=llama_server.go:433 msg="starting llama-server" cmd="/usr/local/lib/ollama/llama-server --model /home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f --port 38753 --host 127.0.0.1 --no-webui --offline -c 4096 -np 1 --log-verbosity 4 --no-log-prefix --no-log-timestamps --no-jinja --chat-template chatml --no-mmap --flash-attn auto -b 512 -ub 512 --context-shift --keep 4"
+time=2026-07-10T11:21:47.043-07:00 level=INFO source=sched.go:623 msg="system memory" total="15.6 GiB" free="14.5 GiB" free_swap="3.0 GiB"
+time=2026-07-10T11:21:47.043-07:00 level=INFO source=llama_server.go:1001 msg="loading model via llama-server" model=/home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f
+time=2026-07-10T11:21:47.043-07:00 level=INFO source=llama_server.go:1248 msg="waiting for llama-server to start responding"
+time=2026-07-10T11:21:47.043-07:00 level=INFO source=llama_server.go:1303 msg="waiting for llama-server to become available" status="llm server not responding"
+cmn  common_param: common_params_print_info: build 1 (cb295bf59) with GNU 11.2.1 for Linux x86_64
+cmn  common_param: common_params_print_info: verbosity = 4 (adjust with the `-lv N` CLI arg)
+cmn  common_param: device_info:
+cmn  common_param:   - CPU     : Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz (15988 MiB, 15988 MiB free)
+cmn  common_param: system_info: n_threads = 2 (n_threads_batch = 2) / 4 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+srv          init: using 5 threads for HTTP server
+srv          init: The UI is disabled
+srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+srv         start: binding port with default address family
+srv    load_model: loading model '/home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f'
+srv    load_model: local path '/home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f'
+cmn  common_init_: fitting params to device memory ...
+cmn  common_init_: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Host               |                 1597 =   965 +     512 +     120                |
+common_memory_breakdown_print: |   - CPU_REPACK         |                 3204 =  3204 +       0 +       0                |
+common_params_fit_impl: projected to use 1597 MiB of host memory vs. 15988 MiB of total host memory
+common_params_fit_impl: will leave 14391 >= 1024 MiB of system memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.05 seconds
+llama_model_loader: loaded meta data with 25 key-value pairs and 291 tensors from /home/runner/.ollama/models/blobs/sha256-f5074b1221da0f5a2910d33b642efa5b9eb58cfdddca1c79e16d7ad28aa2b31f (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = llama
+llama_model_loader: - kv   1:                               general.name str              = Mistral-7B-Instruct-v0.3
+llama_model_loader: - kv   2:                          llama.block_count u32              = 32
+llama_model_loader: - kv   3:                       llama.context_length u32              = 32768
+llama_model_loader: - kv   4:                     llama.embedding_length u32              = 4096
+llama_model_loader: - kv   5:                  llama.feed_forward_length u32              = 14336
+llama_model_loader: - kv   6:                 llama.attention.head_count u32              = 32
+llama_model_loader: - kv   7:              llama.attention.head_count_kv u32              = 8
+llama_model_loader: - kv   8:                       llama.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv   9:     llama.attention.layer_norm_rms_epsilon f32              = 0.000010
+llama_model_loader: - kv  10:                          general.file_type u32              = 15
+llama_model_loader: - kv  11:                           llama.vocab_size u32              = 32768
+llama_model_loader: - kv  12:                 llama.rope.dimension_count u32              = 128
+llama_model_loader: - kv  13:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  14:                         tokenizer.ggml.pre str              = default
+llama_model_loader: - kv  15:                      tokenizer.ggml.tokens arr[str,32768]   = ["<unk>", "<s>", "</s>", "[INST]", "[...
+llama_model_loader: - kv  16:                      tokenizer.ggml.scores arr[f32,32768]   = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  17:                  tokenizer.ggml.token_type arr[i32,32768]   = [2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, ...
+llama_model_loader: - kv  18:                tokenizer.ggml.bos_token_id u32              = 1
+llama_model_loader: - kv  19:                tokenizer.ggml.eos_token_id u32              = 2
+llama_model_loader: - kv  20:            tokenizer.ggml.unknown_token_id u32              = 0
+llama_model_loader: - kv  21:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  22:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  23:                    tokenizer.chat_template str              = {{ bos_token }}{% for message in mess...
+llama_model_loader: - kv  24:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   65 tensors
+llama_model_loader: - type q4_K:  193 tensors
+llama_model_loader: - type q6_K:   33 tensors
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = Q4_K - Medium
+print_info: file size   = 4.07 GiB (4.83 BPW) 
+load: 0 unused tokens
+load: printing all EOG tokens:
+load:   - 2 ('</s>')
+load: special tokens cache size = 771
+load: token to piece cache size = 0.1731 MB
+print_info: arch                  = llama
+print_info: vocab_only            = 0
+print_info: no_alloc              = 0
+print_info: n_ctx_train           = 32768
+print_info: n_embd_inp            = 4096
+print_info: n_embd                = 4096
+print_info: n_embd_out            = 4096
+print_info: n_layer               = 32
+print_info: n_layer_all           = 32
+print_info: n_head                = 32
+print_info: n_head_kv             = 8
+print_info: n_rot                 = 128
+print_info: n_swa                 = 0
+print_info: is_swa_any            = 0
+print_info: n_embd_head_k         = 128
+print_info: n_embd_head_v         = 128
+print_info: n_gqa                 = 4
+print_info: n_embd_k_gqa          = 1024
+print_info: n_embd_v_gqa          = 1024
+print_info: f_norm_eps            = 0.0e+00
+print_info: f_norm_rms_eps        = 1.0e-05
+print_info: f_clamp_kqv           = 0.0e+00
+print_info: f_max_alibi_bias      = 0.0e+00
+print_info: f_logit_scale         = 0.0e+00
+print_info: f_attn_scale          = 0.0e+00
+print_info: f_attn_value_scale    = 0.0000
+print_info: n_ff                  = 14336
+print_info: n_expert              = 0
+print_info: n_expert_used         = 0
+print_info: n_expert_groups       = 0
+print_info: n_group_used          = 0
+print_info: causal attn           = 1
+print_info: pooling type          = -1
+print_info: rope type             = 0
+print_info: rope scaling          = linear
+print_info: freq_base_train       = 1000000.0
+print_info: freq_scale_train      = 1
+print_info: n_ctx_orig_yarn       = 32768
+print_info: rope_yarn_log_mul     = 0.0000
+print_info: rope_finetuned        = unknown
+print_info: model type            = 7B
+print_info: model params          = 7.25 B
+print_info: general.name          = Mistral-7B-Instruct-v0.3
+print_info: vocab type            = SPM
+print_info: n_vocab               = 32768
+print_info: n_merges              = 0
+print_info: BOS token             = 1 '<s>'
+print_info: EOS token             = 2 '</s>'
+print_info: UNK token             = 0 '<unk>'
+print_info: LF token              = 781 '<0x0A>'
+print_info: EOG token             = 2 '</s>'
+print_info: max token length      = 48
+load_tensors: loading model tensors, this can take a while... (mmap = false, direct_io = false)
+load_tensors:          CPU model buffer size =   965.52 MiB
+load_tensors:   CPU_REPACK model buffer size =  3204.00 MiB
+time=2026-07-10T11:21:47.295-07:00 level=INFO source=llama_server.go:1303 msg="waiting for llama-server to become available" status="llm server loading model"
+cmn  common_init_: added </s> logit bias = -inf
+llama_context: constructing llama_context
+llama_context: n_seq_max     = 1
+llama_context: n_ctx         = 4096
+llama_context: n_ctx_seq     = 4096
+llama_context: n_batch       = 512
+llama_context: n_ubatch      = 512
+llama_context: causal_attn   = 1
+llama_context: flash_attn    = auto
+llama_context: kv_unified    = false
+llama_context: freq_base     = 1000000.0
+llama_context: freq_scale    = 1
+llama_context: n_rs_seq      = 0
+llama_context: n_outputs_max = 1
+llama_context: n_ctx_seq (4096) < n_ctx_train (32768) -- the full capacity of the model will not be utilized
+llama_context:        CPU  output buffer size =     0.12 MiB
+llama_kv_cache:        CPU KV buffer size =   512.00 MiB
+llama_kv_cache: size =  512.00 MiB (  4096 cells,  32 layers,  1/1 seqs), K (f16):  256.00 MiB, V (f16):  256.00 MiB
+llama_kv_cache: attn_rot_k = 0, n_embd_head_k_all = 128
+llama_kv_cache: attn_rot_v = 0, n_embd_head_k_all = 128
+sched_reserve: reserving ...
+sched_reserve: Flash Attention was auto, set to enabled
+sched_reserve: resolving fused Gated Delta Net support:
+sched_reserve: fused Gated Delta Net (autoregressive) enabled
+sched_reserve: fused Gated Delta Net (chunked) enabled
+sched_reserve:        CPU compute buffer size =   120.01 MiB
+sched_reserve: graph nodes  = 998
+sched_reserve: graph splits = 1
+sched_reserve: reserve took 2.97 ms, sched copies = 1
+cmn  common_init_: warming up the model with an empty run - please wait ... (--no-warmup to disable)
+srv    load_model: initializing, n_slots = 1, n_ctx_slot = 4096, kv_unified = 'false'
+spec common_specu: no implementations specified for speculative decoding
+slot   load_model: id  0 | task -1 | new slot, n_ctx = 4096
+srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+srv    load_model: use `--cache-ram 0` to disable the prompt cache
+srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+srv    load_model: context checkpoints enabled, max = 32, min spacing = 8192
+srv          init: idle slots will be saved to prompt cache upon starting a new task
+srv          init: init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+'
+srv          init: init: chat template, thinking = 0
+srv  llama_server: model loaded
+srv  llama_server: listening on http://127.0.0.1:38753
+srv  update_slots: all slots are idle
+time=2026-07-10T11:21:51.311-07:00 level=INFO source=llama_server.go:1315 msg="llama-server started in 4.27 seconds"
+time=2026-07-10T11:21:51.316-07:00 level=INFO source=images.go:373 msg="template selection" model=registry.ollama.ai/library/mistral:latest selected=go_template renderer="" parser="" go_template="[completion tools]" chat_template=[completion] harmony=null renderer_parser=null
+time=2026-07-10T11:21:51.316-07:00 level=INFO source=sched.go:739 msg="loaded runners" count=1
+time=2026-07-10T11:21:51.316-07:00 level=INFO source=llama_server.go:1248 msg="waiting for llama-server to start responding"
+time=2026-07-10T11:21:51.317-07:00 level=INFO source=llama_server.go:1315 msg="llama-server started in 4.27 seconds"
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+srv  get_availabl: updating prompt cache
+srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 4096 tokens, 8589934592 est)
+srv  get_availabl: prompt cache update took 0.01 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 4096
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+slot   operator(): id  0 | task 0 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 984
+slot   operator(): id  0 | task 0 | cached n_tokens = 0, memory_seq_rm [0, end)
+srv  stream_sessi: conv_id= (empty=1)
+slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    512, progress = 0.52, t =  35.92 s / 14.25 tokens per second
+slot   operator(): id  0 | task 0 | cached n_tokens = 512, memory_seq_rm [512, end)
+slot init_sampler: id  0 | task 0 | init sampler, took 0.27 ms, tokens: text = 984, total = 984
+slot print_timing: id  0 | task 0 | n_decoded =    100, tg =   3.87 t/s, tg_3s =   3.87 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    112, tg =   3.87 t/s, tg_3s =   3.81 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    124, tg =   3.86 t/s, tg_3s =   3.79 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    136, tg =   3.85 t/s, tg_3s =   3.80 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    148, tg =   3.85 t/s, tg_3s =   3.84 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    160, tg =   3.85 t/s, tg_3s =   3.77 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    172, tg =   3.85 t/s, tg_3s =   3.87 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    184, tg =   3.84 t/s, tg_3s =   3.78 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    196, tg =   3.84 t/s, tg_3s =   3.79 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    208, tg =   3.84 t/s, tg_3s =   3.84 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    220, tg =   3.84 t/s, tg_3s =   3.83 t/s
+slot print_timing: id  0 | task 0 | n_decoded =    232, tg =   3.84 t/s, tg_3s =   3.77 t/s
+slot print_timing: id  0 | task 0 | prompt eval time =   70673.48 ms /   984 tokens (   71.82 ms per token,    13.92 tokens per second)
+slot print_timing: id  0 | task 0 |        eval time =   61500.31 ms /   236 tokens (  260.59 ms per token,     3.84 tokens per second)
+slot print_timing: id  0 | task 0 |       total time =  132173.79 ms /  1220 tokens
+slot print_timing: id  0 | task 0 |    graphs reused =        234
+slot      release: id  0 | task 0 | stop processing: n_tokens = 1219, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/07/10 - 11:24:03 | 200 |         2m16s |       127.0.0.1 | POST     "/api/chat"
+time=2026-07-10T11:24:03.544-07:00 level=WARN source=llama_server.go:314 msg="truncating input prompt" limit=2051 prompt=4320 keep=5 new=2051
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 252071252
+srv  get_availabl: updating prompt cache
+srv   prompt_save:  - saving prompt with length 1219, total state size = 152.390 MiB (draft: 0.000 MiB)
+srv          load:  - looking for better prompt, base f_keep = 0.002, sim = 0.001
+srv        update:  - cache state: 1 prompts, 152.390 MiB (limits: 8192.000 MiB, 4096 tokens, 65529 est)
+srv        update:    - prompt 0x19b448b0:    1219 tokens, checkpoints:  0,   152.390 MiB
+srv  get_availabl: prompt cache update took 82.08 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 4096
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 238 | processing task, is_child = 0
+slot   operator(): id  0 | task 238 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 2051
+slot   operator(): id  0 | task 238 | cached n_tokens = 3, memory_seq_rm [3, end)
+srv  stream_sessi: conv_id= (empty=1)
+slot print_timing: id  0 | task 238 | prompt processing, n_tokens =    512, progress = 0.25, t =  35.94 s / 14.25 tokens per second
+slot   operator(): id  0 | task 238 | cached n_tokens = 515, memory_seq_rm [515, end)
+slot print_timing: id  0 | task 238 | prompt processing, n_tokens =   1024, progress = 0.50, t =  73.65 s / 13.90 tokens per second
+slot   operator(): id  0 | task 238 | cached n_tokens = 1027, memory_seq_rm [1027, end)
+slot print_timing: id  0 | task 238 | prompt processing, n_tokens =   1536, progress = 0.75, t = 112.84 s / 13.61 tokens per second
+slot   operator(): id  0 | task 238 | cached n_tokens = 1539, memory_seq_rm [1539, end)
+slot init_sampler: id  0 | task 238 | init sampler, took 0.43 ms, tokens: text = 2051, total = 2051
+slot print_timing: id  0 | task 238 | n_decoded =    100, tg =   3.29 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    110, tg =   3.29 t/s, tg_3s =   3.32 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    120, tg =   3.28 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    130, tg =   3.28 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    140, tg =   3.28 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    150, tg =   3.27 t/s, tg_3s =   3.26 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    160, tg =   3.27 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    170, tg =   3.27 t/s, tg_3s =   3.23 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    180, tg =   3.27 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    190, tg =   3.26 t/s, tg_3s =   3.15 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    200, tg =   3.26 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    210, tg =   3.26 t/s, tg_3s =   3.19 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    220, tg =   3.25 t/s, tg_3s =   3.23 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    230, tg =   3.25 t/s, tg_3s =   3.27 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    240, tg =   3.25 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    250, tg =   3.25 t/s, tg_3s =   3.23 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    260, tg =   3.25 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    270, tg =   3.25 t/s, tg_3s =   3.13 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    280, tg =   3.24 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    290, tg =   3.24 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    300, tg =   3.24 t/s, tg_3s =   3.19 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    310, tg =   3.23 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    320, tg =   3.23 t/s, tg_3s =   3.15 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    330, tg =   3.23 t/s, tg_3s =   3.19 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    340, tg =   3.23 t/s, tg_3s =   3.17 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    350, tg =   3.23 t/s, tg_3s =   3.13 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    360, tg =   3.22 t/s, tg_3s =   3.22 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    370, tg =   3.22 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    380, tg =   3.22 t/s, tg_3s =   3.07 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    390, tg =   3.22 t/s, tg_3s =   3.15 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    400, tg =   3.21 t/s, tg_3s =   3.11 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    410, tg =   3.21 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    420, tg =   3.21 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    430, tg =   3.21 t/s, tg_3s =   3.17 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    440, tg =   3.21 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    450, tg =   3.20 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    460, tg =   3.20 t/s, tg_3s =   3.18 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    470, tg =   3.20 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    480, tg =   3.20 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    490, tg =   3.20 t/s, tg_3s =   3.18 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    500, tg =   3.20 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    510, tg =   3.20 t/s, tg_3s =   3.11 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    519, tg =   3.19 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    529, tg =   3.19 t/s, tg_3s =   3.05 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    538, tg =   3.19 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    548, tg =   3.18 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    558, tg =   3.18 t/s, tg_3s =   3.04 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    567, tg =   3.18 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    576, tg =   3.17 t/s, tg_3s =   2.97 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    585, tg =   3.17 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    594, tg =   3.17 t/s, tg_3s =   2.97 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    604, tg =   3.16 t/s, tg_3s =   3.02 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    613, tg =   3.16 t/s, tg_3s =   2.98 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    622, tg =   3.16 t/s, tg_3s =   2.97 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    632, tg =   3.16 t/s, tg_3s =   3.04 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    642, tg =   3.15 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    651, tg =   3.15 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    661, tg =   3.15 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    670, tg =   3.15 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    680, tg =   3.15 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    689, tg =   3.14 t/s, tg_3s =   2.97 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    698, tg =   3.14 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    707, tg =   3.14 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    716, tg =   3.14 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    726, tg =   3.14 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    736, tg =   3.13 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    745, tg =   3.13 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    755, tg =   3.13 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    764, tg =   3.13 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    773, tg =   3.13 t/s, tg_3s =   2.88 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    782, tg =   3.12 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    791, tg =   3.12 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    800, tg =   3.12 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    809, tg =   3.12 t/s, tg_3s =   2.96 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    818, tg =   3.12 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    827, tg =   3.11 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    836, tg =   3.11 t/s, tg_3s =   2.90 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    845, tg =   3.11 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    854, tg =   3.11 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    863, tg =   3.10 t/s, tg_3s =   2.98 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    872, tg =   3.10 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    881, tg =   3.10 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    890, tg =   3.10 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    899, tg =   3.10 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    908, tg =   3.09 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    917, tg =   3.09 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    926, tg =   3.09 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    935, tg =   3.09 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    944, tg =   3.09 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    953, tg =   3.08 t/s, tg_3s =   2.88 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    962, tg =   3.08 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    971, tg =   3.08 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    980, tg =   3.08 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    989, tg =   3.08 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 238 | n_decoded =    998, tg =   3.08 t/s, tg_3s =   2.92 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1007, tg =   3.07 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1016, tg =   3.07 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1025, tg =   3.07 t/s, tg_3s =   2.88 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1034, tg =   3.07 t/s, tg_3s =   2.83 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1043, tg =   3.07 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1052, tg =   3.06 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1061, tg =   3.06 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1070, tg =   3.06 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1079, tg =   3.06 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1088, tg =   3.06 t/s, tg_3s =   2.78 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1097, tg =   3.05 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1106, tg =   3.05 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1115, tg =   3.05 t/s, tg_3s =   2.81 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1124, tg =   3.05 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1133, tg =   3.05 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1142, tg =   3.04 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1151, tg =   3.04 t/s, tg_3s =   2.80 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1160, tg =   3.04 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1169, tg =   3.04 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1178, tg =   3.04 t/s, tg_3s =   2.81 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1187, tg =   3.04 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1196, tg =   3.03 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1205, tg =   3.03 t/s, tg_3s =   2.81 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1214, tg =   3.03 t/s, tg_3s =   2.81 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1223, tg =   3.03 t/s, tg_3s =   2.80 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1232, tg =   3.03 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1241, tg =   3.03 t/s, tg_3s =   2.85 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1250, tg =   3.02 t/s, tg_3s =   2.85 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1259, tg =   3.02 t/s, tg_3s =   2.83 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1268, tg =   3.02 t/s, tg_3s =   2.80 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1277, tg =   3.02 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1286, tg =   3.02 t/s, tg_3s =   2.77 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1295, tg =   3.02 t/s, tg_3s =   2.76 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1304, tg =   3.01 t/s, tg_3s =   2.77 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1313, tg =   3.01 t/s, tg_3s =   2.73 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1322, tg =   3.01 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1331, tg =   3.01 t/s, tg_3s =   2.74 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1340, tg =   3.01 t/s, tg_3s =   2.71 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1349, tg =   3.00 t/s, tg_3s =   2.75 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1358, tg =   3.00 t/s, tg_3s =   2.78 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1367, tg =   3.00 t/s, tg_3s =   2.80 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1376, tg =   3.00 t/s, tg_3s =   2.72 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1385, tg =   3.00 t/s, tg_3s =   2.71 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1394, tg =   3.00 t/s, tg_3s =   2.72 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1403, tg =   2.99 t/s, tg_3s =   2.73 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1412, tg =   2.99 t/s, tg_3s =   2.72 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1421, tg =   2.99 t/s, tg_3s =   2.71 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1430, tg =   2.99 t/s, tg_3s =   2.73 t/s
+slot print_timing: id  0 | task 238 | n_decoded =   1439, tg =   2.99 t/s, tg_3s =   2.74 t/s
+slot print_timing: id  0 | task 238 | prompt eval time =  153499.42 ms /  2048 tokens (   74.95 ms per token,    13.34 tokens per second)
+slot print_timing: id  0 | task 238 |        eval time =  485210.36 ms /  1448 tokens (  335.09 ms per token,     2.98 tokens per second)
+slot print_timing: id  0 | task 238 |       total time =  638709.78 ms /  3496 tokens
+slot print_timing: id  0 | task 238 |    graphs reused =       1675
+slot      release: id  0 | task 238 | stop processing: n_tokens = 3498, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/07/10 - 11:34:42 | 200 |        10m38s |       127.0.0.1 | POST     "/api/chat"
+time=2026-07-10T11:34:42.383-07:00 level=WARN source=llama_server.go:314 msg="truncating input prompt" limit=2051 prompt=4319 keep=5 new=2051
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 890910724
+srv  get_availabl: updating prompt cache
+srv   prompt_save:  - saving prompt with length 3498, total state size = 437.291 MiB (draft: 0.000 MiB)
+srv          load:  - looking for better prompt, base f_keep = 0.001, sim = 0.002
+srv        update:  - cache state: 2 prompts, 589.680 MiB (limits: 8192.000 MiB, 4096 tokens, 65529 est)
+srv        update:    - prompt 0x19b448b0:    1219 tokens, checkpoints:  0,   152.390 MiB
+srv        update:    - prompt 0x19b449b0:    3498 tokens, checkpoints:  0,   437.291 MiB
+srv  get_availabl: prompt cache update took 194.06 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 4096
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 1690 | processing task, is_child = 0
+slot   operator(): id  0 | task 1690 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 2051
+slot   operator(): id  0 | task 1690 | cached n_tokens = 5, memory_seq_rm [5, end)
+srv  stream_sessi: conv_id= (empty=1)
+slot print_timing: id  0 | task 1690 | prompt processing, n_tokens =    512, progress = 0.25, t =  36.07 s / 14.20 tokens per second
+slot   operator(): id  0 | task 1690 | cached n_tokens = 517, memory_seq_rm [517, end)
+slot print_timing: id  0 | task 1690 | prompt processing, n_tokens =   1024, progress = 0.50, t =  73.62 s / 13.91 tokens per second
+slot   operator(): id  0 | task 1690 | cached n_tokens = 1029, memory_seq_rm [1029, end)
+slot print_timing: id  0 | task 1690 | prompt processing, n_tokens =   1536, progress = 0.75, t = 112.56 s / 13.65 tokens per second
+slot   operator(): id  0 | task 1690 | cached n_tokens = 1541, memory_seq_rm [1541, end)
+slot init_sampler: id  0 | task 1690 | init sampler, took 0.46 ms, tokens: text = 2051, total = 2051
+slot print_timing: id  0 | task 1690 | n_decoded =    100, tg =   3.30 t/s, tg_3s =   3.30 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    110, tg =   3.30 t/s, tg_3s =   3.28 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    120, tg =   3.29 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    130, tg =   3.29 t/s, tg_3s =   3.26 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    140, tg =   3.29 t/s, tg_3s =   3.23 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    150, tg =   3.29 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    160, tg =   3.29 t/s, tg_3s =   3.31 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    170, tg =   3.29 t/s, tg_3s =   3.24 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    180, tg =   3.29 t/s, tg_3s =   3.30 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    190, tg =   3.29 t/s, tg_3s =   3.28 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    200, tg =   3.29 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    210, tg =   3.29 t/s, tg_3s =   3.30 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    220, tg =   3.29 t/s, tg_3s =   3.26 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    230, tg =   3.28 t/s, tg_3s =   3.17 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    240, tg =   3.28 t/s, tg_3s =   3.29 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    250, tg =   3.28 t/s, tg_3s =   3.25 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    260, tg =   3.27 t/s, tg_3s =   3.16 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    270, tg =   3.27 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    280, tg =   3.27 t/s, tg_3s =   3.15 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    290, tg =   3.26 t/s, tg_3s =   3.16 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    300, tg =   3.26 t/s, tg_3s =   3.16 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    310, tg =   3.26 t/s, tg_3s =   3.20 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    320, tg =   3.25 t/s, tg_3s =   3.17 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    330, tg =   3.25 t/s, tg_3s =   3.09 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    340, tg =   3.24 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    350, tg =   3.24 t/s, tg_3s =   3.13 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    360, tg =   3.24 t/s, tg_3s =   3.11 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    370, tg =   3.24 t/s, tg_3s =   3.19 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    380, tg =   3.23 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    390, tg =   3.23 t/s, tg_3s =   3.18 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    400, tg =   3.23 t/s, tg_3s =   3.14 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    410, tg =   3.23 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    420, tg =   3.22 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    430, tg =   3.22 t/s, tg_3s =   3.16 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    440, tg =   3.22 t/s, tg_3s =   3.15 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    450, tg =   3.22 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    460, tg =   3.21 t/s, tg_3s =   3.06 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    470, tg =   3.21 t/s, tg_3s =   3.06 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    480, tg =   3.21 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    490, tg =   3.21 t/s, tg_3s =   3.17 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    500, tg =   3.20 t/s, tg_3s =   3.12 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    510, tg =   3.20 t/s, tg_3s =   3.13 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    520, tg =   3.20 t/s, tg_3s =   3.04 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    530, tg =   3.20 t/s, tg_3s =   3.06 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    540, tg =   3.19 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    550, tg =   3.19 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    560, tg =   3.19 t/s, tg_3s =   3.04 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    569, tg =   3.18 t/s, tg_3s =   3.00 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    578, tg =   3.18 t/s, tg_3s =   2.97 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    588, tg =   3.18 t/s, tg_3s =   3.08 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    598, tg =   3.18 t/s, tg_3s =   3.02 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    608, tg =   3.17 t/s, tg_3s =   3.07 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    618, tg =   3.17 t/s, tg_3s =   3.09 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    628, tg =   3.17 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    638, tg =   3.17 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    647, tg =   3.16 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    656, tg =   3.16 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    665, tg =   3.16 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    675, tg =   3.16 t/s, tg_3s =   3.02 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    685, tg =   3.15 t/s, tg_3s =   3.03 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    694, tg =   3.15 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    703, tg =   3.15 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    713, tg =   3.15 t/s, tg_3s =   3.02 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    722, tg =   3.14 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    732, tg =   3.14 t/s, tg_3s =   3.01 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    741, tg =   3.14 t/s, tg_3s =   2.99 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    750, tg =   3.14 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    759, tg =   3.14 t/s, tg_3s =   2.96 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    768, tg =   3.13 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    777, tg =   3.13 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    786, tg =   3.13 t/s, tg_3s =   2.90 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    795, tg =   3.13 t/s, tg_3s =   2.92 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    804, tg =   3.12 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    813, tg =   3.12 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    822, tg =   3.12 t/s, tg_3s =   2.92 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    831, tg =   3.12 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    840, tg =   3.11 t/s, tg_3s =   2.92 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    849, tg =   3.11 t/s, tg_3s =   2.98 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    858, tg =   3.11 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    867, tg =   3.11 t/s, tg_3s =   2.96 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    876, tg =   3.11 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    885, tg =   3.10 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    894, tg =   3.10 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    903, tg =   3.10 t/s, tg_3s =   2.90 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    912, tg =   3.10 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    921, tg =   3.10 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    930, tg =   3.10 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    939, tg =   3.09 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    948, tg =   3.09 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    957, tg =   3.09 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    966, tg =   3.09 t/s, tg_3s =   2.94 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    975, tg =   3.09 t/s, tg_3s =   2.92 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    984, tg =   3.09 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =    993, tg =   3.08 t/s, tg_3s =   2.95 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1002, tg =   3.08 t/s, tg_3s =   2.91 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1011, tg =   3.08 t/s, tg_3s =   2.89 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1020, tg =   3.08 t/s, tg_3s =   2.93 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1029, tg =   3.08 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1038, tg =   3.07 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1047, tg =   3.07 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1056, tg =   3.07 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1065, tg =   3.07 t/s, tg_3s =   2.85 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1074, tg =   3.07 t/s, tg_3s =   2.74 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1083, tg =   3.06 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1092, tg =   3.06 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1101, tg =   3.06 t/s, tg_3s =   2.85 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1110, tg =   3.06 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1119, tg =   3.06 t/s, tg_3s =   2.83 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1128, tg =   3.05 t/s, tg_3s =   2.84 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1137, tg =   3.05 t/s, tg_3s =   2.87 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1146, tg =   3.05 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1155, tg =   3.05 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1164, tg =   3.05 t/s, tg_3s =   2.80 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1173, tg =   3.04 t/s, tg_3s =   2.86 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1182, tg =   3.04 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1191, tg =   3.04 t/s, tg_3s =   2.82 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1200, tg =   3.04 t/s, tg_3s =   2.83 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1209, tg =   3.04 t/s, tg_3s =   2.72 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1218, tg =   3.03 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1227, tg =   3.03 t/s, tg_3s =   2.76 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1236, tg =   3.03 t/s, tg_3s =   2.75 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1245, tg =   3.03 t/s, tg_3s =   2.76 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1254, tg =   3.03 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | n_decoded =   1263, tg =   3.02 t/s, tg_3s =   2.79 t/s
+slot print_timing: id  0 | task 1690 | prompt eval time =  153346.44 ms /  2046 tokens (   74.95 ms per token,    13.34 tokens per second)
+slot print_timing: id  0 | task 1690 |        eval time =  419856.17 ms /  1269 tokens (  330.86 ms per token,     3.02 tokens per second)
+slot print_timing: id  0 | task 1690 |       total time =  573202.61 ms /  3315 tokens
+slot print_timing: id  0 | task 1690 |    graphs reused =       2938
+slot      release: id  0 | task 1690 | stop processing: n_tokens = 3319, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/07/10 - 11:44:15 | 200 |         9m33s |       127.0.0.1 | POST     "/api/chat"
+slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 1464354152
+srv  get_availabl: updating prompt cache
+srv   prompt_save:  - saving prompt with length 3319, total state size = 414.914 MiB (draft: 0.000 MiB)
+srv          load:  - looking for better prompt, base f_keep = 0.001, sim = 0.005
+srv        update:  - cache state: 3 prompts, 1004.594 MiB (limits: 8192.000 MiB, 4096 tokens, 65529 est)
+srv        update:    - prompt 0x19b448b0:    1219 tokens, checkpoints:  0,   152.390 MiB
+srv        update:    - prompt 0x19b449b0:    3498 tokens, checkpoints:  0,   437.291 MiB
+srv        update:    - prompt 0x19b43600:    3319 tokens, checkpoints:  0,   414.914 MiB
+srv  get_availabl: prompt cache update took 194.78 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 4096
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 2963 | processing task, is_child = 0
+slot   operator(): id  0 | task 2963 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 594
+slot   operator(): id  0 | task 2963 | cached n_tokens = 3, memory_seq_rm [3, end)
+srv  stream_sessi: conv_id= (empty=1)
+slot print_timing: id  0 | task 2963 | prompt processing, n_tokens =    512, progress = 0.87, t =  35.95 s / 14.24 tokens per second
+slot   operator(): id  0 | task 2963 | cached n_tokens = 515, memory_seq_rm [515, end)
+slot init_sampler: id  0 | task 2963 | init sampler, took 0.19 ms, tokens: text = 594, total = 594
+slot print_timing: id  0 | task 2963 | prompt eval time =   42306.65 ms /   591 tokens (   71.58 ms per token,    13.97 tokens per second)
+slot print_timing: id  0 | task 2963 |        eval time =   13660.78 ms /    57 tokens (  239.66 ms per token,     4.17 tokens per second)
+slot print_timing: id  0 | task 2963 |       total time =   55967.43 ms /   648 tokens
+slot print_timing: id  0 | task 2963 |    graphs reused =       2993
+slot      release: id  0 | task 2963 | stop processing: n_tokens = 650, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/07/10 - 11:45:14 | 200 | 56.201775107s |       127.0.0.1 | POST     "/api/chat"
+slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, sim_best = 0.265 (> 0.100 thold), f_keep = 0.226
+srv  get_availabl: updating prompt cache
+srv   prompt_save:  - saving prompt with length 650, total state size = 81.258 MiB (draft: 0.000 MiB)
+srv          load:  - looking for better prompt, base f_keep = 0.226, sim = 0.265
+srv        update:  - cache state: 4 prompts, 1085.852 MiB (limits: 8192.000 MiB, 4096 tokens, 65529 est)
+srv        update:    - prompt 0x19b448b0:    1219 tokens, checkpoints:  0,   152.390 MiB
+srv        update:    - prompt 0x19b449b0:    3498 tokens, checkpoints:  0,   437.291 MiB
+srv        update:    - prompt 0x19b43600:    3319 tokens, checkpoints:  0,   414.914 MiB
+srv        update:    - prompt 0x19b41da0:     650 tokens, checkpoints:  0,    81.258 MiB
+srv  get_availabl: prompt cache update took 40.44 ms
+slot launch_slot_: id  0 | task -1 | sampler chain: logits -> penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+slot launch_slot_: id  0 | task -1 | sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.100, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 4096
+	top_k = 40, top_p = 0.900, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.800
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+slot launch_slot_: id  0 | task 3022 | processing task, is_child = 0
+slot   operator(): id  0 | task 3022 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 554
+slot   operator(): id  0 | task 3022 | cached n_tokens = 147, memory_seq_rm [147, end)
+srv  stream_sessi: conv_id= (empty=1)
+slot init_sampler: id  0 | task 3022 | init sampler, took 0.11 ms, tokens: text = 554, total = 554
+slot print_timing: id  0 | task 3022 | n_decoded =    100, tg =   4.16 t/s, tg_3s =   4.16 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    113, tg =   4.16 t/s, tg_3s =   4.12 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    126, tg =   4.16 t/s, tg_3s =   4.12 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    139, tg =   4.15 t/s, tg_3s =   4.06 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    152, tg =   4.14 t/s, tg_3s =   4.12 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    165, tg =   4.14 t/s, tg_3s =   4.13 t/s
+slot print_timing: id  0 | task 3022 | n_decoded =    178, tg =   4.13 t/s, tg_3s =   4.03 t/s
+slot print_timing: id  0 | task 3022 | prompt eval time =   29135.73 ms /   407 tokens (   71.59 ms per token,    13.97 tokens per second)
+slot print_timing: id  0 | task 3022 |        eval time =   43557.31 ms /   180 tokens (  241.99 ms per token,     4.13 tokens per second)
+slot print_timing: id  0 | task 3022 |       total time =   72693.04 ms /   587 tokens
+slot print_timing: id  0 | task 3022 |    graphs reused =       3171
+slot      release: id  0 | task 3022 | stop processing: n_tokens = 733, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/07/10 - 11:46:27 | 200 |         1m12s |       127.0.0.1 | POST     "/api/chat"
