@@ -1,35 +1,36 @@
 {
   "world": {
     "locations": {
-      "home": [],
+      "home": [
+        "Diego"
+      ],
       "park": [],
       "cafe": [
-        "Mei",
-        "Diego"
+        "Peter"
       ],
       "library": [],
       "school": [],
       "hospital": [
-        "Peter"
+        "Caroline"
       ],
       "market": [],
       "town_hall": [
-        "Caroline",
         "Andy"
       ],
       "theater": [
-        "Samantha"
+        "Mei"
       ],
       "gym": [],
       "museum": [
-        "Leo"
+        "Samantha",
+        "Noor"
       ],
       "restaurant": [
-        "Noor"
+        "Leo"
       ],
       "train_station": []
     },
-    "time": "2025-12-29 01:00"
+    "time": "2025-12-29 02:00"
   },
   "agents": [
     {
@@ -729,29 +730,53 @@
     {
       "name": "Samantha",
       "personality": "a quiet, methodical programmer who prefers solitude and noise-cancelling headphones; maintains open-source libraries at night, leaves kind notes instead of small talk, and feeds the neighborhood strays behind the cafe; finds comfort in routines and logic puzzles",
-      "location": "theater",
+      "location": "museum",
       "schedule": [
         {
           "date": "2025-10-16",
-          "time": "14:00",
+          "time": "17:00",
           "location": "cafe",
-          "commitment": "discuss AI project with Diego",
+          "commitment": "discuss AI project with Samantha",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-17",
+          "time": "18:00",
+          "location": "restaurant",
+          "commitment": "dinner with Samantha",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-18",
+          "time": "14:00",
+          "location": "museum",
+          "commitment": "visit museum with Samantha",
           "status": "pending",
           "completed_at": ""
         },
         {
           "date": "2025-10-20",
-          "time": "13:00",
-          "location": "park",
-          "commitment": "discussing AI project with Samantha",
+          "time": "16:00",
+          "location": "gym",
+          "commitment": "workout session with Samantha",
           "status": "pending",
           "completed_at": ""
         },
         {
-          "date": "2025-10-20",
-          "time": "15:00",
-          "location": "park",
-          "commitment": "discussion about the AI project with Samantha",
+          "date": "2025-10-22",
+          "time": "19:00",
+          "location": "restaurant",
+          "commitment": "dinner with Diego",
+          "status": "pending",
+          "completed_at": ""
+        },
+        {
+          "date": "2025-10-23",
+          "time": "14:00",
+          "location": "museum",
+          "commitment": "visit museum with Diego",
           "status": "pending",
           "completed_at": ""
         },
@@ -1322,20 +1347,8 @@
         }
       ],
       "memory": {
-        "summary": " On December 28th, 2025, Samantha, Andy, and Noor met at the museum. After discussing their AI music project, they agreed to meet again at Caroline's Café the following day at 1 PM. During the museum visit, Noor also stopped by to get seeds for their AI project and to catch up with Samantha. They planned to discuss Noor's AI music project with Diego and Noor brought snacks for any afternoon hunger pangs.",
+        "summary": " On December 28th, 2025, Samantha, Andy, and Noor met at the museum to discuss their AI music project. They agreed to meet again at Caroline's Café the following day at 1 PM. During the museum visit, Noor also stopped by to get seeds for their AI project and to catch up with Samantha. They planned to discuss Noor's AI music project with Diego and Noor brought snacks for any afternoon hunger pangs. On the same day, at the gym, Noor and Samantha caught up and decided to discuss their AI project in detail over coffee at 3 PM, with Samantha bringing her laptop, headphones, and notes. Noor also reminded Samantha not to forget her gym gear.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Noor at gym around 2025-12-28 13:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Samantha: Hi Noor, I didn't expect to see you here today. We have quite a lot to discuss about our AI project.\n\nNoor: Hey Samantha! I thought it would be great to catch up here at the gym. Let's grab some coffee after our workouts, and we can discuss everything in detail. How about 3 PM today?\n\nSamantha: That sounds perfect, Noor. I'll bring my laptop, headphones, and kind notes. See you then!\n\nNoor: Can't wait! And don't forget to bring your gym gear. See you at 3 PM, Samantha."
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -1383,6 +1396,18 @@
             "data": {
               "content": " Samantha: \"Hello Diego, it's good to see you again. I've been working on the AI music libraries you suggested.\"\n\nDiego: \"Hi Samantha! Great to see you too. I've been meaning to ask, have you tried those street tacos I told you about? We should grab some after we catch up.\"\n\nSamantha: \"I haven't had the chance yet, but they sound delicious. How about we meet at the restaurant at 20:30 tonight to discuss our project and grab dinner?\"\n\nDiego: \"That works for me. I'll see you there then, Samantha.\"\n\nAdded to their schedules:\n2025-12-28 20:30 @ restaurant: Discuss AI project and have dinner together."
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Noor at museum around 2025-12-29 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Hello Noor, it's good to see you again. I didn't expect to run into you here so soon.\"\n\nNoor: \"Hi Samantha! I was just grabbing some seeds for our AI project. It's great to catch up! By the way, have you seen the new exhibit?\"\n\nSamantha: \"No, but I'd love to. How about we meet again here tomorrow at 2 PM to discuss our AI music project with Diego? I've been looking forward to it since our museum visit yesterday.\"\n\nNoor: \"That sounds perfect, Samantha. I'll bring snacks for everyone. And don't forget your noise-cancelling headphones if you want to work on any additional code here.\""
+            }
           }
         ]
       },
@@ -1391,7 +1416,7 @@
     {
       "name": "Caroline",
       "personality": "a purple-haired barista and latte-art whisperer who remembers everyone’s order; a compassionate gossip filter who connects people gently; moonlights as an indie singer at the theater and guards the cafe’s cozy vibe fiercely",
-      "location": "town_hall",
+      "location": "hospital",
       "schedule": [
         {
           "date": "2025-10-15",
@@ -2076,7 +2101,7 @@
     {
       "name": "Peter",
       "personality": "a gym-obsessed ex-finance hopeful with a fragile ego and a bookshelf of self-help; talks a big game about startups, is secretly soft with kids at the park, and insists he’s looking for real love even while networking at every table",
-      "location": "hospital",
+      "location": "cafe",
       "schedule": [
         {
           "date": "2025-10-20",
@@ -2815,7 +2840,7 @@
     {
       "name": "Mei",
       "personality": "a meticulous librarian and amateur archivist who labels everything, champions quiet spaces, and runs a Saturday zine club; keeps seeds in her tote for the community garden and believes small rituals make strong towns",
-      "location": "cafe",
+      "location": "theater",
       "schedule": [
         {
           "date": "2025-10-15",
@@ -3539,7 +3564,7 @@
     {
       "name": "Diego",
       "personality": "a disciplined fitness coach and part-time EMT who times his runs to the minute; pragmatic in emergencies, warm with beginners at the gym, and still rehabbing an old knee injury; swears by stretching and street tacos",
-      "location": "cafe",
+      "location": "home",
       "schedule": [
         {
           "date": "2025-10-19",
@@ -4231,7 +4256,7 @@
     {
       "name": "Noor",
       "personality": "an energetic science teacher who runs the school’s robotics club; turns everyday moments into experiments, keeps snacks for overwhelmed students, and advocates at town hall for better lab equipment",
-      "location": "restaurant",
+      "location": "museum",
       "schedule": [
         {
           "date": "10/17/2025",
@@ -4753,20 +4778,8 @@
         }
       ],
       "memory": {
-        "summary": " On December 28th, Noor meets with Andy at the museum around 6 AM and discusses the progress of their AI music project. They schedule a follow-up meeting with Samantha and others on the following Tuesday at 1 PM at the museum. Noor will bring snacks for the students, and they also plan to discuss the community garden event on Saturday. They are excited about turning the museum into their creative canvas. The additional meeting scheduled includes a meeting with Andy, Samantha, and possibly others at the museum on December 30th at 4 PM, where Andy will bring vegan street tacos and seeds for the community garden.\n\nIn addition, Noor had a conversation with Peter at the museum around 9 AM on the same day, who proposed meeting at Caroline's Café the next day at 1 PM to discuss AI project ideas. Noor suggested making it a double date with Diego and inviting Leo and Samantha. They agreed to meet at 1 PM sharp and Noor reminded Peter to bring snacks for the kids, while Noor will bring seeds for the community garden.",
+        "summary": " On December 28th, Noor meets with Andy at the museum around 6 AM and discusses the progress of their AI music project. They schedule a follow-up meeting with Samantha and others on the following Tuesday at 1 PM at the museum, where Noor will bring snacks for the students. They also plan to discuss the community garden event on Saturday. They also have a conversation with Samantha at the museum around 12 PM, where Noor is there to get seeds for their AI project and they discuss meeting at Caroline's Café the next day at 1 PM to discuss AI project ideas. They plan to make it a double date with Diego and invite Leo and Samantha. Samantha is interested in hearing more about Noor's AI music project and suggests catching up properly at the café tomorrow at 1 PM. Noor agrees to bring some snacks for any late-afternoon hunger pangs. They are still excited about turning the museum into their creative canvas. The additional meetings scheduled include a meeting with Andy, Samantha, and possibly others at the museum on December 30th at 4 PM, where Andy will bring vegan street tacos and seeds for the community garden.",
         "messages": [
-          {
-            "type": "human",
-            "data": {
-              "content": "Talked to Samantha at museum around 2025-12-28 12:00"
-            }
-          },
-          {
-            "type": "ai",
-            "data": {
-              "content": " Samantha: (looking up from her laptop) Noor, it's a pleasant surprise to see you here, aren't you supposed to be at the school?\n\nNoor: (smiling, waving a bag of seeds) Hi Samantha! I'm actually here to grab these seeds for our AI project, and I thought I'd say hi. How's your open-source library coming along?\n\nSamantha: (slightly amused) It's progressing as usual, with routines and logic puzzles. (pauses) Shall we catch up properly at the café tomorrow at 1 PM? I'd like to hear more about your AI music project with Diego.\n\nNoor: (excited) That sounds perfect, Samantha! I'll bring some snacks for any late-afternoon hunger pangs. See you tomorrow!"
-            }
-          },
           {
             "type": "human",
             "data": {
@@ -4802,6 +4815,18 @@
             "data": {
               "content": " Andy: Hey Noor! I didn't expect to see you here so early at the museum. We had such a great discussion about the AI music project yesterday, I'm looking forward to our follow-up.\n\nNoor: Hi Andy! I thought I'd come back and check out some exhibits. I'm glad we got to talk about the project and the community garden event. Let's definitely meet here again on Tuesday at 1 PM to continue our discussion.\n\nAndy: Sounds great! I'll bring my sketchbook and maybe we can sketch some ideas together. And I'll bring snacks too, as a thank you for your help with the students.\n\nNoor: That's super kind of you, Andy. I'll bring the snacks for the students as we discussed. I'm really excited about turning this museum into our creative canvas. See you Tuesday!\n\nHere's their updated schedules:\n\nAndy:\n2025-10-14 18:00 @ cafe: Meet Juan for AI project discussion\n2025-10-15 20:00 @ restaurant: Dinner with Diego and Juan\n2025-11-03 15:00 @ park: AI project follow-up with Noor\n2025-12-28 21:00 @ library: Meet with you\n2025-12-30 13:00 @ museum: Meeting with Samantha, Diego, and possibly others\n\nNoor:\n10/17/2025 19:00 @ cafe: Meeting with you to discuss AI project and music collaboration\n10/18/2025 17:00 @ cafe: Meeting with Diego to discuss community garden\n10/18/2025 18:00 @ cafe: Discuss community projects with Diego\n12/28/2025 6:00 @ museum: Meet with you\n12/30/2025 13:00 @ museum: Meeting with Samantha, Andy, and possibly others"
             }
+          },
+          {
+            "type": "human",
+            "data": {
+              "content": "Talked to Samantha at museum around 2025-12-29 01:00"
+            }
+          },
+          {
+            "type": "ai",
+            "data": {
+              "content": " Samantha: \"Hello Noor, it's good to see you again. I didn't expect to run into you here so soon.\"\n\nNoor: \"Hi Samantha! I was just grabbing some seeds for our AI project. It's great to catch up! By the way, have you seen the new exhibit?\"\n\nSamantha: \"No, but I'd love to. How about we meet again here tomorrow at 2 PM to discuss our AI music project with Diego? I've been looking forward to it since our museum visit yesterday.\"\n\nNoor: \"That sounds perfect, Samantha. I'll bring snacks for everyone. And don't forget your noise-cancelling headphones if you want to work on any additional code here.\""
+            }
           }
         ]
       },
@@ -4810,7 +4835,7 @@
     {
       "name": "Leo",
       "personality": "a wandering violinist and theater tech who busks near the market; improvises duets with birds at the park, collects stories for a future musical, and fixes broken amps with improbable spare parts",
-      "location": "museum",
+      "location": "restaurant",
       "schedule": [
         {
           "date": "2025-10-24",
